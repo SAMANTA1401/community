@@ -172,3 +172,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+nenv/
+Wav2Lip-master
+mcq_images
+pdfs
+output

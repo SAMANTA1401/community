@@ -1,0 +1,114 @@
+[
+  {
+    "question": "Match List-I with List-II:\n\n \n List-I\n \n List-II\n\n A.\n Fleming\n I.\n Disc shaped sacs or cisternae near cell nucleus\n\n B.\n Robert Brown\n II.\n Chromatin\n\n C.\n George Palade\n III.\n Ribosomes\n\n D.\n Camillo Golgi\n IV.\n Nucleus\n\nChoose the correct answer from the options given below:",
+    "year": "NEET 2024",
+    "options": [
+      "A-II, B-IV, C-III, D-I",
+      "A-II, B-III, C-I, D-IV",
+      "A-I, B-II, C-III, D-IV",
+      "A-IV, B-II, C-III, D-I"
+    ],
+    "answer": "A",
+    "solution": "\u2022 Nucleus as a cell organelle was first described by Robert Brown as early as 1831 .",
+    "chapter": "Cell - The Unit of Life",
+    "images": ["./mcq_image/spage12_img0.png"]
+  },
+  {
+    "question": "Which of the following statements is correct about the type of junction\nand their role in our body?",
+    "year": "NEET 2024",
+    "options": [
+      "Adhering junctions facilitate the cells to communicate with each other.",
+      "Tight junctions help to stop substances from leaking across a tissue.",
+      "Tight junctions help to perform cementing to keep neighbouring cells together.",
+      "Gap junctions help to create gap between the cells and tissues."
+    ],
+    "answer": "B",
+    "solution": "The correct answer is option (2), because tight junctions help to stop substances from leaking across a tissue.",
+    "chapter": "Cell - The Unit of Life",
+    "images": []
+  },
+  {
+    "question": "Match List-I with List-II.\n\n \n List-I\n \n List-II\n\n A.\n  F1 Particles\n I\n Chromosomes\n\n B.\n Histones\n II\n Cilia\n\n C.\n Axoneme\n III\n Golgi apparatus\n\n D.\n Cisternae\n IV\n Mitochondria\n\nChoose the correct answer from the options given below:",
+    "year": "NEET 2024",
+    "options": [
+      "A-II, B-I, C-IV, D-III",
+      "A-IV, B-I, C-II, D-III",
+      "A-IV, B-I, C-III, D-II",
+      "A-IV, B-III, C-I, D-II"
+    ],
+    "answer": "B",
+    "solution": "F1 particles or oxysomes are found on the inner face of the inner membrane of mitochondria.",
+    "chapter": "Cell - The Unit of Life",
+    "images": []
+  },
+  {
+    "question": "The DNA present in chloroplast is:",
+    "year": "NEET 2024",
+    "options": [
+      "Linear, double stranded",
+      "Circular, double stranded",
+      "Linear, single stranded",
+      "Circular, single stranded"
+    ],
+    "answer": "B",
+    "solution": "The DNA present in chloroplast is circular double stranded.",
+    "chapter": "Cell - The Unit of Life",
+    "images": []
+  },
+  {
+    "question": "Match List I with List II :\n\n \n List-I\n \n List-II\n\n A.\n Axoneme\n I.\n Centriole\n\n B.\n Cartwheel pattern\n II.\n Cilia and flagella\n\n C.\n Crista\n III.\n Chromosome\n\n D.\n Satellite\n IV.\n Mitochondria\n\nChoose the correct answer from the options given below :",
+    "year": "NEET 2024",
+    "options": [
+      "A-IV, B-III, C-II, D-I",
+      "A-IV, B-II, C-III, D-I",
+      "A-II, B-IV, C-I, D-III",
+      "A-II, B-I, C-IV, D-III"
+    ],
+    "answer": "D",
+    "solution": "\u2022 Axoneme is seen in cilia and flagella",
+    "chapter": "Cell - The Unit of Life",
+    "images": []
+  },
+  {
+    "question": "Which of the following are NOT considered as the part of\nendomembrane system?\nA. Mitochondria\nB. Endoplasmic reticulum\nC. Chloroplasts\nD. Golgi complex\nE. Peroxisomes\nChoose the most appropriate answer from the options given below:",
+    "year": "NEET 2023",
+    "options": [
+      "A, C and E only",
+      "A and D only",
+      "A, D and E only",
+      "B and D only"
+    ],
+    "answer": "A",
+    "solution": "Solution:",
+    "chapter": "Cell - The Unit of Life",
+    "images": []
+  },
+  {
+    "question": "Select correct sequence of substages of Prophase-I of Meiotic division :\n(A) Zygotene\n(B) Pachytene\n(C) Diakinesis\n(D) Leptotene\n(E) Diplotene\nChoose the correct answer from the options given below :",
+    "year": "NEET 2023",
+    "options": [
+      "(D),(B),(A),(E),(C)",
+      "(A),(B),(D),(E),(C)",
+      "(D),(A),(B),(E),(C)",
+      "(A), (D), (B), (C), (E)"
+    ],
+    "answer": "C",
+    "solution": "Leptotene (D) : This is the first stage of Prophase I. During this stage, the chromosomes begin to condense and become",
+    "chapter": "Cell - The Unit of Life",
+    "images": []
+  },
+  {
+    "question": "Which of the following statements are correct with respect of Golgi\napparatus?\n(A) It is the important site of formation of glycoprotein and glycolipids.\n(B) It produces cellular energy in the form of ATP.\n(C) It modifies the protein synthesized by ribosomes on ER.\n(D) It facilitates the transport of ions.\n(E) It provides mechanical support.\n\nChoose the most appropriate answer from the options given below :",
+    "year": "NEET 2023",
+    "options": [
+      "(B) and (C) only",
+      "(A) and (C) only",
+      "(A) and (D) only",
+      "(D) and (E) only"
+    ],
+    "answer": "B",
+    "solution": "The Golgi apparatus, sometimes called the Golgi body or Golgi complex, plays a critical role in the processing and",
+    "chapter": "Cell - The Unit of Life",
+    "images": []
+  }
+]

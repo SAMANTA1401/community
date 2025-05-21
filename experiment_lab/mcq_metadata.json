@@ -1,0 +1,18 @@
+[
+  {
+    "question": "Match List-I with List-II:\n\nList-I\nA. Fleming\nB. Robert Brown\nC. George Palade\nD. Camillo Golgi\n\nList-II\nI. Disc shaped sacs\nII. Chromatin\nIII. Ribosomes\nIV. Nucleus\n\nChoose the correct answer:",
+    "year": "NEET 2024",
+    "options": [
+      "A-II, B-IV, C-III, D-I",
+      "A-II, B-III, C-I, D-IV",
+      "A-I, B-II, C-III, D-IV",
+      "A-IV, B-II, C-III, D-I"
+    ],
+    "answer": "A",
+    "solution": "\u2022 Nucleus was first described by Robert Brown in 1831.",
+    "chapter": "Cell - The Unit of Life",
+    "images": [
+      "./mcq_images/page12_img0.png"
+    ]
+  }
+]
