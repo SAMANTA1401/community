@@ -32,6 +32,7 @@ async def websocket_endpoint(websocket: WebSocket, channel_id: int, db: Session 
     try:
         while True:
             data = await websocket.receive_text()
+            print("data",data)
 
             try:
                 parsed = json.loads(data)

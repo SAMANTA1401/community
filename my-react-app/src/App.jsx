@@ -2,49 +2,52 @@ import React, { useState, useEffect } from "react";
 import ChatRoom from "./ChatRoom";
 import axios from "axios";
 
-const BACKEND_URL = "http://localhost:8000";  // Adjust if different
+const BACKEND_URL = "http://localhost:8000"; // Adjust if needed
 
 function App() {
   const [username, setUsername] = useState("");
-  const [submitted, setSubmitted] = useState(false);
   const [channels, setChannels] = useState([]);
   const [newChannelName, setNewChannelName] = useState("");
   const [channelId, setChannelId] = useState(null);
+  const [submitted, setSubmitted] = useState(false);
 
-  // Fetch all active channels on load
+  // Load channels from server and localStorage
   useEffect(() => {
-    axios.get("http://localhost:8000/channels")
+    const storedChannels = localStorage.getItem("channels");
+    if (storedChannels) {
+      setChannels(JSON.parse(storedChannels));
+    }
+
+    axios.get(`${BACKEND_URL}/channels`)
       .then(res => {
-        console.log("Fetched channels:", res.data); // Debug log
         setChannels(res.data);
+        localStorage.setItem("channels", JSON.stringify(res.data));
       })
       .catch(err => console.error("Error fetching channels", err));
   }, []);
-  
 
-  // Handle chat join
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username.trim() !== "" && channelId !== null) {
+    if (username.trim() && channelId !== null) {
       setSubmitted(true);
     }
   };
 
-  // Handle channel creation
   const handleCreateChannel = () => {
     if (!newChannelName.trim() || !username.trim()) return;
 
     const payload = {
       name: newChannelName,
-      description: "",           // Optional: Add input field if needed
-      created_by: username
+      description: "",
+      created_by: username,
     };
 
-    axios
-      .post(`${BACKEND_URL}/channels`, payload)
+    axios.post(`${BACKEND_URL}/channels`, payload)
       .then((res) => {
-        setChannels((prev) => [...prev, res.data]);
-        setChannelId(res.data.id); // Auto-select created channel
+        const updatedChannels = [...channels, res.data];
+        setChannels(updatedChannels);
+        localStorage.setItem("channels", JSON.stringify(updatedChannels));
+        setChannelId(res.data.id);
         setNewChannelName("");
       })
       .catch((err) => {
@@ -53,9 +56,10 @@ function App() {
       });
   };
 
-  if (!submitted) {
-    return (
-      <div style={{ padding: "2rem" }}>
+  return (
+    <div style={{ display: "flex", height: "100vh" }}>
+      {/* Left Pane - Channel Form (25%) */}
+      <div style={{ width: "45%", padding: "1rem", borderRight: "1px solid #ccc" }}>
         <h2>Join or Create a Channel</h2>
 
         <form onSubmit={handleSubmit} style={{ marginBottom: "1rem" }}>
@@ -65,7 +69,7 @@ function App() {
             onChange={(e) => setUsername(e.target.value)}
             placeholder="Your username"
             required
-            style={{ marginRight: "0.5rem" }}
+            style={{ width: "100%", marginBottom: "0.5rem" }}
           />
           <button type="submit" disabled={!channelId}>Join Chat</button>
         </form>
@@ -77,19 +81,23 @@ function App() {
             value={newChannelName}
             onChange={(e) => setNewChannelName(e.target.value)}
             placeholder="Channel name"
-            style={{ marginRight: "0.5rem" }}
+            style={{ width: "100%", marginBottom: "0.5rem" }}
           />
-          <button onClick={handleCreateChannel}>Create</button>
+          <button onClick={handleCreateChannel} style={{ width: "100%" }}>Create</button>
         </div>
 
         <div>
           <h4>Available Channels</h4>
-          <ul>
+          <ul style={{ listStyle: "none", paddingLeft: 0 }}>
             {channels.map((channel) => (
               <li
                 key={channel.id}
                 onClick={() => setChannelId(channel.id)}
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  padding: "0.25rem 0",
+                  fontWeight: channelId === channel.id ? "bold" : "normal",
+                }}
               >
                 {channel.name}
               </li>
@@ -97,12 +105,17 @@ function App() {
           </ul>
         </div>
       </div>
-    );
-  }
 
-  return (
-    <div className="App">
-      <ChatRoom channelId={channelId} username={username} />
+      {/* Right Pane - Chat Window (75%) */}
+      <div style={{ width: "55%", padding: "1rem" }}>
+        {submitted && channelId && username ? (
+          <ChatRoom channelId={channelId} username={username} />
+        ) : (
+          <div style={{ textAlign: "center", marginTop: "5rem" }}>
+            <h2>Please join a channel to start chatting</h2>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
