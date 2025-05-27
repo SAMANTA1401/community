@@ -24,5 +24,8 @@ class ConnectionManager:
             for conn in self.active_connections[channel_id]:
                 await conn.send_text(message)
 
+    def get_active_channels(self):
+        return list(self.active_connections.keys())
 
-manager = ConnectionManager()
+
+

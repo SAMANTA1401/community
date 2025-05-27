@@ -14,7 +14,14 @@ const ChatRoom = ({ channelId, username }) => {
     };
 
     socket.onmessage = (event) => {
-      setMessages((prev) => [...prev, event.data]);
+      try {
+        const msg = JSON.parse(event.data);
+        const display = `${msg.sender}: ${msg.content}`;
+        setMessages((prev) => [...prev, display]);
+      } catch (err) {
+        console.error("Failed to parse message", err);
+        setMessages((prev) => [...prev, event.data]); // fallback
+      }
     };
 
     socket.onclose = () => {
@@ -32,13 +39,18 @@ const ChatRoom = ({ channelId, username }) => {
 
   const sendMessage = () => {
     if (ws.current.readyState === WebSocket.OPEN) {
-      ws.current.send(`${username}: ${inputValue}`);
-      setMessages((prev) => [...prev, `${username}: ${inputValue}`]);
-      setInputValue("");
+      const message = {
+        sender: username,
+        content: inputValue,
+        channel_id: channelId
+      };
+      ws.current.send(JSON.stringify(message));
+      setInputValue(""); // clear input
     } else {
       console.warn("WebSocket not open yet.");
     }
   };
+  
 
   return (
     <div>
@@ -51,6 +63,7 @@ const ChatRoom = ({ channelId, username }) => {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
         onKeyDown={(e) => e.key === "Enter" && sendMessage()}
+        placeholder="Type a message..."
       />
       <button onClick={sendMessage}>Send</button>
     </div>
