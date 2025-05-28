@@ -25,6 +25,8 @@ class Message(Base):
     channel_id = Column(Integer, ForeignKey("channels.id"))
     sender = Column(String(100), nullable=False)
     content = Column(Text, nullable=False)
+    type = Column(String, default="text")  # Ensure type field exists
+    url = Column(String, nullable=True)    # Ensure url field exists
     timestamp = Column(DateTime, default=datetime.utcnow)
 
     channel = relationship("Channel", back_populates="messages")
