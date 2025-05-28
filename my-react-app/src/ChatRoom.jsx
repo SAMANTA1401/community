@@ -6,18 +6,30 @@ function ChatRoom({ channelId, username }) {
   const socketRef = useRef(null);
   const chatEndRef = useRef(null);
 
+  // 🔹 Load messages from localStorage on first render
+  useEffect(() => {
+    const cached = localStorage.getItem(`messages_${channelId}`);
+    if (cached) setMessages(JSON.parse(cached));
+  }, [channelId]);
+
+  // 🔹 Connect WebSocket and listen for new messages
   useEffect(() => {
     const ws = new WebSocket(`ws://localhost:8000/ws/${channelId}`);
     socketRef.current = ws;
 
     ws.onmessage = (event) => {
       const message = JSON.parse(event.data);
-      setMessages((prev) => [...prev, message]);
+      setMessages((prev) => {
+        const updated = [...prev, message];
+        localStorage.setItem(`messages_${channelId}`, JSON.stringify(updated)); // update cache
+        return updated;
+      });
     };
 
     return () => ws.close();
   }, [channelId]);
 
+  // 🔹 Scroll to bottom on new messages
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
@@ -26,6 +38,7 @@ function ChatRoom({ channelId, username }) {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  // 🔹 Send a message
   const sendMessage = () => {
     if (!text.trim()) return;
 
@@ -33,10 +46,18 @@ function ChatRoom({ channelId, username }) {
       sender: username,
       content: text,
       channel_id: channelId,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     };
 
     socketRef.current?.send(JSON.stringify(message));
+
+    // Optimistic UI update
+    // setMessages((prev) => {
+    //   const updated = [...prev, message];
+    //   localStorage.setItem(`messages_${channelId}`, JSON.stringify(updated));
+    //   return updated;
+    // });
+
     setText("");
   };
 

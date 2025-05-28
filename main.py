@@ -49,7 +49,8 @@ async def websocket_endpoint(websocket: WebSocket, channel_id: int, db: Session 
                 await manager.broadcast(channel_id, json.dumps({
                     "sender": message.sender,
                     "content": message.content,
-                    "channel_id": message.channel_id
+                    "channel_id": message.channel_id,
+                    "timestamp": datetime.utcnow().isoformat()
                 }))
 
             except SQLAlchemyError as e:
