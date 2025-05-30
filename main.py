@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 from websocket.models import Channel , Message
 from websocket.database import SessionLocal, engine, get_db  # Your DB connection setup
 from websocket.websockets import ConnectionManager
-from websocket.utils import ChannelCreate, ChannelType, ChannelOut  # Your Pydantic models
+from websocket.utils import ChannelCreate, ChannelType, ChannelOut   # Your Pydantic models
 import json
 from sqlalchemy.exc import SQLAlchemyError
 import time
@@ -38,7 +38,7 @@ app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 
 
 @app.websocket("/ws/{channel_id}")
-async def websocket_endpoint(websocket: WebSocket, channel_id: int, db: Session = Depends(get_db)):
+async def websocket_endpoint(websocket: WebSocket, channel_id: str, db: Session = Depends(get_db)):
     await manager.connect(channel_id, websocket)
     try:
         while True:
@@ -82,6 +82,20 @@ async def websocket_endpoint(websocket: WebSocket, channel_id: int, db: Session 
         print(" Unexpected error:", e)
         manager.disconnect(channel_id, websocket)
 
+
+@app.get("/channels/{channel_id}/messages")
+def get_messages(channel_id: str, db: Session = Depends(get_db)):
+    messages = db.query(Message).filter(Message.channel_id == channel_id).order_by(Message.timestamp).all()
+    return [
+        {
+            "sender": msg.sender,
+            "content": msg.content,
+            "channel_id": msg.channel_id,
+            "timestamp": msg.timestamp.isoformat(),
+            "type": msg.type,
+            "url": msg.url
+        } for msg in messages
+    ]
 
 
 
@@ -129,3 +143,5 @@ async def upload_file(file: UploadFile = File(...)):
 # async def serve_file(filename: str):
 #     file_path = os.path.join(UPLOAD_DIR, filename)
 #     return FileResponse(file_path)
+
+# uvicorn main:app --host 0.0.0.0 --port 8000 --reload

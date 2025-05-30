@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import FilePreview  from "./FilePreview";
-
+import FilePreview from "./FilePreview";
 
 function ChatRoom({ channelId, username }) {
   const [messages, setMessages] = useState([]);
@@ -8,32 +7,64 @@ function ChatRoom({ channelId, username }) {
   const socketRef = useRef(null);
   const chatEndRef = useRef(null);
 
-  // 🔹 Load messages from localStorage on first render
   useEffect(() => {
+    // Load cached messages
     const cached = localStorage.getItem(`messages_${channelId}`);
     if (cached) {
       const parsed = JSON.parse(cached).map((msg) => ({
         ...msg,
-        type: msg.type || (msg.url ? "file" : "text"), // Fallback for old messages
-        url: msg.url || "", // Ensure url is not undefined
+        type: msg.type || (msg.url ? "file" : "text"),
+        url: msg.url || "",
       }));
       console.log("Cached messages with fix:", parsed); // Debug log
       setMessages(parsed);
     }
   }, [channelId]);
 
-  // 🔹 Connect WebSocket and listen for new messages
   useEffect(() => {
+    async function fetchMessages() {
+      try {
+        const res = await fetch(`http://localhost:8000/channels/${channelId}/messages`);
+        const data = await res.json();
+  
+        // Save to local storage
+        localStorage.setItem(`messages_${channelId}`, JSON.stringify(data));
+  
+        setMessages(
+          data.map((msg) => ({
+            ...msg,
+            type: msg.type || (msg.url ? "file" : "text"),
+            url: msg.url || "",
+          }))
+        );
+      } catch (err) {
+        console.error("Error fetching messages:", err);
+      }
+    }
+  
+    fetchMessages();
+  }, [channelId]);
+  
+
+  
+
+  useEffect(() => {
+    // Setup WebSocket connection
     const ws = new WebSocket(`ws://localhost:8000/ws/${channelId}`);
     socketRef.current = ws;
 
+    ws.onopen = () => {
+      console.log("WebSocket connected");
+    };
+
     ws.onmessage = (event) => {
       const message = JSON.parse(event.data);
-
       setMessages((prev) => {
-        // Prevent duplicate messages
         const exists = prev.some(
-          (m) => m.timestamp === message.timestamp && m.sender === message.sender && m.content === message.content
+          (m) =>
+            m.timestamp === message.timestamp &&
+            m.sender === message.sender &&
+            m.content === message.content
         );
         if (exists) return prev;
 
@@ -43,19 +74,35 @@ function ChatRoom({ channelId, username }) {
       });
     };
 
-    return () => ws.close();
+    ws.onerror = (err) => {
+      console.error("WebSocket error:", err);
+    };
+
+    ws.onclose = () => {
+      console.log("WebSocket closed");
+    };
+
+    return () => {
+      ws.close();
+      socketRef.current = null;
+    };
   }, [channelId]);
 
-  // 🔹 Scroll to bottom on new messages
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
   const sendMessage = () => {
     if (!text.trim()) return;
-    // Warn if text looks like a filename
+
+    if (!socketRef.current || socketRef.current.readyState !== WebSocket.OPEN) {
+      console.warn("WebSocket not connected, cannot send message");
+      return;
+    }
+
     if (/\.(pdf|jpg|jpeg|png|gif)$/i.test(text)) {
-      alert("Did you mean to upload a file? Use the file input for files.");
+      // You said no alert, but maybe a console warning
+      console.warn("Looks like a file name, please use file upload.");
       return;
     }
 
@@ -67,12 +114,19 @@ function ChatRoom({ channelId, username }) {
       type: "text",
     };
 
-    socketRef.current?.send(JSON.stringify(message));
-    setText("");
+    try {
+      socketRef.current.send(JSON.stringify(message));
+      setText("");
+    } catch (err) {
+      console.error("Send message error:", err);
+    }
   };
 
   const handleKeyDown = (e) => {
-    if (e.key === "Enter") sendMessage();
+    if (e.key === "Enter") {
+      e.preventDefault();
+      sendMessage();
+    }
   };
 
   const handleFileUpload = async (e) => {
@@ -87,8 +141,12 @@ function ChatRoom({ channelId, username }) {
         method: "POST",
         body: formData,
       });
+
+      if (!res.ok) {
+        throw new Error("Upload failed");
+      }
+
       const data = await res.json();
-      console.log("Upload response:", data); // Debug log
 
       const message = {
         sender: username,
@@ -98,40 +156,46 @@ function ChatRoom({ channelId, username }) {
         channel_id: channelId,
         timestamp: new Date().toISOString(),
       };
-      console.log(message)
-      console.log("Sending WebSocket message:", message); // Debug log
 
-      socketRef.current?.send(JSON.stringify(message));
+      if (!socketRef.current || socketRef.current.readyState !== WebSocket.OPEN) {
+        console.warn("WebSocket not connected, cannot send file message");
+        return;
+      }
+
+      socketRef.current.send(JSON.stringify(message));
     } catch (err) {
-      alert("File upload failed.");
-      console.error(err);
+      console.error("File upload error:", err);
+      // You asked no alert, so just console error
     }
   };
 
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
       <div style={{ flex: 1, overflowY: "auto", padding: "1rem" }}>
-        {messages.map((msg, idx) => {
-          console.log("Message object:", { idx, sender: msg.sender, type: msg.type, content: msg.content, url: msg.url }); // Debug log
-          return (
-            <div key={idx} style={{ marginBottom: "0.5rem" }}>
-              <strong>{msg.sender}</strong>:{" "}
-              {msg.type === "file" ? (
-                <FilePreview url={`http://localhost:8000${msg.url}`} filename={msg.content} />
-              ) : (
-                msg.content
-              )}
-              <div style={{ fontSize: "0.75rem", color: "#888" }}>
+        {messages.map((msg, idx) => (
+          <div key={idx} style={{ marginBottom: "0.5rem" }}>
+            <strong>{msg.sender}</strong>:{" "}
+            {msg.type === "file" ? (
+              <FilePreview url={`http://localhost:8000${msg.url}`} filename={msg.content} />
+            ) : (
+              msg.content
+            )}
+            <div style={{ fontSize: "0.75rem", color: "#888" }}>
               {new Date(msg.timestamp).toLocaleTimeString()}
-              </div>
-              </div>
-            );
-        })}
-
+            </div>
+          </div>
+        ))}
         <div ref={chatEndRef} />
       </div>
 
-      <div style={{ display: "flex", padding: "1rem", borderTop: "1px solid #ccc", gap: "0.5rem" }}>
+      <div
+        style={{
+          display: "flex",
+          padding: "1rem",
+          borderTop: "1px solid #ccc",
+          gap: "0.5rem",
+        }}
+      >
         <input
           value={text}
           onChange={(e) => setText(e.target.value)}

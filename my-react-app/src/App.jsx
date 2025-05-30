@@ -1,118 +1,104 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ChatRoom from "./ChatRoom";
-import axios from "axios";
-
-const BACKEND_URL = "http://localhost:8000"; // Adjust if needed
 
 function App() {
+  const [channelId, setChannelId] = useState("");
   const [username, setUsername] = useState("");
+  const [joined, setJoined] = useState(false);
   const [channels, setChannels] = useState([]);
-  const [newChannelName, setNewChannelName] = useState("");
-  const [channelId, setChannelId] = useState(null);
-  const [submitted, setSubmitted] = useState(false);
 
-  // Load channels from server and localStorage
+  // Load channels from localStorage
   useEffect(() => {
-    const storedChannels = localStorage.getItem("channels");
-    if (storedChannels) {
-      setChannels(JSON.parse(storedChannels));
-    }
-
-    axios.get(`${BACKEND_URL}/channels`)
-      .then(res => {
-        setChannels(res.data);
-        localStorage.setItem("channels", JSON.stringify(res.data));
-      })
-      .catch(err => console.error("Error fetching channels", err));
+    const saved = JSON.parse(localStorage.getItem("channel_list") || "[]");
+    setChannels(saved);
   }, []);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (username.trim() && channelId !== null) {
-      setSubmitted(true);
+  // Create or join a channel
+  const handleJoin = () => {
+    if (!channelId.trim() || !username.trim()) return;
+
+    // Update channel list if new
+    if (!channels.includes(channelId)) {
+      const updated = [...channels, channelId];
+      setChannels(updated);
+      localStorage.setItem("channel_list", JSON.stringify(updated));
     }
+
+    setJoined(true);
   };
 
-  const handleCreateChannel = () => {
-    if (!newChannelName.trim() || !username.trim()) return;
-
-    const payload = {
-      name: newChannelName,
-      description: "",
-      created_by: username,
-    };
-
-    axios.post(`${BACKEND_URL}/channels`, payload)
-      .then((res) => {
-        const updatedChannels = [...channels, res.data];
-        setChannels(updatedChannels);
-        localStorage.setItem("channels", JSON.stringify(updatedChannels));
-        setChannelId(res.data.id);
-        setNewChannelName("");
-      })
-      .catch((err) => {
-        console.error("Channel creation failed", err);
-        alert(err.response?.data?.detail || "Error creating channel");
-      });
+  // Click existing channel
+  const handleChannelClick = (id) => {
+    setChannelId(id);
+    setJoined(false); // Reset to rejoin
+    setTimeout(() => setJoined(true), 50);
   };
 
   return (
     <div style={{ display: "flex", height: "100vh" }}>
-      {/* Left Pane - Channel Form (25%) */}
-      <div style={{ width: "45%", padding: "1rem", borderRight: "1px solid #ccc" }}>
-        <h2>Join or Create a Channel</h2>
+      {/* Sidebar */}
+      <div style={{ width: "250px", padding: "1rem", borderRight: "1px solid #ccc",  }}>
+        <h3>Username</h3>
+        <input
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          placeholder="Enter your name"
+          style={{ width: "90%", marginBottom: "1rem", padding: "0.5rem" }}
+        />
 
-        <form onSubmit={handleSubmit} style={{ marginBottom: "1rem" }}>
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            placeholder="Your username"
-            required
-            style={{ width: "100%", marginBottom: "0.5rem" }}
-          />
-          <button type="submit" disabled={!channelId}>Join Chat</button>
-        </form>
+        <h3>Create/Join Group</h3>
+        <input
+          value={channelId}
+          onChange={(e) => setChannelId(e.target.value)}
+          placeholder="Channel name"
+          style={{ width: "90%", marginBottom: "0.5rem", padding: "0.5rem" }}
+        />
+        <button
+          onClick={handleJoin}
+          style={{
+            width: "90%",
+            padding: "0.5rem",
+            backgroundColor: "#007bff",
+            color: "#fff",
+            border: "none",
+            marginBottom: "1rem",
+            cursor: "pointer",
+          }}
+        >
+          {joined ? "Re-join Group" : "Join Group"}
+        </button>
 
-        <div style={{ marginBottom: "1rem" }}>
-          <h4>Create New Channel</h4>
-          <input
-            type="text"
-            value={newChannelName}
-            onChange={(e) => setNewChannelName(e.target.value)}
-            placeholder="Channel name"
-            style={{ width: "100%", marginBottom: "0.5rem" }}
-          />
-          <button onClick={handleCreateChannel} style={{ width: "100%" }}>Create</button>
-        </div>
-
-        <div>
-          <h4>Available Channels</h4>
-          <ul style={{ listStyle: "none", paddingLeft: 0 }}>
-            {channels.map((channel) => (
-              <li
-                key={channel.id}
-                onClick={() => setChannelId(channel.id)}
+        <h3>📺 Grooups</h3>
+        <ul style={{ listStyle: "none", padding: 0 }}>
+          {channels.map((ch) => (
+            <li key={ch}>
+              <button
+                onClick={() => handleChannelClick(ch)}
                 style={{
+                  background: ch === channelId ? "#007bff" : "transparent",
+                  color: ch === channelId ? "#fff" : "#fff",
+                  padding: "0.5rem",
+                  width: "90%",
+                  textAlign: "left",
+                  border: "none",
                   cursor: "pointer",
-                  padding: "0.25rem 0",
-                  fontWeight: channelId === channel.id ? "bold" : "normal",
+                  marginBottom: "4px",
                 }}
               >
-                {channel.name}
-              </li>
-            ))}
-          </ul>
-        </div>
+                #{ch}
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
 
-      {/* Right Pane - Chat Window (75%) */}
-      <div style={{ width: "55%", padding: "1rem" }}>
-        {submitted && channelId && username ? (
+      {/* Chat Area */}
+      <div style={{ flex: 1 }}>
+        {joined && username && channelId ? (
           <ChatRoom channelId={channelId} username={username} />
         ) : (
-          <div style={{ textAlign: "center", marginTop: "5rem" }}>
-            <h2>Please join a channel to start chatting</h2>
+          <div style={{ padding: "2rem", textAlign: "center" }}>
+            <h2>Join or create a channel to start chatting!</h2>
           </div>
         )}
       </div>
