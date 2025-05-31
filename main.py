@@ -162,9 +162,13 @@ def download_file(filename: str):
 async def root():
     return {"message": "Socket.IO Whiteboard Server is running"}
 
+### white board server
+
 sio = socketio.AsyncServer(cors_allowed_origins='*', async_mode='asgi')
 app = socketio.ASGIApp(sio, app)
 
+
+user_rooms = {}
 
 @sio.event
 async def connect(sid, environ):
@@ -173,16 +177,26 @@ async def connect(sid, environ):
 @sio.event
 async def disconnect(sid):
     print(f"❌ Client disconnected: {sid}")
+    if sid in user_rooms:
+        await sio.leave_room(sid, user_rooms[sid])
+        del user_rooms[sid]
+
+@sio.event
+async def join_group(sid, data):
+    group_id = data["group_id"]
+    await sio.enter_room(sid, group_id)
+    user_rooms[sid] = group_id
+    print(f"🧑‍🎓 {sid} joined group {group_id}")
 
 @sio.event
 async def draw(sid, data):
-    await sio.emit('draw', data, skip_sid=sid)  # Broadcast to all others
+    group_id = data["group_id"]
+    await sio.emit('draw', data["line"], room=group_id, skip_sid=sid)
 
 @sio.event
-async def clear(sid):
-    await sio.emit('clear', skip_sid=sid)
-
-# This allows FastAPI routes if needed
+async def clear(sid, data):
+    group_id = data["group_id"]
+    await sio.emit('clear', {}, room=group_id, skip_sid=sid)
 
 
 

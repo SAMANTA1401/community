@@ -37,7 +37,7 @@ function App() {
   return (
     <div style={{ display: "flex", height: "100vh" }}>
       {/* Sidebar */}
-      <div style={{ width: "250px", padding: "1rem", borderRight: "1px solid #ccc",  }}>
+      <div style={{ width: "250px", padding: "1rem", borderRight: "1px solid #ccc", background:"rgb(26 26 26)"  }}>
         <h3>Username</h3>
         <input
           value={username}
@@ -68,7 +68,7 @@ function App() {
           {joined ? "Re-join Group" : "Join Group"}
         </button>
 
-        <h3>📺 Grooups</h3>
+        <h3>Grooups</h3>
         <ul style={{ listStyle: "none", padding: 0 }}>
           {channels.map((ch) => (
             <li key={ch}>

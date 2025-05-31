@@ -227,7 +227,7 @@ function ChatRoom({ channelId, username }) {
     </div>
     <div>
         <h2>Group Study Whiteboard</h2>
-        <Whiteboard />
+        <Whiteboard groupId= {channelId} />
     </div>
     </div>
   );
