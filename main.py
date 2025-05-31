@@ -155,7 +155,7 @@ def download_file(filename: str):
     return FileResponse(
         path=file_path,
         filename=filename,
-        media_type='application/octet-stream'  # 👈 triggers download
+        media_type='application/octet-stream'  #  triggers download
     )
 
 @app.get("/")
@@ -172,11 +172,11 @@ user_rooms = {}
 
 @sio.event
 async def connect(sid, environ):
-    print(f"✅ Client connected: {sid}")
+    print(f" Client connected: {sid}")
 
 @sio.event
 async def disconnect(sid):
-    print(f"❌ Client disconnected: {sid}")
+    print(f" Client disconnected: {sid}")
     if sid in user_rooms:
         await sio.leave_room(sid, user_rooms[sid])
         del user_rooms[sid]
@@ -186,7 +186,7 @@ async def join_group(sid, data):
     group_id = data["group_id"]
     await sio.enter_room(sid, group_id)
     user_rooms[sid] = group_id
-    print(f"🧑‍🎓 {sid} joined group {group_id}")
+    print(f" {sid} joined group {group_id}")
 
 @sio.event
 async def draw(sid, data):
