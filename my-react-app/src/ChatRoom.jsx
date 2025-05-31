@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import FilePreview from "./FilePreview";
+import Whiteboard from "./Whiteboard";
 
 function ChatRoom({ channelId, username }) {
   const [messages, setMessages] = useState([]);
@@ -170,16 +171,30 @@ function ChatRoom({ channelId, username }) {
   };
 
   return (
+    <div style={{ display: "flex", flexDirection: "row", height: "100%" }}>
     <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
       <div style={{ flex: 1, overflowY: "auto", padding: "1rem" }}>
         {messages.map((msg, idx) => (
           <div key={idx} style={{ marginBottom: "0.5rem" }}>
             <strong>{msg.sender}</strong>:{" "}
             {msg.type === "file" ? (
-              <FilePreview url={`http://localhost:8000${msg.url}`} filename={msg.content} />
+              <div>
+                <FilePreview url={`http://localhost:8000${msg.url}`} filename={msg.content} />
+                
+                {/* 📥 Download button */}
+                <a
+                  href={`http://localhost:8000/files/${msg.content}`}
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button style={{ marginTop: "0.5rem" }}>Download</button>
+                </a>
+              </div>
             ) : (
               msg.content
             )}
+
             <div style={{ fontSize: "0.75rem", color: "#888" }}>
               {new Date(msg.timestamp).toLocaleTimeString()}
             </div>
@@ -188,6 +203,7 @@ function ChatRoom({ channelId, username }) {
         <div ref={chatEndRef} />
       </div>
 
+      
       <div
         style={{
           display: "flex",
@@ -206,6 +222,13 @@ function ChatRoom({ channelId, username }) {
         <input type="file" onChange={handleFileUpload} />
         <button onClick={sendMessage}>Send</button>
       </div>
+
+
+    </div>
+    <div>
+        <h2>Group Study Whiteboard</h2>
+        <Whiteboard />
+    </div>
     </div>
   );
 }

@@ -14,9 +14,10 @@ from typing import List
 import os
 import uuid
 from fastapi.staticfiles import StaticFiles
-
+import socketio
 
 app = FastAPI()
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -26,15 +27,21 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
+
+
+
 clients = {}
 
 manager = ConnectionManager()
 
 UPLOAD_DIR = "uploads"
+
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 
-app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
+
 
 
 @app.websocket("/ws/{channel_id}")
@@ -128,8 +135,12 @@ def get_channels(db: Session = Depends(get_db)):
 
 @app.post("/upload/")
 async def upload_file(file: UploadFile = File(...)):
-    file_id = str(uuid.uuid4())
-    saved_filename = f"{file_id}_{file.filename}"
+
+    # file_id = str(uuid.uuid4())
+    # saved_filename = f"{file_id}_{file.filename}"
+
+    saved_filename = file.filename
+
     file_path = os.path.join(UPLOAD_DIR, saved_filename)
 
     with open(file_path, "wb") as f:
@@ -138,10 +149,41 @@ async def upload_file(file: UploadFile = File(...)):
 
     return {"filename": file.filename, "url": f"/uploads/{saved_filename}"}
 
+@app.get("/files/{filename}")
+def download_file(filename: str):
+    file_path = os.path.join(UPLOAD_DIR, filename)
+    return FileResponse(
+        path=file_path,
+        filename=filename,
+        media_type='application/octet-stream'  # 👈 triggers download
+    )
 
-# @app.get("/files/{filename}")
-# async def serve_file(filename: str):
-#     file_path = os.path.join(UPLOAD_DIR, filename)
-#     return FileResponse(file_path)
+@app.get("/")
+async def root():
+    return {"message": "Socket.IO Whiteboard Server is running"}
+
+sio = socketio.AsyncServer(cors_allowed_origins='*', async_mode='asgi')
+app = socketio.ASGIApp(sio, app)
+
+
+@sio.event
+async def connect(sid, environ):
+    print(f"✅ Client connected: {sid}")
+
+@sio.event
+async def disconnect(sid):
+    print(f"❌ Client disconnected: {sid}")
+
+@sio.event
+async def draw(sid, data):
+    await sio.emit('draw', data, skip_sid=sid)  # Broadcast to all others
+
+@sio.event
+async def clear(sid):
+    await sio.emit('clear', skip_sid=sid)
+
+# This allows FastAPI routes if needed
+
+
 
 # uvicorn main:app --host 0.0.0.0 --port 8000 --reload
