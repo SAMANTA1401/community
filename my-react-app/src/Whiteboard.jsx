@@ -9,6 +9,7 @@ const Whiteboard = ({ groupId }) => {
   const [lines, setLines] = useState([]);
   const [showWhiteboard, setShowWhiteboard] = useState(false);
   const isDrawing = useRef(false);
+ 
 
   useEffect(() => {
     if (showWhiteboard) {
@@ -70,14 +71,14 @@ const Whiteboard = ({ groupId }) => {
             style={{
               border: '1px solid #ccc',
               marginTop: 10,
-              width: '500px',
+              width: '650px',
               height: '450px', // Visible area
               overflow: 'auto', // Scroll enabled
             }}
           >
             <Stage
-              width={400}
-              height={2000} // Big height for long content
+              width={600}
+              height={3500} // Big height for long content
               onMouseDown={handleMouseDown}
               onMousemove={handleMouseMove}
               onMouseup={handleMouseUp}

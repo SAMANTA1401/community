@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import FilePreview from "./FilePreview";
 import Whiteboard from "./Whiteboard";
+import { getMessages, saveMessages } from "./indexedDB";
 
 function ChatRoom({ channelId, username }) {
   const [messages, setMessages] = useState([]);
@@ -8,18 +9,23 @@ function ChatRoom({ channelId, username }) {
   const socketRef = useRef(null);
   const chatEndRef = useRef(null);
 
+  const normalizeMessage = (msg) => {
+    const isFile = msg.type === "file" || (msg.url && msg.url.includes("/uploads/"));
+    return {
+      ...msg,
+      type: isFile ? "file" : "text",
+      url: msg.url || "",
+      f_content: msg.f_content || (isFile && msg.url ? msg.url.split("/").pop() : null),
+    };
+  };
+
   useEffect(() => {
-    // Load cached messages
-    const cached = localStorage.getItem(`messages_${channelId}`);
-    if (cached) {
-      const parsed = JSON.parse(cached).map((msg) => ({
-        ...msg,
-        type: msg.type || (msg.url ? "file" : "text"),
-        url: msg.url || "",
-      }));
-      console.log("Cached messages with fix:", parsed); // Debug log
-      setMessages(parsed);
-    }
+    (async () => {
+      const cached = await getMessages(channelId);
+      if (cached) {
+        setMessages(cached.map(normalizeMessage));
+      }
+    })();
   }, [channelId]);
 
   useEffect(() => {
@@ -27,39 +33,29 @@ function ChatRoom({ channelId, username }) {
       try {
         const res = await fetch(`http://localhost:8000/channels/${channelId}/messages`);
         const data = await res.json();
-  
-        // Save to local storage
-        localStorage.setItem(`messages_${channelId}`, JSON.stringify(data));
-  
-        setMessages(
-          data.map((msg) => ({
-            ...msg,
-            type: msg.type || (msg.url ? "file" : "text"),
-            url: msg.url || "",
-          }))
-        );
+        const normalized = data.map(normalizeMessage);
+
+        await saveMessages(channelId, normalized);
+
+        setMessages(normalized);
       } catch (err) {
         console.error("Error fetching messages:", err);
       }
     }
-  
+
     fetchMessages();
   }, [channelId]);
-  
-
-  
 
   useEffect(() => {
-    // Setup WebSocket connection
     const ws = new WebSocket(`ws://localhost:8000/ws/${channelId}`);
     socketRef.current = ws;
-
-    ws.onopen = () => {
-      console.log("WebSocket connected");
-    };
-
-    ws.onmessage = (event) => {
-      const message = JSON.parse(event.data);
+  
+    ws.onopen = () => console.log("WebSocket connected");
+  
+    ws.onmessage = async (event) => {
+      const raw = JSON.parse(event.data);
+      const message = normalizeMessage(raw);
+  
       setMessages((prev) => {
         const exists = prev.some(
           (m) =>
@@ -68,26 +64,24 @@ function ChatRoom({ channelId, username }) {
             m.content === message.content
         );
         if (exists) return prev;
-
+  
         const updated = [...prev, message];
-        localStorage.setItem(`messages_${channelId}`, JSON.stringify(updated));
+        // Save to IndexedDB outside of setState
+        saveMessages(channelId, updated);
         return updated;
       });
     };
-
-    ws.onerror = (err) => {
-      console.error("WebSocket error:", err);
-    };
-
-    ws.onclose = () => {
-      console.log("WebSocket closed");
-    };
-
+  
+    ws.onerror = (err) => console.error("WebSocket error:", err);
+    ws.onclose = () => console.log("WebSocket closed");
+  
     return () => {
       ws.close();
       socketRef.current = null;
     };
   }, [channelId]);
+  
+
 
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -102,7 +96,6 @@ function ChatRoom({ channelId, username }) {
     }
 
     if (/\.(pdf|jpg|jpeg|png|gif)$/i.test(text)) {
-      // You said no alert, but maybe a console warning
       console.warn("Looks like a file name, please use file upload.");
       return;
     }
@@ -110,6 +103,7 @@ function ChatRoom({ channelId, username }) {
     const message = {
       sender: username,
       content: text,
+      f_content: null,
       channel_id: channelId,
       timestamp: new Date().toISOString(),
       type: "text",
@@ -136,6 +130,7 @@ function ChatRoom({ channelId, username }) {
 
     const formData = new FormData();
     formData.append("file", file);
+    formData.append("channel_id", channelId);
 
     try {
       const res = await fetch("http://localhost:8000/upload/", {
@@ -143,92 +138,114 @@ function ChatRoom({ channelId, username }) {
         body: formData,
       });
 
-      if (!res.ok) {
-        throw new Error("Upload failed");
-      }
+      if (!res.ok) throw new Error("Upload failed");
 
       const data = await res.json();
 
       const message = {
         sender: username,
-        content: file.name,
+        content: data.filename,
+        f_content: data.saved_as,
         type: "file",
         url: data.url,
         channel_id: channelId,
         timestamp: new Date().toISOString(),
       };
 
-      if (!socketRef.current || socketRef.current.readyState !== WebSocket.OPEN) {
+      if (socketRef.current?.readyState === WebSocket.OPEN) {
+        socketRef.current.send(JSON.stringify(message));
+      } else {
         console.warn("WebSocket not connected, cannot send file message");
-        return;
       }
-
-      socketRef.current.send(JSON.stringify(message));
     } catch (err) {
       console.error("File upload error:", err);
-      // You asked no alert, so just console error
     }
   };
 
+  const handleDownload = async (chanel , filename) => {
+    try {
+      const response = await fetch(`http://localhost:8000/files/${chanel}/${filename}`);
+      if (!response.ok) throw new Error("File download failed");
+  
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const originalName = filename.split("_").slice(1).join("_");
+
+      console.log(originalName)
+  
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = originalName;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+  
+      window.URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error("Download error:", err);
+    }
+  };
+  
+
   return (
-    <div style={{ display: "flex", flexDirection: "row", height: "100%" }}>
-    <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
-      <div style={{ flex: 1, overflowY: "auto", padding: "1rem" }}>
-        {messages.map((msg, idx) => (
-          <div key={idx} style={{ marginBottom: "0.5rem" }}>
-            <strong>{msg.sender}</strong>:{" "}
-            {msg.type === "file" ? (
-              <div>
-                <FilePreview url={`http://localhost:8000${msg.url}`} filename={msg.content} />
-                
-                {/* 📥 Download button */}
+    <div style={{ display: "flex", flexDirection: "row", height: "100%", width:"100%" }}>
+      <div style={{ display: "flex", flexDirection: "column", height: "100%", width:"100%"}}>
+        <div style={{ flex: 1, overflowY: "auto", padding: "1rem" }}>
+          {messages.map((msg, idx) => (
+            <div key={idx} style={{ marginBottom: "0.5rem" }}>
+              <strong>{msg.sender}</strong>:{" "}
+              {msg.type === "file" ? (
+                <div>
                 <a
-                  href={`http://localhost:8000/files/${msg.content}`}
-                  download
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button style={{ marginTop: "0.5rem" }}>Download</button>
-                </a>
+                      href={`http://localhost:8000${msg.url}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                  <FilePreview url={`http://localhost:8000${msg.url}`} filename={msg.content} />
+                  </a>
+                  {msg.f_content && (
+                    <button onClick={() => handleDownload(msg.channel_id,msg.f_content)} style={{ marginTop: "0.5rem" }}>
+                    Download
+                  </button>
+                  
+                  )}
+                </div>
+              ) : (
+                msg.content
+              )}
+              <div style={{ fontSize: "0.75rem", color: "#888" }}>
+                {new Date(msg.timestamp).toLocaleTimeString()}
               </div>
-            ) : (
-              msg.content
-            )}
-
-            <div style={{ fontSize: "0.75rem", color: "#888" }}>
-              {new Date(msg.timestamp).toLocaleTimeString()}
             </div>
-          </div>
-        ))}
-        <div ref={chatEndRef} />
+          ))}
+          <div ref={chatEndRef} />
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            padding: "1rem",
+            borderTop: "1px solid #ccc",
+            gap: "0.5rem",
+          }}
+        >
+          <input
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            onKeyDown={handleKeyDown}
+            placeholder="Type a message..."
+            style={{ flex: 1, fontSize: "18px" , width:"300px"}}
+          />
+          <input type="file" onChange={handleFileUpload} style={{  fontSize: "18px", width:"200px" }} />
+          <button onClick={sendMessage}>Send</button>
+        </div>
       </div>
 
-      
-      <div
-        style={{
-          display: "flex",
-          padding: "1rem",
-          borderTop: "1px solid #ccc",
-          gap: "0.5rem",
-        }}
-      >
-        <input
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          onKeyDown={handleKeyDown}
-          placeholder="Type a message..."
-          style={{ flex: 1 }}
-        />
-        <input type="file" onChange={handleFileUpload} />
-        <button onClick={sendMessage}>Send</button>
+      <div style={{width:"100%"}}>
+        <h2></h2>
+        <Whiteboard groupId={channelId} />
       </div>
-
-
-    </div>
-    <div>
-        <h2>Group Study Whiteboard</h2>
-        <Whiteboard groupId= {channelId} />
-    </div>
+ 
     </div>
   );
 }

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import ChatRoom from "./ChatRoom";
+import ChannelList from "./ChannelList";
 
 function App() {
   const [channelId, setChannelId] = useState("");
-  const [username, setUsername] = useState("");
+  const [username, setUsername] = useState("user1");
   const [joined, setJoined] = useState(false);
   const [channels, setChannels] = useState([]);
 
@@ -36,74 +37,18 @@ function App() {
 
   return (
     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh", }}>
-      <div style={{ display: "flex", height: "100vh", width: "90%", boxShadow: "0 0 10px rgba(0,0,0,0.1)", borderRadius: "8px", overflow: "hidden" }}>
+      <div style={{ display: "flex", height: "100vh", width: "90%", boxShadow: "0 0 10px rgba(0,0,0,0.1)", borderRadius: "8px", overflow: "hidden" , backgroundColor:"#2e3134" }}>
         
-        {/* Sidebar */}
-        <div style={{ width: "250px", padding: "1rem", borderRight: "1px solid #ccc", background: "rgb(39, 39, 39)", color: "#fff" }}>
-          <h3>Username</h3>
-          <input
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            placeholder="Enter your name"
-            style={{ width: "90%", marginBottom: "1rem", padding: "0.5rem" }}
-          />
-  
-          <h3>Create/Join Group</h3>
-          <input
-            value={channelId}
-            onChange={(e) => setChannelId(e.target.value)}
-            placeholder="Channel name"
-            style={{ width: "90%", marginBottom: "0.5rem", padding: "0.5rem" }}
-          />
-          <button
-            onClick={handleJoin}
-            style={{
-              width: "90%",
-              padding: "0.5rem",
-              backgroundColor: "#007bff",
-              color: "#fff",
-              border: "none",
-              marginBottom: "1rem",
-              cursor: "pointer",
-            }}
-          >
-            {joined ? "Re-join Group" : "Join Group"}
-          </button>
-  
-          <h3>Groups</h3>
-          <ul style={{ listStyle: "none", padding: 0 }}>
-            {channels.map((ch) => (
-              <li key={ch}>
-                <button
-                  onClick={() => handleChannelClick(ch)}
-                  style={{
-                    background: ch === channelId ? "#007bff" : "transparent",
-                    color: "#fff",
-                    padding: "0.5rem",
-                    width: "90%",
-                    textAlign: "left",
-                    border: "none",
-                    cursor: "pointer",
-                    marginBottom: "4px",
-                  }}
-                >
-                  #{ch}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-  
-        {/* Chat Area */}
-        <div style={{ flex: 1, background: "#323232" }}>
-          {joined && username && channelId ? (
+        <div style={{ display: "flex", height: "100vh" }}>
+          <ChannelList onSelectChannel={setChannelId} currentChannelId={channelId} />
+          {channelId ? (
             <ChatRoom channelId={channelId} username={username} />
           ) : (
-            <div style={{ padding: "2rem", textAlign: "center" }}>
-              <h2>Join or create a channel to start chatting!</h2>
-            </div>
+            <div style={{ padding: "2rem"}}>Select or create a channel to start chatting.</div>
           )}
         </div>
+
+
       </div>
     </div>
   );
