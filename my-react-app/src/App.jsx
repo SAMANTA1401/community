@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ChatRoom from "./ChatRoom";
 import ChannelList from "./ChannelList";
+import GenerateRoadmap from "./GenerateRoadmap";
 
 function App() {
   const [channelId, setChannelId] = useState("");
@@ -40,12 +41,16 @@ function App() {
       <div style={{ display: "flex", height: "100vh", width: "90%", boxShadow: "0 0 10px rgba(0,0,0,0.1)", borderRadius: "8px", overflow: "hidden" , backgroundColor:"#2e3134" }}>
         
         <div style={{ display: "flex", height: "100vh" }}>
-          <ChannelList onSelectChannel={setChannelId} currentChannelId={channelId} />
+        <div className="App">
+          <h1 className="text-3xl font-bold text-center mt-6">AI Roadmap Generator</h1>
+            <GenerateRoadmap />
+          </div>
+          {/* <ChannelList onSelectChannel={setChannelId} currentChannelId={channelId} />
           {channelId ? (
             <ChatRoom channelId={channelId} username={username} />
           ) : (
             <div style={{ padding: "2rem"}}>Select or create a channel to start chatting.</div>
-          )}
+          )} */}
         </div>
 
 

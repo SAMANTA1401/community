@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { Stage, Layer, Line } from 'react-konva';
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:8000');
+// const socket = io('http://localhost:8000');
 const GROUP_ID = 'physics';
 
 const Whiteboard = ({ groupId }) => {
