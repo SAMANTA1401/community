@@ -8,7 +8,7 @@ function FilePreview({ url, filename }) {
 
   if (isPDF) {
     return (
-      <div style={{ border: "1px solid #ccc", padding: "0.5rem" }}>
+      <div style={{ border: "1px ", padding: "0.5rem" }}>
         <div><strong>{filename}</strong></div>
         <iframe
           src={url}
@@ -21,7 +21,7 @@ function FilePreview({ url, filename }) {
 
   if (isImage) {
     return (
-      <div style={{ border: "1px solid #ccc", padding: "0.5rem" }}>
+      <div style={{ border: "1px", padding: "0.5rem" }}>
         <div><strong>{filename}</strong></div>
         <img
           src={url}

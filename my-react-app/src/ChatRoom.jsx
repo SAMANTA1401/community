@@ -8,6 +8,7 @@ function ChatRoom({ channelId, username }) {
   const [text, setText] = useState("");
   const socketRef = useRef(null);
   const chatEndRef = useRef(null);
+  const [joinStatus, setJoinStatus] = useState("loading");
 
   const normalizeMessage = (msg) => {
     const isFile = msg.type === "file" || (msg.url && msg.url.includes("/uploads/"));
@@ -87,6 +88,41 @@ function ChatRoom({ channelId, username }) {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
+
+  useEffect(() => {
+    async function fetchJoinStatus() {
+      try {
+        const res = await fetch(`http://localhost:8000/channels/${channelId}/join_status?user_id=${username}`);
+        const data = await res.json();
+        setJoinStatus(data.status);
+      } catch (err) {
+        console.error("Error fetching join status:", err);
+        setJoinStatus("error");
+      }
+    }
+  
+    if (channelId) {
+      fetchJoinStatus();
+    }
+  }, [channelId, username]);
+
+  const handleJoinRequest = async () => {
+    try {
+      const res = await fetch(`http://localhost:8000/channels/${channelId}/join_request`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ user_id: username }),
+      });
+      const data = await res.json();
+      setJoinStatus(data.status);
+    } catch (err) {
+      console.error("Error submitting join request:", err);
+    }
+  };
+
+
   const sendMessage = () => {
     if (!text.trim()) return;
 
@@ -116,6 +152,9 @@ function ChatRoom({ channelId, username }) {
       console.error("Send message error:", err);
     }
   };
+
+
+
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
@@ -188,66 +227,97 @@ function ChatRoom({ channelId, username }) {
   
 
   return (
-    <div style={{ display: "flex", flexDirection: "row", height: "100%", width:"100%" }}>
-      <div style={{ display: "flex", flexDirection: "column", height: "100%", width:"100%"}}>
-        <div style={{ flex: 1, overflowY: "auto", padding: "1rem" }}>
-          {messages.map((msg, idx) => (
-            <div key={idx} style={{ marginBottom: "0.5rem" }}>
-              <strong>{msg.sender}</strong>:{" "}
-              {msg.type === "file" ? (
-                <div>
-                <a
+    <div style={{ display: "flex", flexDirection: "column", height: "100vh", width: "100%" }}>
+      {joinStatus === "loading" ? (
+        <div style={{ padding: "2rem", textAlign: "center" }}>
+          Loading join status...
+        </div>
+      ) : joinStatus === "approved" ? (
+        <>
+          <div style={{ flex: 1, overflowY: "auto", padding: "1rem" }}>
+            {messages.map((msg, idx) => (
+              <div key={idx} style={{ marginBottom: "0.5rem" }}>
+                <strong>{msg.sender}</strong>:{" "}
+                {msg.type === "file" ? (
+                  <div>
+                    <a
                       href={`http://localhost:8000${msg.url}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                  <FilePreview url={`http://localhost:8000${msg.url}`} filename={msg.content} />
-                  </a>
-                  {msg.f_content && (
-                    <button onClick={() => handleDownload(msg.channel_id,msg.f_content)} style={{ marginTop: "0.5rem" }}>
-                    Download
-                  </button>
-                  
-                  )}
+                      <FilePreview url={`http://localhost:8000${msg.url}`} filename={msg.content} />
+                    </a>
+                    {msg.f_content && (
+                      <button
+                        onClick={() => handleDownload(msg.channel_id, msg.f_content)}
+                        style={{ marginTop: "0.5rem" }}
+                      >
+                        Download
+                      </button>
+                    )}
+                  </div>
+                ) : (
+                  msg.content
+                )}
+                <div style={{ fontSize: "0.75rem", color: "#888" }}>
+                  {new Date(msg.timestamp).toLocaleTimeString()}
                 </div>
-              ) : (
-                msg.content
-              )}
-              <div style={{ fontSize: "0.75rem", color: "#888" }}>
-                {new Date(msg.timestamp).toLocaleTimeString()}
               </div>
-            </div>
-          ))}
-          <div ref={chatEndRef} />
+            ))}
+            <div ref={chatEndRef} />
+          </div>
+  
+          <div
+            style={{
+              display: "flex",
+              padding: "1rem",
+              borderTop: "1px solid #ccc",
+              gap: "0.5rem",
+            }}
+          >
+            <input
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+              onKeyDown={handleKeyDown}
+              placeholder="Type a message..."
+              style={{ flex: 1, fontSize: "18px", width: "300px" }}
+            />
+            <input
+              type="file"
+              onChange={handleFileUpload}
+              style={{ fontSize: "18px", width: "200px" }}
+            />
+            <button onClick={sendMessage}>Send</button>
+          </div>
+        </>
+      ) : joinStatus === "pending" ? (
+        <div style={{ padding: "2rem", textAlign: "center" }}>
+          Your join request is pending approval.
         </div>
-
-        <div
-          style={{
-            display: "flex",
-            padding: "1rem",
-            borderTop: "1px solid #ccc",
-            gap: "0.5rem",
-          }}
-        >
-          <input
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            onKeyDown={handleKeyDown}
-            placeholder="Type a message..."
-            style={{ flex: 1, fontSize: "18px" , width:"300px"}}
-          />
-          <input type="file" onChange={handleFileUpload} style={{  fontSize: "18px", width:"200px" }} />
-          <button onClick={sendMessage}>Send</button>
+      ) : (
+        <div style={{ padding: "2rem", textAlign: "center" }}>
+          You are not a member of this channel.
+          <br />
+          <button
+            onClick={handleJoinRequest}
+            style={{
+              marginTop: "1rem",
+              padding: "0.5rem 1rem",
+              fontSize: "16px",
+              backgroundColor: "#0d6efd",
+              color: "white",
+              border: "none",
+              borderRadius: "4px",
+              cursor: "pointer",
+            }}
+          >
+            Request to Join
+          </button>
         </div>
-      </div>
-
-      <div style={{width:"100%"}}>
-        <h2></h2>
-        <Whiteboard groupId={channelId} />
-      </div>
- 
+      )}
     </div>
   );
+  
 }
 
 export default ChatRoom;

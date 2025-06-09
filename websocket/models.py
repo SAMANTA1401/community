@@ -16,6 +16,7 @@ class Channel(Base):
     created_at = Column(DateTime, default=datetime.utcnow)
 
     messages = relationship("Message", back_populates="channel")
+    join_requests = relationship("ChannelJoinRequest", back_populates="channel")
 
 
 class Message(Base):
@@ -30,3 +31,15 @@ class Message(Base):
     timestamp = Column(DateTime, default=datetime.utcnow)
 
     channel = relationship("Channel", back_populates="messages")
+
+
+class ChannelJoinRequest(Base):
+    __tablename__ = "channel_join_requests"
+
+    id = Column(Integer, primary_key=True, index=True)
+    channel_id = Column(Integer, ForeignKey("channels.id"))
+    user_id = Column(String)  # you can use username or user_id
+    status = Column(String, default="pending")  # "pending", "approved", "rejected"
+
+    # Optional relationships
+    channel = relationship("Channel", back_populates="join_requests")

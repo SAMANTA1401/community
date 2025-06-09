@@ -1,11 +1,11 @@
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Depends, HTTPException, UploadFile, File, Form
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Depends, HTTPException, UploadFile, File, Form,  Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, StreamingResponse
 from sqlalchemy.orm import Session
-from websocket.models import Channel , Message
+from websocket.models import Channel , Message ,ChannelJoinRequest
 from websocket.database import SessionLocal, engine, get_db  # Your DB connection setup
 from websocket.websockets import ConnectionManager
-from websocket.utils import ChannelCreate, ChannelType, ChannelOut   # Your Pydantic models
+from websocket.utils import ChannelCreate, ChannelType, ChannelOut  # Your Pydantic models
 import json
 from sqlalchemy.exc import SQLAlchemyError
 import time
@@ -43,7 +43,34 @@ UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 
+@app.post("/channels/{channel_id}/join_request")
+def submit_join_request(channel_id: int, user_id: str, db: Session = Depends(get_db)):
+    existing = db.query(ChannelJoinRequest).filter_by(
+        channel_id=channel_id, user_id=user_id
+    ).first()
 
+    if existing:
+        return {"status": existing.status}
+
+    new_request = ChannelJoinRequest(
+        channel_id=channel_id,
+        user_id=user_id,
+        status="pending"
+    )
+    db.add(new_request)
+    db.commit()
+    return {"status": "pending"}
+
+@app.get("/channels/{channel_id}/join_status")
+def get_join_status(channel_id: int, user_id: str, db: Session = Depends(get_db)):
+    req = db.query(ChannelJoinRequest).filter_by(
+        channel_id=channel_id, user_id=user_id
+    ).first()
+
+    if req:
+        return {"status": req.status}
+    else:
+        return {"status": "none"}
 
 
 @app.websocket("/ws/{channel_id}")
@@ -52,17 +79,37 @@ async def websocket_endpoint(websocket: WebSocket, channel_id: str, db: Session 
     try:
         while True:
             data = await websocket.receive_text()
-            print("data",data)
+            print("data", data)
 
             try:
                 parsed = json.loads(data)
 
+                # Check if user is approved to send messages
+                approved = db.query(ChannelJoinRequest).filter_by(
+                    channel_id=channel_id,
+                    user_id=parsed["sender"],
+                    status="approved"
+                ).first()
+
+                if not approved:
+                    warning_message = {
+                        "sender": "System",
+                        "content": "You are not approved to send messages in this channel.",
+                        "channel_id": channel_id,
+                        "timestamp": datetime.utcnow().isoformat(),
+                        "type": "text",
+                        "url": None
+                    }
+                    await websocket.send_text(json.dumps(warning_message))
+                    continue  # Skip processing the message!
+
+                # If approved, save and broadcast the message
                 message = Message(
                     channel_id=parsed["channel_id"],
                     sender=parsed["sender"],
                     content=parsed["content"],
-                    type=parsed.get("type", "text"),  # Store type
-                    url=parsed.get("url")  # Store url
+                    type=parsed.get("type", "text"),
+                    url=parsed.get("url")
                 )
                 db.add(message)
                 db.commit()
@@ -72,28 +119,108 @@ async def websocket_endpoint(websocket: WebSocket, channel_id: str, db: Session 
                     "content": message.content,
                     "channel_id": message.channel_id,
                     "timestamp": parsed.get("timestamp", datetime.utcnow().isoformat()),
-                    "type": parsed.get("type", "text"),  # Include type
-                    "url": parsed.get("url")  # Include url
+                    "type": parsed.get("type", "text"),
+                    "url": parsed.get("url")
                 }
+
                 print("Broadcasting message:", broadcast_message)
-                # Send JSON message to clients
+
                 await manager.broadcast(channel_id, json.dumps(broadcast_message))
 
             except SQLAlchemyError as e:
                 db.rollback()
                 print(" DB Error:", e)
-                await websocket.send_text(json.dumps({"sender": "System", "content": "Error saving message."}))
+                await websocket.send_text(json.dumps({
+                    "sender": "System",
+                    "content": "Error saving message."
+                }))
 
     except WebSocketDisconnect:
         manager.disconnect(channel_id, websocket)
         print(" WebSocket disconnected")
+
     except Exception as e:
         print(" Unexpected error:", e)
         manager.disconnect(channel_id, websocket)
 
 
+
+# @app.get("/channels/{channel_id}/messages")
+# def get_messages(channel_id: str, db: Session = Depends(get_db)):
+#     messages = db.query(Message).filter(Message.channel_id == channel_id).order_by(Message.timestamp).all()
+#     return [
+#         {
+#             "sender": msg.sender,
+#             "content": msg.content,
+#             "channel_id": msg.channel_id,
+#             "timestamp": msg.timestamp.isoformat(),
+#             "type": msg.type,
+#             "url": msg.url
+#         } for msg in messages
+#     ]
+
+@app.get("/channels/{channel_id}/join-requests")
+def get_join_requests(channel_id: int, admin_user: str, db: Session = Depends(get_db)):
+    channel = db.query(Channel).filter_by(id=channel_id).first()
+    if not channel:
+        raise HTTPException(status_code=404, detail="Channel not found")
+
+    if channel.created_by != admin_user:
+        raise HTTPException(status_code=403, detail="Not authorized")
+
+    requests = db.query(ChannelJoinRequest).filter_by(channel_id=channel_id, status="pending").all()
+    return [
+        {"id": r.id, "user_id": r.user_id, "status": r.status}
+        for r in requests
+    ]
+
+@app.post("/channels/{channel_id}/join-requests/{request_id}/approve")
+def approve_join_request(channel_id: int, request_id: int, admin_user: str, db: Session = Depends(get_db)):
+    channel = db.query(Channel).filter_by(id=channel_id).first()
+    if not channel:
+        raise HTTPException(status_code=404, detail="Channel not found")
+
+    if channel.created_by != admin_user:
+        raise HTTPException(status_code=403, detail="Not authorized")
+
+    join_request = db.query(ChannelJoinRequest).filter_by(id=request_id, channel_id=channel_id).first()
+    if not join_request:
+        raise HTTPException(status_code=404, detail="Join request not found")
+
+    join_request.status = "approved"
+    db.commit()
+
+    return {"message": "Request approved."}
+
+
+@app.post("/channels/{channel_id}/join-requests/{request_id}/reject")
+def reject_join_request(channel_id: int, request_id: int, admin_user: str, db: Session = Depends(get_db)):
+    channel = db.query(Channel).filter_by(id=channel_id).first()
+    if not channel:
+        raise HTTPException(status_code=404, detail="Channel not found")
+
+    if channel.created_by != admin_user:
+        raise HTTPException(status_code=403, detail="Not authorized")
+
+    join_request = db.query(ChannelJoinRequest).filter_by(id=request_id, channel_id=channel_id).first()
+    if not join_request:
+        raise HTTPException(status_code=404, detail="Join request not found")
+
+    join_request.status = "rejected"
+    db.commit()
+
+    return {"message": "Request rejected."}
+
 @app.get("/channels/{channel_id}/messages")
-def get_messages(channel_id: str, db: Session = Depends(get_db)):
+def get_messages(channel_id: str, user_id: str, db: Session = Depends(get_db)):
+    # Check if user is approved
+    approved = db.query(ChannelJoinRequest).filter_by(
+        channel_id=channel_id, user_id=user_id, status="approved"
+    ).first()
+
+    if not approved:
+        raise HTTPException(status_code=403, detail="You are not approved to view this channel")
+
     messages = db.query(Message).filter(Message.channel_id == channel_id).order_by(Message.timestamp).all()
     return [
         {
@@ -105,7 +232,6 @@ def get_messages(channel_id: str, db: Session = Depends(get_db)):
             "url": msg.url
         } for msg in messages
     ]
-
 
 
 def generate_channel_id(name: str) -> str:
@@ -136,9 +262,9 @@ def create_channel(channel: ChannelCreate, db: Session = Depends(get_db)):
 
     return new_channel
 
-@app.get("/channels", response_model=List[ChannelOut])
-def get_channels(db: Session = Depends(get_db)):
-    return db.query(Channel).all()
+@app.get("/channels")
+def get_channels(user: str = Query(...), db: Session = Depends(get_db)):
+    return db.query(Channel).filter(Channel.created_by == user).all()
 
 
 @app.post("/upload/")
@@ -197,6 +323,25 @@ def download_file(channel: str, filename: str):
 @app.get("/")
 async def root():
     return {"message": "Socket.IO Whiteboard Server is running"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### white board server
 

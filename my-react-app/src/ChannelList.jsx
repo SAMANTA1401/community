@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function ChannelList({ onSelectChannel, currentChannelId, currentUser = "guest" }) {
+function ChannelList({ onSelectChannel, currentChannelId, currentUser = "user1" }) {
   const [channels, setChannels] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [newChannelName, setNewChannelName] = useState("");
@@ -8,7 +8,7 @@ function ChannelList({ onSelectChannel, currentChannelId, currentUser = "guest" 
   useEffect(() => {
     const fetchChannels = async () => {
       try {
-        const res = await fetch("http://localhost:8000/channels");
+        const res = await fetch(`http://localhost:8000/channels?user=${currentUser}`);
         const data = await res.json();
         setChannels(data);
       } catch (err) {
@@ -16,7 +16,8 @@ function ChannelList({ onSelectChannel, currentChannelId, currentUser = "guest" 
       }
     };
     fetchChannels();
-  }, []);
+  }, [currentUser]); // Add currentUser as dependency in case it changes
+  
 
   const createChannel = async () => {
     const name = newChannelName.trim();
@@ -52,18 +53,34 @@ function ChannelList({ onSelectChannel, currentChannelId, currentUser = "guest" 
   );
 
   return (
-    <div style={{
-      width: "250px",
-      borderRight: "1px solid #343a40",
-      display: "flex",
-      flexDirection: "column",
-      backgroundColor: "#212529",
-      color: "white",
-    }}>
-      <h3 style={{textAlign:"center"}}>AiClassmate</h3>
-      <h4 style={{textAlign:"center"}}>{currentUser}</h4>
+    <div
+      style={{
+        width: "250px", // slight increase for breathing room
+        borderRight: "1px solid #343a40",
+        display: "flex",
+        flexDirection: "column",
+        backgroundColor: "#212529",
+        color: "white",
+        fontFamily: "Arial, sans-serif",
+        height: "100vh",
+      }}
+    >
+      <div
+        style={{
+          paddingTop: "2rem",
+          borderBottom: "1px solid #343a40",
+          textAlign: "center",
+        }}
+      >
+        <h2 style={{ margin: "0", fontSize: "1.5rem", color: "#f8f9fa" }}>
+          AiClassmate
+        </h2>
+        <p style={{ margin: "0.5rem 0", fontSize: "1rem", color: "#adb5bd" }}>
+          {currentUser}
+        </p>
+      </div>
 
-      <div style={{ padding: "1rem", borderBottom: "1px solid #343a40" }}>
+      <div style={{ padding: "1rem", borderBottom: "1px solid #343a40",  marginRight: "1rem", }}>
         <input
           type="text"
           value={searchTerm}
@@ -73,11 +90,12 @@ function ChannelList({ onSelectChannel, currentChannelId, currentUser = "guest" 
             width: "100%",
             padding: "0.5rem",
             marginBottom: "0.5rem",
-            borderRadius: "4px",
+            borderRadius: "6px",
             border: "1px solid #555",
             backgroundColor: "#343a40",
             color: "white",
-            fontSize: "18px"
+            fontSize: "16px",
+          
           }}
         />
         <input
@@ -89,11 +107,11 @@ function ChannelList({ onSelectChannel, currentChannelId, currentUser = "guest" 
             width: "100%",
             padding: "0.5rem",
             marginBottom: "0.5rem",
-            borderRadius: "4px",
+            borderRadius: "6px",
             border: "1px solid #555",
             backgroundColor: "#343a40",
             color: "white",
-            fontSize: "18px"
+            fontSize: "16px",
           }}
         />
         <button
@@ -104,33 +122,52 @@ function ChannelList({ onSelectChannel, currentChannelId, currentUser = "guest" 
             backgroundColor: "#0d6efd",
             color: "white",
             border: "none",
-            borderRadius: "4px",
-            cursor: "pointer"
+            borderRadius: "6px",
+            cursor: "pointer",
+            fontWeight: "bold",
+            transition: "background-color 0.2s ease",
+            marginLeft: "0.5rem",
           }}
+          onMouseOver={(e) => (e.target.style.backgroundColor = "#0b5ed7")}
+          onMouseOut={(e) => (e.target.style.backgroundColor = "#0d6efd")}
         >
           + Create Channel
         </button>
       </div>
 
-      <div style={{ flex: 1, overflowY: "auto" }}>
+      <div
+        style={{
+          flex: 1,
+          overflowY: "auto",
+          padding: "0.5rem 0",
+        }}
+      >
         {filteredChannels.map((channel) => (
           <div
             key={channel.id}
             onClick={() => onSelectChannel(channel.id)}
             style={{
-              padding: "0.75rem",
+              padding: "0.75rem 1rem",
               cursor: "pointer",
-              backgroundColor: currentChannelId === channel.id ? "#495057" : "transparent",
+              backgroundColor:
+                currentChannelId === channel.id ? "#495057" : "transparent",
               color: "white",
               borderBottom: "1px solid #343a40",
-              fontSize: "18px"
+              fontSize: "16px",
+              transition: "background-color 0.2s ease",
             }}
+            onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#495057")}
+            onMouseOut={(e) =>
+              (e.currentTarget.style.backgroundColor =
+                currentChannelId === channel.id ? "#495057" : "transparent")
+            }
           >
             #{channel.name}
           </div>
         ))}
       </div>
     </div>
+
   );
 }
 
