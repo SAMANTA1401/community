@@ -1,0 +1,62 @@
+{
+  "STEM": [
+    {
+      "title": "AI Engineer",
+      "opportunities": ["AI Researcher", "Product Engineer", "Data Scientist"],
+      "future_demand": "High",
+      "research_areas": [
+        "Deep Learning",
+        "Reinforcement Learning",
+        "Explainable AI"
+      ]
+    },
+    {
+      "title": "Mechanical Engineer",
+      "opportunities": ["Product Designer", "Robotics Engineer"],
+      "future_demand": "Stable",
+      "research_areas": ["3D Printing", "Material Science"]
+    }
+  ],
+  "Arts": [
+    {
+      "title": "Graphic Designer",
+      "opportunities": ["UI/UX Designer", "Animator", "Illustrator"],
+      "future_demand": "High",
+      "research_areas": ["AR/VR Design", "Motion Graphics"]
+    },
+    {
+      "title": "Musician",
+      "opportunities": ["Composer", "Performer"],
+      "future_demand": "Medium",
+      "research_areas": ["AI Music", "Sound Engineering"]
+    }
+  ],
+  "Business": [
+    {
+      "title": "Marketing Manager",
+      "opportunities": ["Digital Marketing", "Brand Manager"],
+      "future_demand": "High",
+      "research_areas": ["NeuroMarketing", "AI in Marketing"]
+    }
+  ],
+  "Law": [
+    {
+      "title": "Corporate Lawyer",
+      "opportunities": ["Legal Advisor", "Compliance Officer"],
+      "future_demand": "Stable",
+      "research_areas": ["AI & Law", "Blockchain Law"]
+    }
+  ],
+  "Medicine": [
+    {
+      "title": "Doctor",
+      "opportunities": [
+        "Surgeon",
+        "General Physician",
+        "Telemedicine Specialist"
+      ],
+      "future_demand": "Very High",
+      "research_areas": ["Genomics", "AI in Diagnosis"]
+    }
+  ]
+}

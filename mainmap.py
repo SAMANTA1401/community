@@ -9,7 +9,8 @@ from langchain_google_genai import (ChatGoogleGenerativeAI,GoogleGenerativeAI,
                                     GoogleGenerativeAIEmbeddings)
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnableLambda
-
+from fastapi.staticfiles import StaticFiles
+from routers import fields, careers, roadmap
 
 
 app = FastAPI()
@@ -21,6 +22,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
 
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GEMINI_API_KEY")
@@ -42,46 +46,58 @@ def get_gemini():
 import re
 import json
 
-def clean_json_output(output_str):
-        """
-        Remove markdown code block formatting and return raw JSON object.
-        """
-        # Remove ```json and ``` from start/end if present
-        cleaned = re.sub(r"^```json\s*|\s*```$", "", output_str.strip(), flags=re.DOTALL)
+# def clean_json_output(output_str):
+#         """
+#         Remove markdown code block formatting and return raw JSON object.
+#         """
+#         # Remove ```json and ``` from start/end if present
+#         cleaned = re.sub(r"^```json\s*|\s*```$", "", output_str.strip(), flags=re.DOTALL)
         
-        return cleaned
+#         return cleaned
 
 
-class RoadmapRequest(BaseModel):
-    goal: str
+# class RoadmapRequest(BaseModel):
+#     goal: str
 
-@app.post("/generate-roadmap")
-async def generate_roadmap(req: RoadmapRequest):
-    llm = get_gemini()
-    target = req.goal
-    prompt = ChatPromptTemplate.from_messages(
-    [
-        (
-            "system",
-            "Create a structured learning roadmap for: {target}. Split into stages with duration and key topics. Return as pure JSON no markedown",
-        ),
+# @app.post("/generate-roadmap")
+# async def generate_roadmap(req: RoadmapRequest):
+#     llm = get_gemini()
+#     target = req.goal
+#     prompt = ChatPromptTemplate.from_messages(
+#     [
+#         (
+#             "system",
+#             "Create a structured learning roadmap for: {target}. Split into stages with duration and key topics. Return as pure JSON no markedown",
+#         ),
        
-    ]
-    )
+#     ]
+#     )
 
-    llm_o = prompt | llm
-    # Wrap the cleaner in a RunnableLambda
-    cleaner = RunnableLambda(lambda x: clean_json_output(x))
+#     llm_o = prompt | llm
+#     # Wrap the cleaner in a RunnableLambda
+#     cleaner = RunnableLambda(lambda x: clean_json_output(x))
 
-    chain = llm_o | cleaner 
+#     chain = llm_o | cleaner 
 
-    response = chain.invoke({"target":target})
+#     response = chain.invoke({"target":target})
 
-    print(response)
+#     print(response)
 
-    print(json.loads(response))
+#     print(json.loads(response))
 
-    return json.loads(response)
+#     return json.loads(response)
+
+
+
+
+# Routers
+app.include_router(fields.router)
+app.include_router(careers.router)
+app.include_router(roadmap.router)
+
+@app.get("/")
+def root():
+    return {"message": "Career Roadmap API is running 🚀"}
 
 
 # uvicorn mainmap:app --host 0.0.0.0 --port 8000 --reload

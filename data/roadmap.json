@@ -1,0 +1,200 @@
+{
+  "degree": {
+    "AI Engineer": {
+      "title": "AI Engineer Roadmap",
+      "stages": [
+        {
+          "stage": 1,
+          "title": "Foundation",
+          "topics": [{ "topic": "B.Tech in Computer Science", "subtopics": [] }]
+        },
+        {
+          "stage": 2,
+          "title": "Intermediate",
+          "topics": [{ "topic": "B.Sc in AI/ML", "subtopics": [] }]
+        },
+        {
+          "stage": 3,
+          "title": "Advanced",
+          "topics": [{ "topic": "M.Tech in AI", "subtopics": [] }]
+        },
+        {
+          "stage": 4,
+          "title": "Advanced",
+          "topics": [{ "topic": "Ph.D in AI", "subtopics": [] }]
+        }
+      ]
+    },
+    "Graphic Designer": {
+      "title": "Graphic Designer Roadmap",
+      "stages": [
+        {
+          "stage": 1,
+          "title": "Foundation",
+          "topics": [{ "topic": "Diploma in Graphic Design", "subtopics": [] }]
+        },
+        {
+          "stage": 2,
+          "title": "Intermediate",
+          "topics": [{ "topic": "Bachelor of Fine Arts", "subtopics": [] }]
+        },
+        {
+          "stage": 3,
+          "title": "Advanced",
+          "topics": [{ "topic": "Master of Design", "subtopics": [] }]
+        }
+      ]
+    },
+    "Doctor": {
+      "title": "Doctor Roadmap",
+      "stages": [
+        {
+          "stage": 1,
+          "title": "Foundation",
+          "topics": [{ "topic": "MBBS", "subtopics": [] }]
+        },
+        {
+          "stage": 2,
+          "title": "Intermediate",
+          "topics": [{ "topic": "MD/MS", "subtopics": [] }]
+        },
+        {
+          "stage": 3,
+          "title": "Advanced",
+          "topics": [{ "topic": "DM/MCh", "subtopics": [] }]
+        }
+      ]
+    }
+  },
+  "skill": {
+    "AI Engineer": {
+      "title": "AI Engineer Roadmap",
+      "stages": [
+        {
+          "stage": 1,
+          "title": "Foundation",
+          "topics": [
+            {
+              "topic": "beginner Skills",
+              "subtopics": [
+                "Python Programming",
+                "Basic Math",
+                "Linear Algebra"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 2,
+          "title": "Intermediate",
+          "topics": [
+            {
+              "topic": "intermediate Skills",
+              "subtopics": [
+                "Machine Learning",
+                "Data Structures",
+                "Neural Networks"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 3,
+          "title": "Advanced",
+          "topics": [
+            {
+              "topic": "advanced Skills",
+              "subtopics": [
+                "Deep Learning Frameworks (PyTorch, TensorFlow)",
+                "Deployment",
+                "AI Research"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Graphic Designer": {
+      "title": "Graphic Designer Roadmap",
+      "stages": [
+        {
+          "stage": 1,
+          "title": "Foundation",
+          "topics": [
+            {
+              "topic": "beginner Skills",
+              "subtopics": [
+                "Color Theory",
+                "Typography",
+                "Adobe Photoshop Basics"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 2,
+          "title": "Intermediate",
+          "topics": [
+            {
+              "topic": "intermediate Skills",
+              "subtopics": [
+                "Adobe Illustrator",
+                "Brand Design",
+                "UI Principles"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": 3,
+          "title": "Advanced",
+          "topics": [
+            {
+              "topic": "advanced Skills",
+              "subtopics": ["UX Design", "AR/VR Design", "Motion Graphics"]
+            }
+          ]
+        }
+      ]
+    },
+    "Doctor": {
+      "title": "Doctor Roadmap",
+      "stages": [
+        {
+          "stage": 1,
+          "title": "Foundation",
+          "topics": [
+            {
+              "topic": "beginner Skills",
+              "subtopics": ["Basic Anatomy", "Physiology"]
+            }
+          ]
+        },
+        {
+          "stage": 2,
+          "title": "Intermediate",
+          "topics": [
+            {
+              "topic": "intermediate Skills",
+              "subtopics": ["Clinical Diagnosis", "Patient Management"]
+            }
+          ]
+        },
+        {
+          "stage": 3,
+          "title": "Advanced",
+          "topics": [
+            {
+              "topic": "advanced Skills",
+              "subtopics": [
+                "Surgical Techniques",
+                "Advanced Diagnostics",
+                "Telemedicine Tools"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
