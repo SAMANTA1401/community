@@ -1,11 +1,11 @@
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Depends, HTTPException, UploadFile, File, Form,  Query
+from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect, Depends, HTTPException, UploadFile, File, Form,  Query
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse, StreamingResponse
+from fastapi.responses import FileResponse, StreamingResponse, HTMLResponse
 from sqlalchemy.orm import Session
-from websocket.models import Channel , Message ,ChannelJoinRequest
-from websocket.database import SessionLocal, engine, get_db  # Your DB connection setup
-from websocket.websockets import ConnectionManager
-from websocket.utils import ChannelCreate, ChannelType, ChannelOut  # Your Pydantic models
+from community_backend.models import Channel , Message ,ChannelJoinRequest
+from community_backend.database import SessionLocal, engine, get_db  # Your DB connection setup
+from community_backend.websockets import ConnectionManager
+from community_backend.utils import ChannelCreate, ChannelType, ChannelOut  # Your Pydantic models
 import json
 from sqlalchemy.exc import SQLAlchemyError
 import time
@@ -14,9 +14,10 @@ from typing import List
 import os
 import uuid
 from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
 import socketio
 from sqlalchemy import func
-
+from routers import fields, careers, roadmap
 
 app = FastAPI()
 
@@ -31,8 +32,13 @@ app.add_middleware(
 
 
 app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
+app.mount("/static", StaticFiles(directory="static"), name="static")
+templates = Jinja2Templates(directory="templates")
 
 
+app.include_router(fields.router)
+app.include_router(careers.router)
+app.include_router(roadmap.router)
 
 clients = {}
 
@@ -41,6 +47,20 @@ manager = ConnectionManager()
 UPLOAD_DIR = "uploads"
 
 os.makedirs(UPLOAD_DIR, exist_ok=True)
+
+
+@app.get("/", response_class=HTMLResponse)
+async def index(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
+
+
+@app.get("/community", response_class=HTMLResponse)
+async def index(request: Request):
+    return templates.TemplateResponse("community.html", {"request": request})
+
+@app.get("/roadmap", response_class=HTMLResponse)
+async def index(request: Request):
+    return templates.TemplateResponse("roadmap.html", {"request": request})
 
 
 @app.post("/channels/{channel_id}/join_request")
@@ -320,9 +340,6 @@ def download_file(channel: str, filename: str):
 
 
 
-@app.get("/")
-async def root():
-    return {"message": "Socket.IO Whiteboard Server is running"}
 
 
 
@@ -341,43 +358,46 @@ async def root():
 
 
 
+# @app.get("/")
+# async def root():
+#     return {"message": "Socket.IO Whiteboard Server is running"}
 
 
-### white board server
+# ### white board server
 
-sio = socketio.AsyncServer(cors_allowed_origins='*', async_mode='asgi')
-app = socketio.ASGIApp(sio, app)
+# sio = socketio.AsyncServer(cors_allowed_origins='*', async_mode='asgi')
+# app = socketio.ASGIApp(sio, app)
 
 
-user_rooms = {}
+# user_rooms = {}
 
-@sio.event
-async def connect(sid, environ):
-    print(f" Client connected: {sid}")
+# @sio.event
+# async def connect(sid, environ):
+#     print(f" Client connected: {sid}")
 
-@sio.event
-async def disconnect(sid):
-    print(f" Client disconnected: {sid}")
-    if sid in user_rooms:
-        await sio.leave_room(sid, user_rooms[sid])
-        del user_rooms[sid]
+# @sio.event
+# async def disconnect(sid):
+#     print(f" Client disconnected: {sid}")
+#     if sid in user_rooms:
+#         await sio.leave_room(sid, user_rooms[sid])
+#         del user_rooms[sid]
 
-@sio.event
-async def join_group(sid, data):
-    group_id = data["group_id"]
-    await sio.enter_room(sid, group_id)
-    user_rooms[sid] = group_id
-    print(f" {sid} joined group {group_id}")
+# @sio.event
+# async def join_group(sid, data):
+#     group_id = data["group_id"]
+#     await sio.enter_room(sid, group_id)
+#     user_rooms[sid] = group_id
+#     print(f" {sid} joined group {group_id}")
 
-@sio.event
-async def draw(sid, data):
-    group_id = data["group_id"]
-    await sio.emit('draw', data["line"], room=group_id, skip_sid=sid)
+# @sio.event
+# async def draw(sid, data):
+#     group_id = data["group_id"]
+#     await sio.emit('draw', data["line"], room=group_id, skip_sid=sid)
 
-@sio.event
-async def clear(sid, data):
-    group_id = data["group_id"]
-    await sio.emit('clear', {}, room=group_id, skip_sid=sid)
+# @sio.event
+# async def clear(sid, data):
+#     group_id = data["group_id"]
+#     await sio.emit('clear', {}, room=group_id, skip_sid=sid)
 
 
 

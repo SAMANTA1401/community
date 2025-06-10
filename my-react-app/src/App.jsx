@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import ChatRoom from "./ChatRoom";
-import ChannelList from "./ChannelList";
+import ChatRoom from "./community/ChatRoom";
+import ChannelList from "./community/ChannelList";
 
 
 function App() {

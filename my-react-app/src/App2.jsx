@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingPage from './components/LandingPage';
-import CareerPage from './components/CareerPage';
-import RoadmapPage from './components/RoadmapPage';
+import LandingPage from './roadmap/LandingPage';
+import CareerPage from './roadmap/CareerPage';
+import RoadmapPage from './roadmap/RoadmapPage';
 import './index.css';
 
 function App() {
