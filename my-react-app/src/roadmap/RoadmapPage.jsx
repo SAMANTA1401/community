@@ -506,510 +506,704 @@ const RoadmapPage = () => {
       //   ]
       // }
 
+      // const data = {
+      //   "id": "data_science",
+      //   "name": "Data Science",
+      //   "type": "root",
+      //   "meta": {
+      //     "description": "Comprehensive roadmap for mastering Data Science, tailored for an undergraduate student aiming for a job-ready proficiency."
+      //   },
+      //   "children": [
+      //     {
+      //       "id": "foundational_math_stats",
+      //       "name": "Foundational Mathematics and Statistics",
+      //       "type": "category",
+      //       "meta": {
+      //         "overview": "Establish a strong foundation in the mathematical and statistical concepts essential for data science."
+      //       },
+      //       "children": [
+      //         {
+      //           "id": "linear_algebra",
+      //           "name": "Linear Algebra",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Vectors, matrices, matrix operations, eigenvalues, eigenvectors, singular value decomposition (SVD)."
+      //           }
+      //         },
+      //         {
+      //           "id": "calculus",
+      //           "name": "Calculus",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Derivatives, integrals, optimization, gradient descent."
+      //           }
+      //         },
+      //         {
+      //           "id": "probability_theory",
+      //           "name": "Probability Theory",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Basic probability, conditional probability, Bayes' theorem, probability distributions."
+      //           }
+      //         },
+      //         {
+      //           "id": "statistical_inference",
+      //           "name": "Statistical Inference",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Hypothesis testing, confidence intervals, p-values."
+      //           }
+      //         },
+      //         {
+      //           "id": "descriptive_statistics",
+      //           "name": "Descriptive Statistics",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Measures of central tendency, measures of dispersion, data visualization."
+      //           }
+      //         }
+      //       ]
+      //     },
+      //     {
+      //       "id": "programming_fundamentals",
+      //       "name": "Programming Fundamentals (Python)",
+      //       "type": "category",
+      //       "meta": {
+      //         "overview": "Learn the fundamentals of programming using Python, the primary language for data science."
+      //       },
+      //       "children": [
+      //         {
+      //           "id": "python_basics",
+      //           "name": "Python Basics",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Data types, variables, operators, control flow (if/else, loops)."  
+      //           }
+      //         },
+      //         {
+      //           "id": "data_structures",
+      //           "name": "Data Structures",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Lists, dictionaries, tuples, sets."
+      //           }
+      //         },
+      //         {
+      //           "id": "functions_modules",
+      //           "name": "Functions and Modules",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Defining functions, using built-in modules, creating custom modules."
+      //           }
+      //         },
+      //         {
+      //           "id": "object_oriented_programming",
+      //           "name": "Object-Oriented Programming (OOP)",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Classes, objects, inheritance, polymorphism."
+      //           }
+      //         },
+      //         {
+      //           "id": "error_handling",
+      //           "name": "Error Handling",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Try-except blocks, exception handling."
+      //           }
+      //         }
+      //       ]
+      //     },
+      //     {
+      //       "id": "data_manipulation_analysis",
+      //       "name": "Data Manipulation and Analysis with Pandas",
+      //       "type": "category",
+      //       "meta": {
+      //         "overview": "Master the Pandas library for data manipulation, cleaning, and analysis."
+      //       },
+      //       "children": [
+      //         {
+      //           "id": "pandas_dataframes",
+      //           "name": "Pandas DataFrames",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Creating, reading, writing, and manipulating DataFrames."
+      //           }
+      //         },
+      //         {
+      //           "id": "data_cleaning",
+      //           "name": "Data Cleaning",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Handling missing values, duplicate data, and inconsistent data."   
+      //           }
+      //         },
+      //         {
+      //           "id": "data_transformation",
+      //           "name": "Data Transformation",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Filtering, sorting, grouping, and aggregating data."
+      //           }
+      //         },
+      //         {
+      //           "id": "data_analysis",
+      //           "name": "Data Analysis",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Calculating descriptive statistics, correlation analysis, and creating pivot tables."
+      //           }
+      //         },
+      //         {
+      //           "id": "data_visualization_pandas",
+      //           "name": "Data Visualization with Pandas",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Creating basic plots (histograms, scatter plots, bar plots) directly from Pandas DataFrames."
+      //           }
+      //         }
+      //       ]
+      //     },
+      //     {
+      //       "id": "data_visualization",
+      //       "name": "Data Visualization with Matplotlib and Seaborn",
+      //       "type": "category",
+      //       "meta": {
+      //         "overview": "Learn to create compelling and informative visualizations using Matplotlib and Seaborn."
+      //       },
+      //       "children": [
+      //         {
+      //           "id": "matplotlib_basics",
+      //           "name": "Matplotlib Basics",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Creating basic plots, customizing plots, and working with subplots."
+      //           }
+      //         },
+      //         {
+      //           "id": "seaborn_basics",
+      //           "name": "Seaborn Basics",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Creating statistical plots, customizing plots, and using Seaborn's built-in themes."
+      //           }
+      //         },
+      //         {
+      //           "id": "advanced_visualizations",
+      //           "name": "Advanced Visualizations",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Creating complex plots, interactive visualizations, and using different chart types effectively."
+      //           }
+      //         },
+      //         {
+      //           "id": "visualization_principles",
+      //           "name": "Visualization Principles",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Understanding best practices for data visualization, storytelling with data, and avoiding common pitfalls."
+      //           }
+      //         },
+      //         {
+      //           "id": "plotly_dash",
+      //           "name": "Introduction to Plotly and Dash (Interactive Visualizations)",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Creating interactive web-based visualizations and dashboards."     
+      //           }
+      //         }
+      //       ]
+      //     },
+      //     {
+      //       "id": "machine_learning_fundamentals",
+      //       "name": "Machine Learning Fundamentals",
+      //       "type": "category",
+      //       "meta": {
+      //         "overview": "Understand the core concepts and algorithms of machine learning."     
+      //       },
+      //       "children": [
+      //         {
+      //           "id": "supervised_learning",
+      //           "name": "Supervised Learning",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Regression, classification, model evaluation metrics."
+      //           }
+      //         },
+      //         {
+      //           "id": "unsupervised_learning",
+      //           "name": "Unsupervised Learning",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Clustering, dimensionality reduction, anomaly detection."
+      //           }
+      //         },
+      //         {
+      //           "id": "model_selection",
+      //           "name": "Model Selection and Evaluation",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Cross-validation, hyperparameter tuning, bias-variance tradeoff."  
+      //           }
+      //         },
+      //         {
+      //           "id": "scikit_learn",
+      //           "name": "Introduction to Scikit-learn",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Using Scikit-learn for model training, evaluation, and deployment."
+      //           }
+      //         },
+      //         {
+      //           "id": "feature_engineering",
+      //           "name": "Feature Engineering",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Techniques for creating and selecting features to improve model performance."
+      //           }
+      //         }
+      //       ]
+      //     },
+      //     {
+      //       "id": "deep_learning_basics",
+      //       "name": "Deep Learning Basics",
+      //       "type": "category",
+      //       "meta": {
+      //         "overview": "Introduction to neural networks and deep learning concepts."
+      //       },
+      //       "children": [
+      //         {
+      //           "id": "neural_networks",
+      //           "name": "Neural Networks Fundamentals",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Perceptrons, multi-layer perceptrons, activation functions."       
+      //           }
+      //         },
+      //         {
+      //           "id": "backpropagation",
+      //           "name": "Backpropagation Algorithm",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Understanding how neural networks learn."
+      //           }
+      //         },
+      //         {
+      //           "id": "tensorflow_keras",
+      //           "name": "Introduction to TensorFlow and Keras",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Building and training neural networks with TensorFlow and Keras."  
+      //           }
+      //         },
+      //         {
+      //           "id": "cnn",
+      //           "name": "Convolutional Neural Networks (CNNs)",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Image classification with CNNs."
+      //           }
+      //         },
+      //         {
+      //           "id": "rnn",
+      //           "name": "Recurrent Neural Networks (RNNs)",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Sequence modeling with RNNs."
+      //           }
+      //         }
+      //       ]
+      //     },
+      //     {
+      //       "id": "databases_sql",
+      //       "name": "Databases and SQL",
+      //       "type": "category",
+      //       "meta": {
+      //         "overview": "Learn how to interact with databases using SQL."
+      //       },
+      //       "children": [
+      //         {
+      //           "id": "sql_basics",
+      //           "name": "SQL Basics",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "SELECT, FROM, WHERE, ORDER BY, GROUP BY."
+      //           }
+      //         },
+      //         {
+      //           "id": "joins",
+      //           "name": "Joins",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Inner join, left join, right join, full outer join."
+      //           }
+      //         },
+      //         {
+      //           "id": "subqueries",
+      //           "name": "Subqueries",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Using subqueries to filter and aggregate data."
+      //           }
+      //         },
+      //         {
+      //           "id": "database_design",
+      //           "name": "Introduction to Database Design",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Normalization, entity-relationship diagrams (ERDs)."
+      //           }
+      //         },
+      //         {
+      //           "id": "nosql_intro",
+      //           "name": "Introduction to NoSQL Databases (MongoDB)",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Basic concepts of NoSQL and MongoDB."
+      //           }
+      //         }
+      //       ]
+      //     },
+      //     {
+      //       "id": "cloud_computing",
+      //       "name": "Cloud Computing for Data Science (AWS/Azure/GCP)",
+      //       "type": "category",
+      //       "meta": {
+      //         "overview": "Explore cloud computing platforms and their services relevant to data science."
+      //       },
+      //       "children": [
+      //         {
+      //           "id": "aws_basics",
+      //           "name": "AWS Basics (S3, EC2)",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Using S3 for data storage and EC2 for compute resources."
+      //           }
+      //         },
+      //         {
+      //           "id": "azure_basics",
+      //           "name": "Azure Basics (Blob Storage, Virtual Machines)",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Using Blob Storage for data storage and Virtual Machines for compute resources."
+      //           }
+      //         },
+      //         {
+      //           "id": "gcp_basics",
+      //           "name": "GCP Basics (Cloud Storage, Compute Engine)",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Using Cloud Storage for data storage and Compute Engine for compute resources."
+      //           }
+      //         },
+      //         {
+      //           "id": "cloud_data_processing",
+      //           "name": "Cloud-based Data Processing (Spark on AWS/Azure/GCP)",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Using cloud services for large-scale data processing."
+      //           }
+      //         },
+      //         {
+      //           "id": "machine_learning_services",
+      //           "name": "Cloud Machine Learning Services (SageMaker, Azure ML, Vertex AI)",      
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Using cloud-based machine learning platforms."
+      //           }
+      //         }
+      //       ]
+      //     },
+      //     {
+      //       "id": "big_data_processing",
+      //       "name": "Big Data Processing with Spark",
+      //       "type": "category",
+      //       "meta": {
+      //         "overview": "Learn how to process and analyze large datasets using Apache Spark."  
+      //       },
+      //       "children": [
+      //         {
+      //           "id": "spark_basics",
+      //           "name": "Spark Basics",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "RDDs, DataFrames, Spark SQL."
+      //           }
+      //         },
+      //         {
+      //           "id": "spark_mlib",
+      //           "name": "Spark MLlib",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Using Spark MLlib for machine learning tasks."
+      //           }
+      //         },
+      //         {
+      //           "id": "spark_streaming",
+      //           "name": "Spark Streaming",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Processing real-time data streams with Spark Streaming."
+      //           }
+      //         },
+      //         {
+      //           "id": "data_engineering_spark",
+      //           "name": "Data Engineering with Spark",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Using Spark for ETL pipelines."
+      //           }
+      //         },
+      //         {
+      //           "id": "spark_performance",
+      //           "name": "Spark Performance Tuning",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Optimizing Spark applications for performance."
+      //           }
+      //         }
+      //       ]
+      //     },
+      //     {
+      //       "id": "data_science_project",
+      //       "name": "Data Science Project and Portfolio Building",
+      //       "type": "category",
+      //       "meta": {
+      //         "overview": "Apply your knowledge to real-world data science projects and build a portfolio to showcase your skills."
+      //       },
+      //       "children": [
+      //         {
+      //           "id": "project_selection",
+      //           "name": "Project Selection",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Choosing projects that align with your interests and career goals."
+      //           }
+      //         },
+      //         {
+      //           "id": "data_collection",
+      //           "name": "Data Collection and Preparation",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Gathering data from various sources and preparing it for analysis."
+      //           }
+      //         },
+      //         {
+      //           "id": "data_analysis_project",
+      //           "name": "Data Analysis and Modeling",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Applying data analysis techniques and building machine learning models."
+      //           }
+      //         },
+      //         {
+      //           "id": "project_documentation",
+      //           "name": "Project Documentation and Presentation",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Writing clear and concise documentation and presenting your findings effectively."
+      //           }
+      //         },
+      //         {
+      //           "id": "portfolio_building",
+      //           "name": "Portfolio Building",
+      //           "type": "topic",
+      //           "meta": {
+      //             "details": "Creating a professional portfolio to showcase your projects."      
+      //           }
+      //         }
+      //       ]
+      //     }
+      //   ]
+      // }
+
       const data = {
         "id": "data_science",
         "name": "Data Science",
         "type": "root",
         "meta": {
-          "description": "Comprehensive roadmap for mastering Data Science, tailored for an undergraduate student aiming for a job-ready proficiency."
+          "description": "Comprehensive degree-based roadmap for becoming a Data Scientist, starting from graduation."
         },
         "children": [
           {
-            "id": "foundational_math_stats",
-            "name": "Foundational Mathematics and Statistics",
-            "type": "category",
+            "id": "bachelors_degree",
+            "name": "Bachelor’s Degree (if not already obtained)",
+            "type": "degree",
             "meta": {
-              "overview": "Establish a strong foundation in the mathematical and statistical concepts essential for data science."
+              "overview": "A strong foundation in mathematics, statistics, and computer science is crucial for data science. This stage is skipped if already obtained.",
+              "duration": "4 years (if needed)",
+              "prerequisites": "High school diploma or equivalent"
             },
             "children": [
               {
-                "id": "linear_algebra",
-                "name": "Linear Algebra",
-                "type": "topic",
+                "id": "core_courses_bachelors",
+                "name": "Core Coursework",
+                "type": "component",
                 "meta": {
-                  "details": "Vectors, matrices, matrix operations, eigenvalues, eigenvectors, singular value decomposition (SVD)."
+                  "details": "Calculus, Linear Algebra, Statistics, Probability, Data Structures, Algorithms, Programming (Python, R), Database Management",
+                  "importance": "Provides the fundamental mathematical and computational skills required for data analysis and modeling."
                 }
               },
               {
-                "id": "calculus",
-                "name": "Calculus",
-                "type": "topic",
+                "id": "elective_courses_bachelors",
+                "name": "Elective Courses",
+                "type": "component",
                 "meta": {
-                  "details": "Derivatives, integrals, optimization, gradient descent."
+                  "details": "Machine Learning (introductory), Data Mining, Optimization, Statistical Modeling, Cloud Computing (introductory)",
+                  "importance": "Expands knowledge in specific areas of data science and allows for specialization."
                 }
               },
               {
-                "id": "probability_theory",
-                "name": "Probability Theory",
-                "type": "topic",
+                "id": "research_opportunities_bachelors",
+                "name": "Research Opportunities",
+                "type": "component",
                 "meta": {
-                  "details": "Basic probability, conditional probability, Bayes' theorem, probability distributions."
+                  "details": "Participate in research projects with professors or research groups focusing on data analysis, machine learning, or related fields.",
+                  "importance": "Provides hands-on experience in applying theoretical knowledge to real-world problems."
                 }
               },
               {
-                "id": "statistical_inference",
-                "name": "Statistical Inference",
-                "type": "topic",
+                "id": "internships_bachelors",
+                "name": "Internship Opportunities",
+                "type": "component",
                 "meta": {
-                  "details": "Hypothesis testing, confidence intervals, p-values."
-                }
-              },
-              {
-                "id": "descriptive_statistics",
-                "name": "Descriptive Statistics",
-                "type": "topic",
-                "meta": {
-                  "details": "Measures of central tendency, measures of dispersion, data visualization."
+                  "details": "Seek internships in companies or organizations that utilize data science techniques. Look for roles such as data analyst intern or machine learning intern.", 
+                  "importance": "Provides practical experience in a professional setting and allows for networking with industry professionals."
                 }
               }
             ]
           },
           {
-            "id": "programming_fundamentals",
-            "name": "Programming Fundamentals (Python)",
-            "type": "category",
+            "id": "masters_degree",
+            "name": "Master's Degree in Data Science or Related Field",
+            "type": "degree",
             "meta": {
-              "overview": "Learn the fundamentals of programming using Python, the primary language for data science."
+              "overview": "A Master's degree provides advanced knowledge and specialized skills in data science.",
+              "duration": "1-2 years",
+              "prerequisites": "Bachelor's degree in a related field, strong academic record, GRE scores (optional)"
             },
             "children": [
               {
-                "id": "python_basics",
-                "name": "Python Basics",
-                "type": "topic",
+                "id": "core_courses_masters",
+                "name": "Core Coursework",
+                "type": "component",
                 "meta": {
-                  "details": "Data types, variables, operators, control flow (if/else, loops)."  
+                  "details": "Advanced Machine Learning, Deep Learning, Statistical Inference, Data Visualization, Big Data Analytics, Data Mining, Natural Language Processing",
+                  "importance": "Provides in-depth knowledge and advanced skills in various data science techniques."
                 }
               },
               {
-                "id": "data_structures",
-                "name": "Data Structures",
-                "type": "topic",
+                "id": "specialization_masters",
+                "name": "Specialization",
+                "type": "component",
                 "meta": {
-                  "details": "Lists, dictionaries, tuples, sets."
+                  "details": "Choose a specialization area such as machine learning, deep learning, natural language processing, or data engineering based on your interests and career goals.",
+                  "importance": "Allows for focused development of expertise in a specific area of data science."
                 }
               },
               {
-                "id": "functions_modules",
-                "name": "Functions and Modules",
-                "type": "topic",
+                "id": "capstone_project",
+                "name": "Capstone Project",
+                "type": "component",
                 "meta": {
-                  "details": "Defining functions, using built-in modules, creating custom modules."
+                  "details": "Complete a capstone project that involves applying data science techniques to solve a real-world problem. This project often involves working with a company or organization.",
+                  "importance": "Provides hands-on experience in applying data science skills to a complex problem and demonstrates your abilities to potential employers."
                 }
               },
               {
-                "id": "object_oriented_programming",
-                "name": "Object-Oriented Programming (OOP)",
-                "type": "topic",
+                "id": "networking_masters",
+                "name": "Networking Opportunities",
+                "type": "component",
                 "meta": {
-                  "details": "Classes, objects, inheritance, polymorphism."
-                }
-              },
-              {
-                "id": "error_handling",
-                "name": "Error Handling",
-                "type": "topic",
-                "meta": {
-                  "details": "Try-except blocks, exception handling."
+                  "details": "Attend industry conferences, workshops, and meetups to network with data science professionals and learn about the latest trends and technologies.",
+                  "importance": "Provides opportunities to connect with industry professionals, learn about job opportunities, and stay up-to-date on the latest trends."
                 }
               }
             ]
           },
           {
-            "id": "data_manipulation_analysis",
-            "name": "Data Manipulation and Analysis with Pandas",
-            "type": "category",
+            "id": "online_courses_and_certifications",
+            "name": "Online Courses and Certifications",
+            "type": "degree",
             "meta": {
-              "overview": "Master the Pandas library for data manipulation, cleaning, and analysis."
+              "overview": "Supplement formal education with online courses and certifications to enhance specific skills and demonstrate expertise.",
+              "duration": "Ongoing",
+              "prerequisites": "Varies depending on the course or certification"
             },
             "children": [
               {
-                "id": "pandas_dataframes",
-                "name": "Pandas DataFrames",
-                "type": "topic",
+                "id": "platform_courses",
+                "name": "Platform-Specific Courses",
+                "type": "component",
                 "meta": {
-                  "details": "Creating, reading, writing, and manipulating DataFrames."
+                  "details": "Complete courses on platforms like Coursera, edX, Udacity, and DataCamp in areas such as machine learning, deep learning, data visualization, and big data analytics. Target courses with hands-on projects.",
+                  "importance": "Provides flexible learning opportunities and allows for focused development of specific skills."
                 }
               },
               {
-                "id": "data_cleaning",
-                "name": "Data Cleaning",
-                "type": "topic",
+                "id": "certification_programs",
+                "name": "Certification Programs",
+                "type": "component",
                 "meta": {
-                  "details": "Handling missing values, duplicate data, and inconsistent data."   
+                  "details": "Obtain certifications from reputable organizations such as Google, Microsoft, and AWS in areas such as cloud computing, machine learning, and data analytics. Examples: Google Cloud Certified Professional Data Engineer, Microsoft Certified: Azure Data Scientist Associate, AWS Certified Machine Learning – Specialty",
+                  "importance": "Demonstrates expertise in specific technologies and enhances your credibility with potential employers."
                 }
               },
               {
-                "id": "data_transformation",
-                "name": "Data Transformation",
-                "type": "topic",
+                "id": "kaggle_competitions",
+                "name": "Kaggle Competitions",
+                "type": "component",
                 "meta": {
-                  "details": "Filtering, sorting, grouping, and aggregating data."
-                }
-              },
-              {
-                "id": "data_analysis",
-                "name": "Data Analysis",
-                "type": "topic",
-                "meta": {
-                  "details": "Calculating descriptive statistics, correlation analysis, and creating pivot tables."
-                }
-              },
-              {
-                "id": "data_visualization_pandas",
-                "name": "Data Visualization with Pandas",
-                "type": "topic",
-                "meta": {
-                  "details": "Creating basic plots (histograms, scatter plots, bar plots) directly from Pandas DataFrames."
+                  "details": "Participate in Kaggle competitions to gain experience in solving real-world data science problems and showcase your skills to potential employers.",
+                  "importance": "Provides practical experience in applying data science techniques to complex problems and demonstrates your ability to work under pressure."
                 }
               }
             ]
           },
           {
-            "id": "data_visualization",
-            "name": "Data Visualization with Matplotlib and Seaborn",
-            "type": "category",
+            "id": "job_search_and_interview_prep",
+            "name": "Job Search and Interview Preparation",
+            "type": "degree",
             "meta": {
-              "overview": "Learn to create compelling and informative visualizations using Matplotlib and Seaborn."
+              "overview": "Prepare for the job search process by building a strong resume, networking with industry professionals, and practicing your interview skills.",
+              "duration": "Ongoing",
+              "prerequisites": "Completion of relevant education and skills development"
             },
             "children": [
               {
-                "id": "matplotlib_basics",
-                "name": "Matplotlib Basics",
-                "type": "topic",
+                "id": "resume_building",
+                "name": "Resume Building",
+                "type": "component",
                 "meta": {
-                  "details": "Creating basic plots, customizing plots, and working with subplots."
+                  "details": "Create a resume that highlights your skills, experience, and projects. Tailor your resume to each job application to emphasize the skills and experience that are most relevant to the specific role. Highlight projects and contributions using the STAR method (Situation, Task, Action, Result).",
+                  "importance": "A well-crafted resume is essential for attracting the attention of potential employers."
                 }
               },
               {
-                "id": "seaborn_basics",
-                "name": "Seaborn Basics",
-                "type": "topic",
+                "id": "portfolio_development",
+                "name": "Portfolio Development",
+                "type": "component",
                 "meta": {
-                  "details": "Creating statistical plots, customizing plots, and using Seaborn's built-in themes."
+                  "details": "Create a portfolio of data science projects that demonstrates your skills and abilities. Include projects from your coursework, capstone project, and Kaggle competitions. Host the portfolio on GitHub or a personal website.",
+                  "importance": "A portfolio provides concrete evidence of your skills and abilities and allows potential employers to see your work."
                 }
               },
               {
-                "id": "advanced_visualizations",
-                "name": "Advanced Visualizations",
-                "type": "topic",
+                "id": "interview_preparation",
+                "name": "Interview Preparation",
+                "type": "component",
                 "meta": {
-                  "details": "Creating complex plots, interactive visualizations, and using different chart types effectively."
+                  "details": "Practice answering common data science interview questions, including technical questions on machine learning, statistics, and programming. Also, practice behavioral questions to demonstrate your soft skills. Participate in mock interviews with mentors or career counselors.",
+                  "importance": "Effective interview skills are essential for landing a data science job."
                 }
               },
               {
-                "id": "visualization_principles",
-                "name": "Visualization Principles",
-                "type": "topic",
+                "id": "job_applications",
+                "name": "Job Applications",
+                "type": "component",
                 "meta": {
-                  "details": "Understanding best practices for data visualization, storytelling with data, and avoiding common pitfalls."
-                }
-              },
-              {
-                "id": "plotly_dash",
-                "name": "Introduction to Plotly and Dash (Interactive Visualizations)",
-                "type": "topic",
-                "meta": {
-                  "details": "Creating interactive web-based visualizations and dashboards."     
-                }
-              }
-            ]
-          },
-          {
-            "id": "machine_learning_fundamentals",
-            "name": "Machine Learning Fundamentals",
-            "type": "category",
-            "meta": {
-              "overview": "Understand the core concepts and algorithms of machine learning."     
-            },
-            "children": [
-              {
-                "id": "supervised_learning",
-                "name": "Supervised Learning",
-                "type": "topic",
-                "meta": {
-                  "details": "Regression, classification, model evaluation metrics."
-                }
-              },
-              {
-                "id": "unsupervised_learning",
-                "name": "Unsupervised Learning",
-                "type": "topic",
-                "meta": {
-                  "details": "Clustering, dimensionality reduction, anomaly detection."
-                }
-              },
-              {
-                "id": "model_selection",
-                "name": "Model Selection and Evaluation",
-                "type": "topic",
-                "meta": {
-                  "details": "Cross-validation, hyperparameter tuning, bias-variance tradeoff."  
-                }
-              },
-              {
-                "id": "scikit_learn",
-                "name": "Introduction to Scikit-learn",
-                "type": "topic",
-                "meta": {
-                  "details": "Using Scikit-learn for model training, evaluation, and deployment."
-                }
-              },
-              {
-                "id": "feature_engineering",
-                "name": "Feature Engineering",
-                "type": "topic",
-                "meta": {
-                  "details": "Techniques for creating and selecting features to improve model performance."
-                }
-              }
-            ]
-          },
-          {
-            "id": "deep_learning_basics",
-            "name": "Deep Learning Basics",
-            "type": "category",
-            "meta": {
-              "overview": "Introduction to neural networks and deep learning concepts."
-            },
-            "children": [
-              {
-                "id": "neural_networks",
-                "name": "Neural Networks Fundamentals",
-                "type": "topic",
-                "meta": {
-                  "details": "Perceptrons, multi-layer perceptrons, activation functions."       
-                }
-              },
-              {
-                "id": "backpropagation",
-                "name": "Backpropagation Algorithm",
-                "type": "topic",
-                "meta": {
-                  "details": "Understanding how neural networks learn."
-                }
-              },
-              {
-                "id": "tensorflow_keras",
-                "name": "Introduction to TensorFlow and Keras",
-                "type": "topic",
-                "meta": {
-                  "details": "Building and training neural networks with TensorFlow and Keras."  
-                }
-              },
-              {
-                "id": "cnn",
-                "name": "Convolutional Neural Networks (CNNs)",
-                "type": "topic",
-                "meta": {
-                  "details": "Image classification with CNNs."
-                }
-              },
-              {
-                "id": "rnn",
-                "name": "Recurrent Neural Networks (RNNs)",
-                "type": "topic",
-                "meta": {
-                  "details": "Sequence modeling with RNNs."
-                }
-              }
-            ]
-          },
-          {
-            "id": "databases_sql",
-            "name": "Databases and SQL",
-            "type": "category",
-            "meta": {
-              "overview": "Learn how to interact with databases using SQL."
-            },
-            "children": [
-              {
-                "id": "sql_basics",
-                "name": "SQL Basics",
-                "type": "topic",
-                "meta": {
-                  "details": "SELECT, FROM, WHERE, ORDER BY, GROUP BY."
-                }
-              },
-              {
-                "id": "joins",
-                "name": "Joins",
-                "type": "topic",
-                "meta": {
-                  "details": "Inner join, left join, right join, full outer join."
-                }
-              },
-              {
-                "id": "subqueries",
-                "name": "Subqueries",
-                "type": "topic",
-                "meta": {
-                  "details": "Using subqueries to filter and aggregate data."
-                }
-              },
-              {
-                "id": "database_design",
-                "name": "Introduction to Database Design",
-                "type": "topic",
-                "meta": {
-                  "details": "Normalization, entity-relationship diagrams (ERDs)."
-                }
-              },
-              {
-                "id": "nosql_intro",
-                "name": "Introduction to NoSQL Databases (MongoDB)",
-                "type": "topic",
-                "meta": {
-                  "details": "Basic concepts of NoSQL and MongoDB."
-                }
-              }
-            ]
-          },
-          {
-            "id": "cloud_computing",
-            "name": "Cloud Computing for Data Science (AWS/Azure/GCP)",
-            "type": "category",
-            "meta": {
-              "overview": "Explore cloud computing platforms and their services relevant to data science."
-            },
-            "children": [
-              {
-                "id": "aws_basics",
-                "name": "AWS Basics (S3, EC2)",
-                "type": "topic",
-                "meta": {
-                  "details": "Using S3 for data storage and EC2 for compute resources."
-                }
-              },
-              {
-                "id": "azure_basics",
-                "name": "Azure Basics (Blob Storage, Virtual Machines)",
-                "type": "topic",
-                "meta": {
-                  "details": "Using Blob Storage for data storage and Virtual Machines for compute resources."
-                }
-              },
-              {
-                "id": "gcp_basics",
-                "name": "GCP Basics (Cloud Storage, Compute Engine)",
-                "type": "topic",
-                "meta": {
-                  "details": "Using Cloud Storage for data storage and Compute Engine for compute resources."
-                }
-              },
-              {
-                "id": "cloud_data_processing",
-                "name": "Cloud-based Data Processing (Spark on AWS/Azure/GCP)",
-                "type": "topic",
-                "meta": {
-                  "details": "Using cloud services for large-scale data processing."
-                }
-              },
-              {
-                "id": "machine_learning_services",
-                "name": "Cloud Machine Learning Services (SageMaker, Azure ML, Vertex AI)",      
-                "type": "topic",
-                "meta": {
-                  "details": "Using cloud-based machine learning platforms."
-                }
-              }
-            ]
-          },
-          {
-            "id": "big_data_processing",
-            "name": "Big Data Processing with Spark",
-            "type": "category",
-            "meta": {
-              "overview": "Learn how to process and analyze large datasets using Apache Spark."  
-            },
-            "children": [
-              {
-                "id": "spark_basics",
-                "name": "Spark Basics",
-                "type": "topic",
-                "meta": {
-                  "details": "RDDs, DataFrames, Spark SQL."
-                }
-              },
-              {
-                "id": "spark_mlib",
-                "name": "Spark MLlib",
-                "type": "topic",
-                "meta": {
-                  "details": "Using Spark MLlib for machine learning tasks."
-                }
-              },
-              {
-                "id": "spark_streaming",
-                "name": "Spark Streaming",
-                "type": "topic",
-                "meta": {
-                  "details": "Processing real-time data streams with Spark Streaming."
-                }
-              },
-              {
-                "id": "data_engineering_spark",
-                "name": "Data Engineering with Spark",
-                "type": "topic",
-                "meta": {
-                  "details": "Using Spark for ETL pipelines."
-                }
-              },
-              {
-                "id": "spark_performance",
-                "name": "Spark Performance Tuning",
-                "type": "topic",
-                "meta": {
-                  "details": "Optimizing Spark applications for performance."
-                }
-              }
-            ]
-          },
-          {
-            "id": "data_science_project",
-            "name": "Data Science Project and Portfolio Building",
-            "type": "category",
-            "meta": {
-              "overview": "Apply your knowledge to real-world data science projects and build a portfolio to showcase your skills."
-            },
-            "children": [
-              {
-                "id": "project_selection",
-                "name": "Project Selection",
-                "type": "topic",
-                "meta": {
-                  "details": "Choosing projects that align with your interests and career goals."
-                }
-              },
-              {
-                "id": "data_collection",
-                "name": "Data Collection and Preparation",
-                "type": "topic",
-                "meta": {
-                  "details": "Gathering data from various sources and preparing it for analysis."
-                }
-              },
-              {
-                "id": "data_analysis_project",
-                "name": "Data Analysis and Modeling",
-                "type": "topic",
-                "meta": {
-                  "details": "Applying data analysis techniques and building machine learning models."
-                }
-              },
-              {
-                "id": "project_documentation",
-                "name": "Project Documentation and Presentation",
-                "type": "topic",
-                "meta": {
-                  "details": "Writing clear and concise documentation and presenting your findings effectively."
-                }
-              },
-              {
-                "id": "portfolio_building",
-                "name": "Portfolio Building",
-                "type": "topic",
-                "meta": {
-                  "details": "Creating a professional portfolio to showcase your projects."      
+                  "details": "Apply for data science positions through online job boards, company websites, and networking contacts. Tailor your application to each specific role and highlight your relevant skills and experience.",
+                  "importance": "Applying for jobs is the first step towards landing a data science job."
                 }
               }
             ]

@@ -28,7 +28,13 @@ Create a comprehensive JSON roadmap for mastering a specified skill or professio
        - `type`: Set to "root".
        - `meta`: An object containing a `description` field summarizing the roadmap's purpose.
        - `children`: An array of category objects.
-     - **Category Level**:
+     - **Complexity level**:
+         - `id`: A unique identifier for the complexity level (e.g., "beginner", "intermediate", "advanced").
+         - `name`: The name of the complexity level (e.g., "Beginner", "Intermediate", "Advanced").
+         - `type`: Set to "complexity".
+         - `meta`: An object containing a `description` field summarizing the complexity level's focus.
+         - `children`: An array of module objects.
+     - **Module Level**:
        - `id`: A unique identifier for the category (e.g., lowercase, underscore-separated category name).
        - `name`: The name of the category (e.g., "Introduction to [Skill]", "Core Concepts").
        - `type`: Set to "category".
@@ -40,6 +46,11 @@ Create a comprehensive JSON roadmap for mastering a specified skill or professio
        - `type`: Set to "topic".
        - `meta` (optional): An object containing additional details (e.g., `details` field for specific subtopics or focus areas).
      - **SubTopic Level**:
+       - `id`: A unique identifier for the topic (e.g., lowercase, underscore-separated topic name).
+       - `name`: The name of the topic (e.g., "Linear Algebra", "Supervised Learning").
+       - `type`: Set to "topic".
+       - `meta` (optional): An object containing additional details (e.g., `details` field for specific subtopics or focus areas).
+     - **Paragraph Level**:
        - `id`: A unique identifier for the topic (e.g., lowercase, underscore-separated topic name).
        - `name`: The name of the topic (e.g., "Linear Algebra", "Supervised Learning").
        - `type`: Set to "topic".
@@ -80,7 +91,7 @@ Create a comprehensive JSON roadmap for mastering a specified skill or professio
     {{
       "id": "intro_ai",
       "name": "Introduction to AI",
-      "type": "category",
+      "type": "module",
       "meta": {{
         "overview": "Understand the foundations of Artificial Intelligence"
       }},

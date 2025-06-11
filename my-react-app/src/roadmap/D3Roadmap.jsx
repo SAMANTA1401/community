@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { Component, useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 
 const D3SkillRoadmap = ({ data }) => {
@@ -28,6 +28,11 @@ const D3SkillRoadmap = ({ data }) => {
     root.children?.forEach(collapse);
 
     let highlightedPath = [];
+    
+    let highlightedChild = null;
+    const highlightedChildren = new Set();
+
+
 
     function collapse(d) {
       if (d.children) {
@@ -48,14 +53,30 @@ const D3SkillRoadmap = ({ data }) => {
     }
 
     function getPathToRoot(d) {
+
       const path = [];
       let current = d;
+
       while (current) {
         path.push(current);
         current = current.parent;
       }
       return path.reverse();
     }
+
+    function highlightParentLink(childNode) {
+      // Reset all links first (optional)
+      g.selectAll(".link")
+        .attr("stroke", d => getLinkColor(d.source.depth)) // reset original color
+        .classed("highlighted-link", false); // remove any old highlight class
+    
+      // Select the specific link whose target is the clicked child
+      g.selectAll(".link")
+        .filter(d => d.target === childNode && d.source === childNode.parent)
+        .attr("stroke", "orange") // Or any highlight color
+        .classed("highlighted-link", true);
+    }
+    
 
     function update(source) {
       const treeLayout = d3.tree().nodeSize([60, 200]);
@@ -68,13 +89,13 @@ const D3SkillRoadmap = ({ data }) => {
       const right = Math.max(...nodes.map(d => d.x));
       const depth = Math.max(...nodes.map(d => d.depth));
 
-      height = Math.max(400, right - left + margin.top + margin.bottom);
-      width = Math.max(350, 200 * (depth + 1));
+      height = Math.max(700, right - left + margin.top + margin.bottom);
+      width = Math.max(1000, 200 * (depth + 1));
 
       svg.attr("width", width).attr("height", height).attr("viewBox", [0, 0, width, height]);
 
       nodes.forEach(d => {
-        d.y = d.depth * 200 + margin.left;
+        d.y = d.depth * 500 + margin.left;
         d.x = d.x - left + margin.top;
       });
 
@@ -86,7 +107,7 @@ const D3SkillRoadmap = ({ data }) => {
         .attr("class", "link")
         .attr("opacity", 0)
         .attr("stroke", d => getLinkColor(d.source.depth))
-        .attr("stroke-width", 2)
+        .attr("stroke-width", 10)
         .attr("fill", "none")
         .attr("d", d => {
           const o = { x: source.x0, y: source.y0 };
@@ -97,13 +118,36 @@ const D3SkillRoadmap = ({ data }) => {
         .transition().duration(600).attr("opacity", 1)
         .attr("stroke", d => getLinkColor(d.source.depth))
         .attr("d", diagonal)
+        .attr("stroke", d => {
+          // Check if this link connects a highlighted child to its parent
+          for (const child of highlightedChildren) {
+            if (d.source === child.parent && d.target === child) {
+              return "orange"; // highlighted link color
+            }
+          }
+          return getLinkColor(d.source.depth); // default link color
+        })
         .attr("class", d => {
           let isHighlight = false;
+      
+          // Highlight via known path logic
           for (let i = 1; i < highlightedPath.length; i++) {
-            if (d.source === highlightedPath[i - 1] && d.target === highlightedPath[i]) isHighlight = true;
+            if (d.source === highlightedPath[i - 1] && d.target === highlightedPath[i]) {
+              isHighlight = true;
+            }
           }
+      
+          // Highlight via clicked children
+          for (const child of highlightedChildren) {
+            if (d.source === child.parent && d.target === child) {
+              isHighlight = true;
+            }
+          }
+      
           return isHighlight ? "link highlight" : "link";
-        });
+        }
+      
+      );
 
       const node = g.selectAll(".node").data(nodes, d => d.data.id);
 
@@ -115,6 +159,17 @@ const D3SkillRoadmap = ({ data }) => {
         .attr("transform", d => `translate(${source.y0},${source.x0})`)
         .on("click", (event, d) => {
           highlightedPath = getPathToRoot(d);
+          // highlightParentLink(d);
+          // highlightedChild = d; // Track clicked node
+          highlightedChildren.add(d);
+          update(d);
+
+          if (highlightedChildren.has(d)) {
+            highlightedChildren.delete(d);
+          } else {
+            highlightedChildren.add(d);
+          }
+          
           if (d.parent && d.parent.children) {
             d.parent.children.forEach(sibling => {
               if (sibling !== d) collapse(sibling);
@@ -187,8 +242,10 @@ const D3SkillRoadmap = ({ data }) => {
 
     function getNodeColor(type) {
       const map = {
-        root: "#333",
+        root: "#4254f5",
         skill: "#28a7de",
+        degree:"#e642f5",
+        component:"#42b6f5",
         portfolio: "#f39c12",
         job: "#e74c3c"
       };
