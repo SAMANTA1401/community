@@ -1,41 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 
-const D3Roadmap = ({ data }) => {
+const D3SkillRoadmap = ({ data }) => {
   const svgRef = useRef();
   const gRef = useRef();
   const tooltipRef = useRef();
 
   useEffect(() => {
-    const metaText = "The chart is ready for external method calls. If you want to interact with the chart, and call methods after you draw it, you should set up a listener for this event before you call the draw method, and call the methods only after the event is fired.";
-
-    const buildHierarchy = (data) => {
-      return {
-        id: 1,
-        name: data.title,
-        type: "folder",
-        meta: metaText,
-        children: data.stages.map((stage, i) => ({
-          id: (i + 1) * 10,
-          name: `Stage ${stage.stage}: ${stage.title}`,
-          type: "folder",
-          meta: metaText,
-          children: stage.topics.map((topic, j) => ({
-            id: (i + 1) * 100 + (j + 1),
-            name: topic.topic,
-            type: "file",
-            meta: metaText,
-            children: topic.subtopics.map((sub, k) => ({
-              id: (i + 1) * 1000 + (j + 1) * 10 + (k + 1),
-              name: sub,
-              type: "file",
-              meta: metaText
-            }))
-          }))
-        }))
-      };
-    };
-
     const svg = d3.select(svgRef.current);
     const g = d3.select(gRef.current);
     const tooltip = d3.select(tooltipRef.current);
@@ -51,7 +22,7 @@ const D3Roadmap = ({ data }) => {
     let width = 900, height = 600;
     const margin = { top: 30, right: 60, bottom: 30, left: 60 };
 
-    const root = d3.hierarchy(buildHierarchy(data));
+    const root = d3.hierarchy(data);
     root.x0 = height / 2;
     root.y0 = 0;
     root.children?.forEach(collapse);
@@ -87,10 +58,7 @@ const D3Roadmap = ({ data }) => {
     }
 
     function update(source) {
-      const nodeVerticalGap = 60;
-      const nodeHorizontalGap = 200;
-
-      const treeLayout = d3.tree().nodeSize([nodeVerticalGap, nodeHorizontalGap]);
+      const treeLayout = d3.tree().nodeSize([60, 200]);
       treeLayout(root);
 
       const nodes = root.descendants();
@@ -101,27 +69,18 @@ const D3Roadmap = ({ data }) => {
       const depth = Math.max(...nodes.map(d => d.depth));
 
       height = Math.max(400, right - left + margin.top + margin.bottom);
-      width = Math.max(350, nodeHorizontalGap * (depth + 1));
+      width = Math.max(350, 200 * (depth + 1));
 
-      svg
-        .attr("width", width)
-        .attr("height", height)
-        .attr("viewBox", [0, 0, width, height]);
+      svg.attr("width", width).attr("height", height).attr("viewBox", [0, 0, width, height]);
 
       nodes.forEach(d => {
-        d.y = d.depth * nodeHorizontalGap + margin.left;
+        d.y = d.depth * 200 + margin.left;
         d.x = d.x - left + margin.top;
       });
 
-      // LINKS
-      const link = g.selectAll(".link")
-        .data(links, d => d.target.data.id || d.target.data.name);
+      const link = g.selectAll(".link").data(links, d => d.target.data.id);
 
-      link.exit()
-        .transition()
-        .duration(400)
-        .attr("opacity", 0)
-        .remove();
+      link.exit().transition().duration(400).attr("opacity", 0).remove();
 
       const linkEnter = link.enter().append("path")
         .attr("class", "link")
@@ -135,46 +94,30 @@ const D3Roadmap = ({ data }) => {
         });
 
       linkEnter.merge(link)
-        .transition()
-        .duration(600)
-        .attr("opacity", 1)
+        .transition().duration(600).attr("opacity", 1)
         .attr("stroke", d => getLinkColor(d.source.depth))
         .attr("d", diagonal)
         .attr("class", d => {
           let isHighlight = false;
-          if (highlightedPath.length) {
-            for (let i = 1; i < highlightedPath.length; i++) {
-              if (d.source === highlightedPath[i - 1] && d.target === highlightedPath[i]) {
-                isHighlight = true;
-              }
-            }
+          for (let i = 1; i < highlightedPath.length; i++) {
+            if (d.source === highlightedPath[i - 1] && d.target === highlightedPath[i]) isHighlight = true;
           }
           return isHighlight ? "link highlight" : "link";
         });
 
-      // NODES
-      const node = g.selectAll(".node")
-        .data(nodes, d => d.data.id || d.data.name);
+      const node = g.selectAll(".node").data(nodes, d => d.data.id);
 
       const nodeExit = node.exit();
-      nodeExit.transition()
-        .duration(400)
-        .attr("transform", d => `translate(${source.y},${source.x})`)
-        .remove();
+      nodeExit.transition().duration(400).attr("transform", d => `translate(${source.y},${source.x})`).remove();
 
       const nodeEnter = node.enter().append("g")
-        .attr("class", d =>
-          "node" +
-          (d.children || d._children ? " node--internal" : " node--leaf")
-        )
+        .attr("class", d => "node" + (d.children || d._children ? " node--internal" : " node--leaf"))
         .attr("transform", d => `translate(${source.y0},${source.x0})`)
         .on("click", (event, d) => {
           highlightedPath = getPathToRoot(d);
           if (d.parent && d.parent.children) {
             d.parent.children.forEach(sibling => {
-              if (sibling !== d) {
-                collapse(sibling);
-              }
+              if (sibling !== d) collapse(sibling);
             });
           }
           if (d.children) {
@@ -184,10 +127,7 @@ const D3Roadmap = ({ data }) => {
             d.children = d._children;
             d._children = null;
           }
-
-          // Animate zoom to this node
           zoomToNode(d);
-
           update(d);
         });
 
@@ -203,7 +143,6 @@ const D3Roadmap = ({ data }) => {
         const textWidth = textElement.node().getComputedTextLength();
         const textPadding = 12;
         const lineHeight = 20;
-
         const nodeWidth = textWidth + textPadding * 2;
         const nodeHeight = lineHeight + textPadding * 2;
 
@@ -215,52 +154,30 @@ const D3Roadmap = ({ data }) => {
           .attr("y", -nodeHeight / 2)
           .attr("width", nodeWidth)
           .attr("height", nodeHeight)
-          .attr("fill", d.data.type === "folder" ? "#28a7de" : "#a54ce0")
+          .attr("fill", getNodeColor(d.data.type))
           .on("mouseover", function (event) {
             tooltip
               .style("opacity", 1)
-              .html(d.data.meta)
+              .html(formatMeta(d.data.meta))
               .style("left", `${event.pageX + 18}px`)
               .style("top", `${event.pageY - 10}px`);
           })
           .on("mousemove", function (event) {
-            tooltip
-              .style("left", `${event.pageX + 18}px`)
-              .style("top", `${event.pageY - 10}px`);
+            tooltip.style("left", `${event.pageX + 18}px`).style("top", `${event.pageY - 10}px`);
           })
           .on("mouseout", () => tooltip.style("opacity", 0));
       });
 
-      nodeEnter.merge(node)
-        .transition()
-        .duration(600)
-        .attr("transform", d => `translate(${d.y},${d.x})`);
+      nodeEnter.merge(node).transition().duration(600).attr("transform", d => `translate(${d.y},${d.x})`);
 
-      nodes.forEach(d => {
-        d.x0 = d.x;
-        d.y0 = d.y;
-      });
+      nodes.forEach(d => { d.x0 = d.x; d.y0 = d.y; });
     }
 
     function diagonal(d) {
-      const sourceWidth = d.source.nodeWidth || 0;
-      const targetWidth = d.target.nodeWidth || 0;
-
-      const sourceX = d.source.x;
-      const sourceY = d.source.y + sourceWidth / 2;
-      const targetX = d.target.x;
-      const targetY = d.target.y - targetWidth / 2;
-
+      const sourceX = d.source.x, sourceY = d.source.y + (d.source.nodeWidth || 0) / 2;
+      const targetX = d.target.x, targetY = d.target.y - (d.target.nodeWidth || 0) / 2;
       const curvature = 0.4;
-      const controlPointX1 = sourceY + (targetY - sourceY) * curvature;
-      const controlPointY1 = sourceX;
-      const controlPointX2 = targetY - (targetY - sourceY) * curvature;
-      const controlPointY2 = targetX;
-
-      return `
-        M${sourceY},${sourceX}
-        C${controlPointX1},${controlPointY1} ${controlPointX2},${controlPointY2} ${targetY},${targetX}
-      `;
+      return `M${sourceY},${sourceX} C${sourceY + (targetY - sourceY) * curvature},${sourceX} ${targetY - (targetY - sourceY) * curvature},${targetX} ${targetY},${targetX}`;
     }
 
     function getLinkColor(depth) {
@@ -268,42 +185,34 @@ const D3Roadmap = ({ data }) => {
       return colors[depth % colors.length];
     }
 
-    function zoomToNode(d) {
-      const scale = 1;
-      const translate = [
-        width / 2 - d.y * scale,
-        height / 2 - d.x * scale
-      ];
-
-      svg.transition()
-        .duration(750)
-        .call(zoomBehavior.transform, d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale));
+    function getNodeColor(type) {
+      const map = {
+        root: "#333",
+        skill: "#28a7de",
+        portfolio: "#f39c12",
+        job: "#e74c3c"
+      };
+      return map[type] || "#a54ce0";
     }
 
-    // Initial render
-    update(root);
+    function formatMeta(meta) {
+      if (!meta) return "";
+      return Object.entries(meta).map(([k, v]) => `<div><strong>${k}:</strong> ${Array.isArray(v) ? v.join(", ") : v}</div>`).join("");
+    }
 
-    // Center root node initially
+    function zoomToNode(d) {
+      const scale = 1;
+      const translate = [width / 2 - d.y * scale, height / 2 - d.x * scale];
+      svg.transition().duration(750).call(zoomBehavior.transform, d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale));
+    }
+
+    update(root);
     zoomToNode(root);
 
-    // Expose expand/collapse all
-    window.expandAll = () => {
-      root.each(expand);
-      update(root);
-    };
-    window.collapseAll = () => {
-      root.children?.forEach(collapse);
-      update(root);
-    };
+    window.expandAll = () => { root.each(expand); update(root); };
+    window.collapseAll = () => { root.children?.forEach(collapse); update(root); };
 
-    window.addEventListener("resize", () => {
-      update(root);
-    });
-
-    return () => {
-      window.removeEventListener("resize", update);
-    };
-
+    return () => { window.removeEventListener("resize", update); };
   }, [data]);
 
   return (
@@ -312,7 +221,7 @@ const D3Roadmap = ({ data }) => {
         <button onClick={() => window.expandAll()}>Expand All</button>
         <button onClick={() => window.collapseAll()} style={{ marginLeft: "10px" }}>Collapse All</button>
       </div>
-      <svg ref={svgRef}>
+      <svg ref={svgRef} width="100%" height="100%">
         <g ref={gRef}></g>
       </svg>
       <div ref={tooltipRef} className="d3-tooltip" style={{
@@ -329,4 +238,4 @@ const D3Roadmap = ({ data }) => {
   );
 };
 
-export default D3Roadmap;
+export default D3SkillRoadmap;

@@ -1,30 +1,235 @@
 {
   "degree": {
     "AI Engineer": {
-      "title": "AI Engineer Roadmap",
+      "title": "AI Engineer Learning Roadmap",
+      "description": "A structured path to becoming a proficient AI Engineer, covering fundamental concepts, practical skills, and advanced topics.",
       "stages": [
         {
-          "stage": 1,
-          "title": "Foundation",
-          "topics": [{ "topic": "B.Tech in Computer Science", "subtopics": [] }]
+          "stage_number": 1,
+          "stage_name": "Foundational Knowledge (Mathematics, Programming, and Data Structures)",
+          "duration": "3 Months",
+          "topics": [
+            {
+              "topic_name": "Mathematics Fundamentals",
+              "subtopics": [
+                "Linear Algebra (Vectors, Matrices, Matrix Operations, Eigenvalues, Eigenvectors)",
+                "Calculus (Derivatives, Integrals, Optimization)",
+                "Probability and Statistics (Probability Distributions, Hypothesis Testing, Statistical Inference)"
+              ]
+            },
+            {
+              "topic_name": "Programming Fundamentals (Python)",
+              "subtopics": [
+                "Basic Syntax and Data Types",
+                "Control Flow (Loops, Conditionals)",
+                "Functions and Modules",
+                "Object-Oriented Programming (Classes, Objects, Inheritance, Polymorphism)",
+                "Error Handling",
+                "File I/O"
+              ]
+            },
+            {
+              "topic_name": "Data Structures and Algorithms",
+              "subtopics": [
+                "Arrays, Linked Lists, Stacks, Queues",
+                "Trees, Graphs",
+                "Sorting Algorithms (Merge Sort, Quick Sort)",
+                "Searching Algorithms (Binary Search)",
+                "Algorithm Complexity Analysis (Big O Notation)"
+              ]
+            },
+            {
+              "topic_name": "Version Control (Git)",
+              "subtopics": [
+                "Basic Git Commands (clone, add, commit, push, pull)",
+                "Branching and Merging",
+                "Collaboration using Git"
+              ]
+            }
+          ]
         },
         {
-          "stage": 2,
-          "title": "Intermediate",
-          "topics": [{ "topic": "B.Sc in AI/ML", "subtopics": [] }]
+          "stage_number": 2,
+          "stage_name": "Machine Learning Fundamentals",
+          "duration": "4 Months",
+          "topics": [
+            {
+              "topic_name": "Supervised Learning",
+              "subtopics": [
+                "Linear Regression, Logistic Regression",
+                "Decision Trees, Random Forests",
+                "Support Vector Machines (SVM)",
+                "K-Nearest Neighbors (KNN)",
+                "Model Evaluation (Accuracy, Precision, Recall, F1-Score, ROC AUC)",
+                "Cross-Validation"
+              ]
+            },
+            {
+              "topic_name": "Unsupervised Learning",
+              "subtopics": [
+                "Clustering (K-Means, Hierarchical Clustering)",
+                "Dimensionality Reduction (PCA, t-SNE)",
+                "Anomaly Detection"
+              ]
+            },
+            {
+              "topic_name": "Model Selection and Hyperparameter Tuning",
+              "subtopics": [
+                "Grid Search, Random Search",
+                "Regularization (L1, L2)",
+                "Bias-Variance Tradeoff"
+              ]
+            },
+            {
+              "topic_name": "Machine Learning Libraries (Scikit-learn)",
+              "subtopics": [
+                "Data Preprocessing",
+                "Model Training and Evaluation",
+                "Pipeline Creation"
+              ]
+            }
+          ]
         },
         {
-          "stage": 3,
-          "title": "Advanced",
-          "topics": [{ "topic": "M.Tech in AI", "subtopics": [] }]
+          "stage_number": 3,
+          "stage_name": "Deep Learning",
+          "duration": "5 Months",
+          "topics": [
+            {
+              "topic_name": "Neural Networks Fundamentals",
+              "subtopics": [
+                "Perceptron, Multilayer Perceptron (MLP)",
+                "Activation Functions (ReLU, Sigmoid, Tanh)",
+                "Backpropagation",
+                "Loss Functions (Cross-Entropy, Mean Squared Error)",
+                "Optimization Algorithms (Gradient Descent, Adam, SGD)"
+              ]
+            },
+            {
+              "topic_name": "Convolutional Neural Networks (CNNs)",
+              "subtopics": [
+                "Convolutional Layers, Pooling Layers",
+                "CNN Architectures (LeNet, AlexNet, VGGNet, ResNet)",
+                "Image Classification, Object Detection, Image Segmentation"
+              ]
+            },
+            {
+              "topic_name": "Recurrent Neural Networks (RNNs)",
+              "subtopics": [
+                "RNN Architectures (Simple RNN, LSTM, GRU)",
+                "Sequence Modeling, Natural Language Processing (NLP)",
+                "Time Series Analysis"
+              ]
+            },
+            {
+              "topic_name": "Deep Learning Frameworks (TensorFlow, PyTorch)",
+              "subtopics": [
+                "Tensor Operations",
+                "Model Building and Training",
+                "GPU Acceleration"
+              ]
+            },
+            {
+              "topic_name": "Generative Models (GANs, VAEs)",
+              "subtopics": [
+                "Generative Adversarial Networks (GANs)",
+                "Variational Autoencoders (VAEs)"
+              ]
+            }
+          ]
         },
         {
-          "stage": 4,
-          "title": "Advanced",
-          "topics": [{ "topic": "Ph.D in AI", "subtopics": [] }]
+          "stage_number": 4,
+          "stage_name": "AI Engineering Practices & Deployment",
+          "duration": "4 Months",
+          "topics": [
+            {
+              "topic_name": "Data Engineering Fundamentals",
+              "subtopics": [
+                "Data Collection and Storage",
+                "Data Cleaning and Preprocessing",
+                "Data Pipelines (ETL)",
+                "Database Technologies (SQL, NoSQL)",
+                "Cloud Storage (AWS S3, Google Cloud Storage, Azure Blob Storage)"
+              ]
+            },
+            {
+              "topic_name": "Model Deployment",
+              "subtopics": [
+                "REST APIs (Flask, FastAPI)",
+                "Containerization (Docker)",
+                "Orchestration (Kubernetes)",
+                "Cloud Platforms (AWS SageMaker, Google Cloud AI Platform, Azure Machine Learning)",
+                "Serverless Deployment (AWS Lambda, Google Cloud Functions, Azure Functions)"
+              ]
+            },
+            {
+              "topic_name": "Model Monitoring and Maintenance",
+              "subtopics": [
+                "Performance Monitoring",
+                "Data Drift Detection",
+                "Model Retraining",
+                "A/B Testing"
+              ]
+            },
+            {
+              "topic_name": "MLOps",
+              "subtopics": [
+                "Continuous Integration/Continuous Deployment (CI/CD) for ML",
+                "Model Versioning",
+                "Automated Testing"
+              ]
+            }
+          ]
+        },
+        {
+          "stage_number": 5,
+          "stage_name": "Advanced Topics & Specialization (Optional)",
+          "duration": "Ongoing",
+          "topics": [
+            {
+              "topic_name": "Natural Language Processing (NLP)",
+              "subtopics": [
+                "Transformer Models (BERT, GPT)",
+                "Sentiment Analysis, Text Summarization, Machine Translation"
+              ]
+            },
+            {
+              "topic_name": "Computer Vision",
+              "subtopics": [
+                "Object Detection (YOLO, Faster R-CNN)",
+                "Image Segmentation",
+                "Image Generation"
+              ]
+            },
+            {
+              "topic_name": "Reinforcement Learning",
+              "subtopics": [
+                "Markov Decision Processes (MDPs)",
+                "Q-Learning, Deep Q-Networks (DQN)",
+                "Policy Gradient Methods"
+              ]
+            },
+            {
+              "topic_name": "Edge Computing",
+              "subtopics": [
+                "Deploying ML models on edge devices"
+              ]
+            },
+            {
+              "topic_name": "Ethical AI",
+              "subtopics": [
+                "Fairness, Accountability, Transparency",
+                "Bias Detection and Mitigation"
+              ]
+            }
+          ]
         }
       ]
     },
+
+
+
     "Graphic Designer": {
       "title": "Graphic Designer Roadmap",
       "stages": [

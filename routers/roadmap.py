@@ -29,17 +29,19 @@ class RoadmapRequest(BaseModel):
 
 
 class Topic(BaseModel):
-    topic: str
+    topic_name: str
     subtopics: List[str]
 
 class Stage(BaseModel):
-    stage: int
-    title: str
+    stage_number: int
+    stage_name: str
     topics: List[Topic]
+    duration: Optional[str] = None
 
 class RoadmapResponse(BaseModel):
     title: str
     stages: List[Stage]
+    description: Optional[str] = None
 
 import asyncio
 

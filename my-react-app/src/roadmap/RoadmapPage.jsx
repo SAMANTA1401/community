@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import D3Roadmap from './D3Roadmap';
+// import D3Roadmap from './D3Roadmap';
+import D3SkillRoadmap from './D3Roadmap';
 
 const RoadmapPage = () => {
   const { career } = useParams();
@@ -20,24 +21,272 @@ const RoadmapPage = () => {
     // setRoadmapData(null);
 
     try {
-      const response = await fetch('http://localhost:8000/generate-roadmap', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
+      // const response = await fetch('http://localhost:8000/generate-roadmap', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json'
+      //   },
+      //   body: JSON.stringify({
+      //     career,
+      //     current_state: currentState,
+      //     target,
+      //     mode
+      //   })
+      // });
+
+      // if (!response.ok) {
+      //   throw new Error(`Server error: ${response.status}`);
+      // }
+
+      // const data = await response.json();
+      const data = {
+        "id": "skill_root",
+        "name": "Class 12 Student",
+        "type": "root",
+        "meta": {
+          "description": "Completed Class 12, pursuing AI Engineering through self-learning and skills"
         },
-        body: JSON.stringify({
-          career,
-          current_state: currentState,
-          target,
-          mode
-        })
-      });
+        "children": [
+          {
+            "id": "learn_programming",
+            "name": "Learn Python & Math",
+            "type": "skill",
+            "meta": {
+              "duration": "3-6 months",
+              "resources": ["Khan Academy", "freeCodeCamp", "Python Docs"],
+              "skills_covered": ["Variables", "Loops", "Linear Algebra", "Calculus"]
+            },
+            "edge": {
+              "transition": "Start self-paced online learning"
+            },
+            "children": [
+              {
+                "id": "ml_basics",
+                "name": "ML Basics & Projects",
+                "type": "skill",
+                "meta": {
+                  "duration": "3-4 months",
+                  "resources": ["Coursera ML by Andrew Ng", "Kaggle"],
+                  "skills_covered": ["Supervised Learning", "Unsupervised Learning"]
+                },
+                "edge": {
+                  "transition": "Complete projects and assignments"
+                },
+                "children": [
+                  {
+                    "id": "deep_learning",
+                    "name": "Deep Learning Specialization",
+                    "type": "skill",
+                    "meta": {
+                      "duration": "4-6 months",
+                      "resources": ["DeepLearning.AI", "fast.ai"],
+                      "skills_covered": ["CNN", "RNN", "Transformer"]
+                    },
+                    "edge": {
+                      "transition": "Hands-on projects with PyTorch/TensorFlow"
+                    },
+                    "children": [
+                      {
+                        "id": "portfolio_build",
+                        "name": "AI Portfolio & GitHub",
+                        "type": "portfolio",
+                        "meta": {
+                          "description": "Build a strong portfolio with 3-5 AI projects",
+                          "platforms": ["GitHub", "Kaggle", "HuggingFace"]
+                        },
+                        "edge": {
+                          "transition": "Push projects + write blogs"
+                        },
+                        "children": [
+                          {
+                            "id": "freelance_intern",
+                            "name": "Freelance/Internship",
+                            "type": "job",
+                            "meta": {
+                              "description": "Apply for real-world AI work",
+                              "platforms": ["Upwork", "Internshala", "LinkedIn"]
+                            },
+                            "edge": {
+                              "transition": "Cold email, apply via platforms"
+                            }
+                          },
+                          {
+                            "id": "ai_engineer_self",
+                            "name": "AI Engineer Job (Self-Taught)",
+                            "type": "job",
+                            "meta": {
+                              "description": "Apply to startups/companies",
+                              "requirements": ["GitHub profile", "Interview prep"]
+                            },
+                            "edge": {
+                              "transition": "Interview + project demo"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ml_basics",
+                "name": "ML Basics & Projects",
+                "type": "skill",
+                "meta": {
+                  "duration": "3-4 months",
+                  "resources": ["Coursera ML by Andrew Ng", "Kaggle"],
+                  "skills_covered": ["Supervised Learning", "Unsupervised Learning"]
+                },
+                "edge": {
+                  "transition": "Complete projects and assignments"
+                },
+                "children": [
+                  {
+                    "id": "deep_learning",
+                    "name": "Deep Learning Specialization",
+                    "type": "skill",
+                    "meta": {
+                      "duration": "4-6 months",
+                      "resources": ["DeepLearning.AI", "fast.ai"],
+                      "skills_covered": ["CNN", "RNN", "Transformer"]
+                    },
+                    "edge": {
+                      "transition": "Hands-on projects with PyTorch/TensorFlow"
+                    },
+                    "children": [
+                      {
+                        "id": "portfolio_build",
+                        "name": "AI Portfolio & GitHub",
+                        "type": "portfolio",
+                        "meta": {
+                          "description": "Build a strong portfolio with 3-5 AI projects",
+                          "platforms": ["GitHub", "Kaggle", "HuggingFace"]
+                        },
+                        "edge": {
+                          "transition": "Push projects + write blogs"
+                        },
+                        "children": [
+                          {
+                            "id": "freelance_intern",
+                            "name": "Freelance/Internship",
+                            "type": "job",
+                            "meta": {
+                              "description": "Apply for real-world AI work",
+                              "platforms": ["Upwork", "Internshala", "LinkedIn"]
+                            },
+                            "edge": {
+                              "transition": "Cold email, apply via platforms"
+                            }
+                          },
+                          {
+                            "id": "ai_engineer_self",
+                            "name": "AI Engineer Job (Self-Taught)",
+                            "type": "job",
+                            "meta": {
+                              "description": "Apply to startups/companies",
+                              "requirements": ["GitHub profile", "Interview prep"]
+                            },
+                            "edge": {
+                              "transition": "Interview + project demo"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
 
-      if (!response.ok) {
-        throw new Error(`Server error: ${response.status}`);
+
+            ]
+          },
+          {
+            "id": "learn_programming",
+            "name": "Learn Python & Math",
+            "type": "skill",
+            "meta": {
+              "duration": "3-6 months",
+              "resources": ["Khan Academy", "freeCodeCamp", "Python Docs"],
+              "skills_covered": ["Variables", "Loops", "Linear Algebra", "Calculus"]
+            },
+            "edge": {
+              "transition": "Start self-paced online learning"
+            },
+            "children": [
+              {
+                "id": "ml_basics",
+                "name": "ML Basics & Projects",
+                "type": "skill",
+                "meta": {
+                  "duration": "3-4 months",
+                  "resources": ["Coursera ML by Andrew Ng", "Kaggle"],
+                  "skills_covered": ["Supervised Learning", "Unsupervised Learning"]
+                },
+                "edge": {
+                  "transition": "Complete projects and assignments"
+                },
+                "children": [
+                  {
+                    "id": "deep_learning",
+                    "name": "Deep Learning Specialization",
+                    "type": "skill",
+                    "meta": {
+                      "duration": "4-6 months",
+                      "resources": ["DeepLearning.AI", "fast.ai"],
+                      "skills_covered": ["CNN", "RNN", "Transformer"]
+                    },
+                    "edge": {
+                      "transition": "Hands-on projects with PyTorch/TensorFlow"
+                    },
+                    "children": [
+                      {
+                        "id": "portfolio_build",
+                        "name": "AI Portfolio & GitHub",
+                        "type": "portfolio",
+                        "meta": {
+                          "description": "Build a strong portfolio with 3-5 AI projects",
+                          "platforms": ["GitHub", "Kaggle", "HuggingFace"]
+                        },
+                        "edge": {
+                          "transition": "Push projects + write blogs"
+                        },
+                        "children": [
+                          {
+                            "id": "freelance_intern",
+                            "name": "Freelance/Internship",
+                            "type": "job",
+                            "meta": {
+                              "description": "Apply for real-world AI work",
+                              "platforms": ["Upwork", "Internshala", "LinkedIn"]
+                            },
+                            "edge": {
+                              "transition": "Cold email, apply via platforms"
+                            }
+                          },
+                          {
+                            "id": "ai_engineer_self",
+                            "name": "AI Engineer Job (Self-Taught)",
+                            "type": "job",
+                            "meta": {
+                              "description": "Apply to startups/companies",
+                              "requirements": ["GitHub profile", "Interview prep"]
+                            },
+                            "edge": {
+                              "transition": "Interview + project demo"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
-
-      const data = await response.json();
+      
+   
       console.log('Received roadmap:', data);
       setRoadmapData(data);
     } catch (error) {
@@ -47,6 +296,8 @@ const RoadmapPage = () => {
       setLoading(false);
     }
   };
+
+  
 
   // When mode changes, reset loading and error (and optionally roadmapData)
   useEffect(() => {
@@ -108,7 +359,7 @@ const RoadmapPage = () => {
           <h3 style={{ marginTop: '20px' }}>
             Generated Roadmap ({mode} mode)
           </h3>
-          <D3Roadmap key={mode} data={roadmapData} />
+          <D3SkillRoadmap key={mode} data={roadmapData} />
         </>
       )}
     </div>
