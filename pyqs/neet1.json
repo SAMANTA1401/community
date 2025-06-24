@@ -1,0 +1,483 @@
+[
+  {
+    "question": "Lecithin, a small molecular weight organic compound found in living tissues, is an example of:",
+    "options": ["Amino acids", "Phospholipids", "Glycerides", "Carbohydrates"],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["NEET"],
+    "exam year": [2024],
+    "answer": "B",
+    "solution": "The correct answer is option (2). Some lipids have phosphorous and a phosphorylated organic compound in them. These are phospholipids. Lecithin is one example. Option (3) is incorrect as glycerides are another group of lipids in which both glycerol and fatty acids are present. Option (1) and (2) are incorrect as amino acids and carbohydrates are separate groups of biomolecules."
+  },
+  {
+    "question": "Hind II always cuts DNA molecules at a particular point called recognition sequence and it consists of:",
+    "options": ["8 bp", "6 bp", "4 bp", "10 bp"],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["NEET"],
+    "exam year": [2024],
+    "answer": "B",
+    "solution": "The correct answer is option (2). The first restriction endonuclease Hind II, whose functioning depends on a specific DNA nucleotide sequence was isolated. It was found that Hind II always cut DNA molecules at a particular point by recognising sequence of six base pairs. Option (1), (3) and (4) are incorrect because they have either more than 6 or less than 6 bp."
+  },
+  {
+    "question": "The capacity to generate a whole plant from any cell of the plant is called:",
+    "options": [
+      "Totipotency",
+      "Micropropagation",
+      "Differentiation",
+      "Somatic hybridization"
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["NEET"],
+    "exam year": [2024],
+    "answer": "B",
+    "solution": "Totipotency is defined as the capacity to generate a whole plant from any cell of the plant."
+  },
+  {
+    "question": "Given below are two statements:\nStatement I: Bt toxins are insect group specific and coded by a gene cry IAC.\nStatement II: Bt toxin exists as inactive protoxin in B. thuringiensis. However, after ingestion by the insect the inactive protoxin gets converted into active form due to acidic pH of the insect gut.\nIn the light of the above statements, choose the correct answer from the options given below:",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["NEET"],
+    "exam year": [2024],
+    "answer": "C",
+    "solution": "The correct answer is option (3) as specific Bt toxin genes were isolated from Bacillus thuringiensis and incorporated into the several crop plants such as cotton. The choice of genes depends upon the crop and the targeted pest as most Bt toxins are insect-group specific. The toxin is coded by a gene named cry. There are a number of them, for example, the proteins encoded by the genes cry IAc and cry IIAb control the cotton bollworms, that of cry IAb controls corn borer."
+  },
+  {
+    "question": "The type of conservation in which the threatened species are taken out from their natural habitat and placed in special setting where they can be protected and given special care is called",
+    "options": [
+      "in-situ conservation",
+      "Biodiversity conservation",
+      "Semi-conservative method",
+      "Sustainable development"
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["NEET"],
+    "exam year": [2024],
+    "answer": "B",
+    "solution": "The type of conservation in which threatened species are taken out from their natural habitat and placed in special setting where they can be protected and given special care is called ex-situ conservation which is a type of biodiversity conservation."
+  },
+  {
+    "question": "Match List I with List II\nList-I\nClostridium butylicum\nSaccharomyces cerevisiae\nTrichoderma polysporum\nStreptococcus sp.\nList-II\nEthanol\nStreptokinase\nButyric acid\nCyclosporin-A\nChoose the correct answer from the options given below:",
+    "options": [
+      "A-III, B-I, C-II, D-IV",
+      "A-II, B-IV, C-III, D-I",
+      "A-III, B-I, C-IV, D-II",
+      "A-IV, B-I, C-III, D-II"
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["NEET"],
+    "exam year": [2024],
+    "answer": "C",
+    "solution": "A. Clostridium butylicum - III. Butyric acid \nB. Saccharomyces cerevisiae - I. Ethanol \nC. Trichoderma polysporum - IV. Cyclosporin-A \nD. Streptococcus sp. - II. Streptokinase "
+  },
+  {
+    "question": "Which of the following are true about the taxonomical aid 'key'?\n(a) Keys are based on the similarities and dissimilarities.\n(b) Key is analytical in nature.\n(c) Keys are based on the contrasting characters in pair called Couplet.\n(d) Same key can be used for all taxonomic categories.\n(e) Each statement in the key is called Lead.\nChoose the most appropriate answer from the options given below :",
+    "options": [
+      "(a), (c), (d) and (e) only",
+      "(a), (b) and (c) only",
+      "(b), (c) and (d) only",
+      "(a), (b), (c) and (e) only"
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["NEET Re-2022"],
+    "exam year": [],
+    "answer": "D",
+    "solution": "Keys are a type of taxonomical aid. They are analytical in nature. Different keys are used for different taxonomic categories. Keys are based on contrasting characters in a pair called a couplet. Each statement in the key is called a lead. Therefore, statements (a), (b), (c), and (e) are true."
+  },
+  {
+    "question": "Which of the following is against the rules of ICBN?",
+    "options": [
+      "Generic and specific names should be written starting with small letters.",
+      "Hand written scientific names should be underlined.",
+      "Every species should have a generic name and a specific epithet.",
+      "Scientific names are in Latin and should be italized"
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["OD NEET"],
+    "exam year": [2019],
+    "answer": "A",
+    "solution": "The first word denoting the genus starts with a capital letter while the specific epithet starts with a small letter. In plant nomenclature (ICBN), tautonyms are not valid, i.e., generic name and specific name should not be the same in plants. For example, Mangifera mangifera. But tautonyms are valid for animal nomenclature (ICZN-International Code of Zoological Nomenclature) e.g., Naja naja (Indian cobra), Rattus rattus (Rat)."
+  },
+  {
+    "question": "Select the correctly written scientific name of Mango which was first described by Carolus Linnaeus:",
+    "options": [
+      "Mangifera indica Car. Linn.",
+      "Mangifera indica Linn.",
+      "Mangifera indica",
+      "Mangifera Indica"
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["NEET"],
+    "exam year": [2019],
+    "answer": "B",
+    "solution": "According to rules of binomial nomenclature, correctly written scientific name of mango is Mangifera indica Linn. This system of nomenclature was given by Carl Linnaeus. The scientific name of mango is given as Mangifera indica Linn. Mangifera indicates the 'genus' while indica represents a particular species or 'specific epithet' and Linn indicates the Biologist Linnaeus who first described the species of mango."
+  },
+  {
+    "question": "The contrasting characteristics generally in a pair used for identification of animals in Taxonomic Key are referred to as :",
+    "options": ["Alternate", "Lead", "Couplet", "Doublet"],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["NEET"],
+    "exam year": [2019],
+    "answer": "C",
+    "solution": "The keys are based on the set of contrasting characters in pair known as couplet."
+  },
+  {
+    "question": "Which of the following has proved helpful in preserving pollen as fossils?",
+    "options": [
+      "Pollenkitt",
+      "Cellulosic intine",
+      "Sporopollenin",
+      "Oil content"
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [2018],
+    "answer": "C",
+    "solution": "Sporopollenin cannot be degraded by enzyme; strong acids and alkali, therefore it is helpful in preserving pollen as fossil."
+  },
+  {
+    "question": "The label of a herbarium sheet does not carry information on",
+    "options": [
+      "date of collection",
+      "name of collector",
+      "local names",
+      "height of the plant"
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["NEET-II"],
+    "exam year": [2016],
+    "answer": "D",
+    "solution": "The Herbarium is a collection of preserved plants that are stored, cataloged, and arranged systematically for study. It does not carry information on plant height. So, the correct answer is 'Height of the plant'."
+  },
+  {
+    "question": "Match column I with column II for housefly classification and select the correct option using the codes given below.\nColumn I\nA. Family\nB. Order\nC. Class\nD. Phylum\nColumn II\n(i) Diptera\n(ii) Arthropods\n(iii) Muscidae\n(iv) Insecta",
+    "options": [
+      "A-(iii), B-(i), C-(iv), D-(ii)",
+      "A-(iii), B-(ii), C-(iv), D-(i)",
+      "A-(iv), B-(iii), C-(ii), D-(i)",
+      "A-(iv), B-(ii), C-(i), D-(iii)"
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["NEET-ii"],
+    "exam year": [2016],
+    "answer": "A",
+    "solution": "The scientific name of housefly is Musca domestica. The taxonomic classification of the housefly is as follows:\nKingdom: Animal\nPhylum: Arthropoda\nClass: Insecta\nOrder: Diptera\nSection: Schizophora\nFamily: Muscidae\nGenus: Musca\nSpecies: M.domestica \nTherefore, A (Family) matches with (iii) Muscidae, B (Order) matches with (i) Diptera, C (Class) matches with (iv) Insecta, and D (Phylum) matches with (ii) Arthropods."
+  },
+  {
+    "question": "Study the four statements (A-D) given below and select the two correct ones out of them.\nA. Definition of biological species was given by Ernst Mayr.\nB. Photoperiod does not affect reproduction in plants.\nC. Binomial nomenclature system was given by R.H. Whittaker.\nD. In unicellular organisms, reproduction is synonymous with growth.\nThe two correct statements are",
+    "options": ["B and C", "C and D", "A and D", "A and B."],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["NEET-II"],
+    "exam year": [2016],
+    "answer": "C",
+    "solution": "Photoperiod affects the reproduction in plants by regulating the flowering timing of the plants. The binomial system of nomenclature was given by Carolus Linnaeus. R. H. Whittaker proposed 5 kingdom classification of living organisms. Ernst Mayr gave the definition of biological species. In unicellular organisms, reproduction is synonymous with growth."
+  },
+  {
+    "question": "Nomenclature is governed by certain universal rules. Which one of the following is contrary to the rules of nomenclature?",
+    "options": [
+      "The names arc written in Latin and are italicised.",
+      "When written by hand the names are to be underlined.",
+      "Biological names can be written in any language,",
+      "The first word in a biological name represents the genus name and the second is a specific epithet."
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["NEET-1"],
+    "exam year": [2016],
+    "answer": "C",
+    "solution": "Biological names are derived either from Latin language or are latinised. This is because Latin language is a dead language and therefore it will not change in form or spellings with the passage of time."
+  },
+  {
+    "question": "Which one of the following is not a correct statement?",
+    "options": [
+      "A museum has collection of photographs of plants and animals,",
+      "Key is a taxonomic aid for identification of specimens.",
+      "Herbarium houses dried, pressed and preserved plant specimens.",
+      "Botanical gardens have collection of living plants for reference."
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["NEET"],
+    "exam year": [2013],
+    "answer": "A",
+    "solution": "Museums have collections of preserved plant and animal specimens for study and reference. Specimens are preserved in containers or jars in preservative solutions. Plant and animal specimens may also be preserved as dry specimens. Insects are preserved in insect boxes after collecting, killing and pinning. Larger animals like birds and mammals are usually stuffed and preserved. Museums often have collections of skeletons of animals too."
+  },
+  {
+    "question": "The common characteristics between tomato and potato will be maximum at the level of their",
+    "options": ["family", "order", "division", "genus"],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["Karnataka NEET"],
+    "exam year": [2013],
+    "answer": "A",
+    "solution": "Potato (Solanum tuberosum) and tomato (Lycopersicum esculentum) both belong to family Solanaceae, which is commonly called as the \"potato family\". Many plants belonging to this family are sources of vegetables, fruits etc."
+  },
+  {
+    "question": "Which one of the following organisms is scientifically correctly named, correctly printed according to the International Rules of Nomenclature and correctly described?",
+    "options": [
+      "Musca domestica - the common house lizard, a reptile",
+      "Plasmodium falciparum - a protozoan pathogen causing the most serious type of malaria.",
+      "Felis tigris - the Indian tiger, well protected in Gir forests.",
+      "E.Coli - full name Entamoeba coli, a commonly occurring bacterium in human intestine."
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["Mains"],
+    "exam year": [2012],
+    "answer": "B",
+    "solution": "Plasmodium falciparum is a protozoan parasite, one of the species of Plasmodium that causes malaria in humans. Being digenetic, its life cycle is complete in two hosts — man and mosquito. Its sexual cycle is completed in female Anopheles mosquito and infective individuals called sporozoites are formed. Which are transmitted to humans with the bite of infected female Anopheles. A sexual cycle is passed in man in two phases. Malaria caused by P. falciparum (also known as aestivo-autumnal malignant tertian or pernicious malaria) is the most dangerous form of malaria, with the highest rate of complication and mortality. In this case fever cycle is of 48 hours and is often fatal to patient as it affects the brain. Scientific name of common house lizard is Hemidactylus whereas Musca domestica is the scientific name of common housefly. Scientific name of Indian tiger is Panthera tigris. Full name of E.coli is Escherichia coli."
+  },
+  {
+    "question": "Which one of the following animals is correctly matched with its particular taxonomic category?",
+    "options": [
+      "Tiger - Tigris, species",
+      "Cuttlefish - mollusca, class",
+      "Humans - primata, family",
+      "Housefly - Musca, order"
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [2011],
+    "answer": "A",
+    "solution": "The zoological name of tiger is Panthera tigris. So, tigris is the species name of Tiger."
+  },
+  {
+    "question": "Which one of the following aspects is an exclusive characteristic of living things?",
+    "options": [
+      "isolated metabolic reactions occur in vitro",
+      "Increase in mass from inside only",
+      "Perception of events happening in the environment and their memory.",
+      "Increase in mass by accumulation of material both on surface as well as internally."
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": ["Mains"],
+    "exam year": [2011],
+    "answer": "C",
+    "solution": "Metabolism is the process by which all living things assimilate energy and use it for various purposes such as growth, movement, locomotion etc. This mechanism of metabolism is not shown by nonliving objects. However, some of the metabolic reactions can be carried out in a cell-free system or outside the cells. Isolated metabolic reactions in vitro are not living things but are living reactions. Hence, statement A is incorrect. All living organisms show growth either by multiplication or by an increase in size. It is an irreversible increase in the mass of individual from inside. Two types of substances are produced by the cells, apoplastic and protoplastic. Apoplastic substances are nonliving materials formed by the cells which become components of tissues. For example, cell wall, the matrix of bone etc. Protoplastic substances are the components of living matter like cytoplasm and nucleus. Although some nonliving things like mountains, sand mounds, crystals also grow, their growth is due to the addition of matter from outside. Hence, statements B and D are incorrect. All organisms respond to external stimuli which can be physical, chemical or biological. This is called irritability. Stimuli are perceived by sense organs in animals but plants can respond to external factors like water, temperature, light etc. All organisms from prokaryote to the most complex eukaryotes can sense and respond to environmental events. So, the correct answer is 'Perception of events happening in the environment and their memory'."
+  },
+  {
+    "question": "ICBN stands for",
+    "options": [
+      "International Code of Botanical Nomenclature",
+      "International Congress of Biological Names",
+      "Indian Code of Botanical Nomenclature",
+      "Indian Congress of Biological Names,"
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [2007],
+    "answer": "A",
+    "solution": "The International Code of Botanical Nomenclature (ICBN) is a set of rules and recommendations dealing with the formal botanical names given to plant. The foundations of ICBN are given in a book written by C. Linnaeus named Philosophia Botanica. It is independent of zoological nomenclature."
+  },
+  {
+    "question": "The living organisms can be unexceptionally distinguished from the non-living things on the basis of their ability for",
+    "options": [
+      "interaction with the environment and progressive evolution",
+      "reproduction",
+      "growth and movement",
+      "responsiveness to touch.",
+      "All of the above"
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [2007],
+    "answer": "A",
+    "solution": "The living organisms can be unexceptionally distinguished from non-living things on the basis of their ability to respond to touch and other stimuli. Growth and movement: Even non-living things like sand dunes and mountains show growth, i.e. increase in size. Reproduction: Sterile couples do not reproduce. Responsiveness to touch: A person in a coma does not respond to touch. Interaction with the environment: A person in a coma can hear things, can see things, i.e. his body is interacting with the environment."
+  },
+  {
+    "question": "One of the most important functions of botanical gardens is that",
+    "options": [
+      "they provide a beautiful area for recreation",
+      "one can observe tropical plants there",
+      "they allow ex situ conservation of germplasm",
+      "they provide the natural habitat for wild life."
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [2005],
+    "answer": "C",
+    "solution": "Ex situ conservation means \"offsite conservation\". It is the process of protecting endangered species of plants and animals by removing it from an unsafe or threatened habitat and placing it or part of it under the care of humans. Botanical gardens serve as ex situ conservation of germplasm of different plants, to maintain rare and endemic plant species and also to provide recreation and knowledge about plants to a common man."
+  },
+  {
+    "question": "Species are considered as",
+    "options": [
+      "real basic units of classification",
+      "the lowest units of classification",
+      "artificial concept of human mind which cannot be defined in absolute terms",
+      "real units of classification devised by taxonomists."
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [2003],
+    "answer": "A",
+    "solution": "Species is a natural population or group of natural populations of individuals which are genetically distinct and reproductively isolated with similar essential morphological traits. Species is also a genetically closed system because its members do not interbreed with members of other species. Species is the lowest or basic taxonomic category, e.g., mango (Mangifera indica), potato (Solanum tuberosum), lion (Panthera leo). Here indica, tuberosum, leo are species of genera Mangifera, Solanum and Pantera respectively. All other taxonomic categories are defined and described in relation to species. For example, a genus is a group of species and a subspecies or a variety is a part of species. New species originate from already existing species. Species is considered the basic unit of taxonomy since in the greater majority of cases we do not have intraspecific names."
+  },
+  {
+    "question": "Biosystematics aims at",
+    "options": [
+      "the classification of organisms based on broad morphological characters",
+      "delimiting various taxa of organisms and establishing their relationships",
+      "the classification of organisms based on their evolutionary history and establishing their phylogeny on the totality of various parameters from all fields of studies",
+      "identification and arrangement of organisms on the basis of their cytologicalcharacteristics."
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [2003],
+    "answer": "C",
+    "solution": "Biosystematics is the study of identification, nomenclature classification and relationships amongst living beings. In other words, it is the study of diversity of organisms, their comparative and evolutionary relationships based on comparative anatomy, ecology, physiology, biochemistry and other fields."
+  },
+  {
+    "question": "Which of the following is less general in characters as compared to genus?",
+    "options": ["Species", "Division", "Class", "Family"],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [2001],
+    "answer": "A",
+    "solution": "The correct hierarchy of classification of various taxons in descending order is given by: Kingdom → Phylum → Class → Order → Family → Genus → Species. The kingdom is the highest taxon with the least similar characters shared between its various members while species is the lowest level with almost similar morphological and behavioral similarities. Species is followed by Genus with slightly fewer similarities among its members."
+  },
+  {
+    "question": "The book 'Genera Plantarum' was written by",
+    "options": [
+      "Hutchinson",
+      "Engler and Prantl",
+      "Eichler",
+      "Carolus Linnaeus"
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [1999],
+    "answer": "D",
+    "solution": "Genera Plantarum is a publication by Carl Linnaeus (1707–1778), a Swedish naturalist. Genera Plantarum's first edition includes brief descriptions of the 935 genera of plants known to Linnaeus at that time. It is dedicated to Herman Boerhaave, a physician from Leiden who introduced George Clifford to Linnaeus and the Dutch medico-botanical establishment of the day. In his method of classification, plants are grouped according to the number of stamens and pistils in a flower, as used by Genera Plantarum. In the 1753 edition of Species Plantarum, which is now taken as the starting point for all botanical nomenclature, Linnaeus developed the system of binomial nomenclature through the widespread acceptance of his list of plants. Genera Plantarum was an important part of the first step towards a standardized universal biological nomenclature."
+  },
+  {
+    "question": "‘Taxon’ is the unit of a group of",
+    "options": ["order", "taxonomy", "species", "genes."],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [1996],
+    "answer": "B",
+    "solution": "Taxon refers to all the categories in the taxonomic hierarchy. It may be a kingdom, class, order, family, genus or species. It is any level of grouping of organisms. Each of these categories has been divided further into intermediate categories like subkingdom, subdivision, superclass, subgenus, subspecies etc. This term was coined by ICBN in 1956."
+  },
+  {
+    "question": "Linnaeus is credited with",
+    "options": [
+      "binomial nomenclature",
+      "theory of biogenesis",
+      "discovery of microscope",
+      "discovery of blood circulation."
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [1993],
+    "answer": "A",
+    "solution": "Binomial nomenclature of scientific naming was first given by C. Linnaeus (1735) in his book Systema Naturae and later in \"Species Plantarum\" (1753). He used two Latin words for any organism, the first being generic name and the second is specific name. The generic name begins with capital letter and the species name with small letter."
+  },
+  {
+    "question": "Sequence of taxonomic categories is",
+    "options": [
+      "class-phylum-tribe-order-family-genus-species",
+      "division-class-family-tribe order-genus-species",
+      "division-class-order-family-tribe-genus-species.",
+      "phylum-order-class-tribe family-genus-species."
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [1992],
+    "answer": "C",
+    "solution": "To construct the hierarchy of classification, one or more species are grouped into a genus, one or more of genera into a family, families are clubbed into order, orders into class, classes into phylum and various phyla into kingdom."
+  },
+  {
+    "question": "The term phylum was given by",
+    "options": ["Cuvier", "Haeckel", "Theophrastus", "Linnaeus"],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [1992],
+    "answer": "B",
+    "solution": "The term phylum was coined in 1866 by Ernst Haeckel from the Greek phylon."
+  },
+  {
+    "question": "A group of plants or animals with similar traits of any rank is",
+    "options": ["species", "genus", "order", "taxon"],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [1992, 1991],
+    "answer": "D",
+    "solution": "A taxon (plural taxa) or taxonomic unit, is a name designating an organism or group of organisms. A taxon is assigned a rank and can be placed at a particular level in a systematic hierarchy reflecting evolutionary relationships."
+  },
+  {
+    "question": "Basic unit or smallest taxon of taxonomy classification is",
+    "options": ["species", "kingdom", "family", "variety."],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [1990],
+    "answer": "A",
+    "solution": "Basic unit or smallest taxon of taxonomy/ classification is species. Species is a group of individuals that remain relatively constant in their characteristics; can be distinguished from other species and do not normally interbreed."
+  },
+  {
+    "question": "Linnaeus evolved a system of nomenclature called",
+    "options": ["mononomial", "vernacular", "binomial", "polynomial."],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [1990],
+    "answer": "C",
+    "solution": "Linnaeus, 1758 developed 'Binomial system of nomenclature'."
+  },
+  {
+    "question": "The term 'New Systematics’” was introduced by",
+    "options": [
+      "Bentham and Hooker",
+      "Linnaeus",
+      "Julian Huxley",
+      "A.P. de Candolle"
+    ],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [1990],
+    "answer": "C",
+    "solution": "The term \"New Systematics\" was given by Julian Huxley (1940). This classification takes into account the cytological, morphological, genetical, anatomical, palynological and physiological characteristics."
+  },
+  {
+    "question": "Static concept of species was put forward by",
+    "options": ["de Candolle", "Linnaeus", "Theophrastus", "Darwin"],
+    "subject": "Biology",
+    "topic": "The Living World",
+    "exam name": [],
+    "exam year": [1988],
+    "answer": "B",
+    "solution": "Linnaeus, 1758 developed 'Binomial system of nomenclature'. The concept of static species is associated with Linnaeus, who believed species were unchanging."
+  }
+]

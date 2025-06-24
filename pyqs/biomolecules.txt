@@ -1,0 +1,2731 @@
+
+Question1
+Which of the following is a nucleotide?
+[NEET 2024 Re]
+Options:
+
+A.
+Uridine
+
+B.
+Adenylic acid
+
+C.
+Guanine
+
+D.
+Guanosine
+
+Answer: B
+
+Solution:
+Uridine is a nucleoside. Thus, option (1) is incorrect.
+Adenylic acid is a nucleotide. Thus, option (2) is correct.
+Guanine is a nitrogenous base. Thus, option (3) is incorrect.
+Guanosine is a nucleoside. Thus, option (4) is incorrect.
+
+-------------------------------------------------------------------------------------------------
+
+Question2
+Ligases is a class of enzymes responsible for catalysing the linking
+together of two compounds.
+Which of the following bonds is not catalysed by it?
+[NEET 2024 Re]
+Options:
+
+A.
+C−C
+
+B.
+P−O
+
+C.
+C−O
+
+D.
+C−N
+
+Answer: A
+
+Solution:
+Option (1) is the correct answer because, ligases are the enzymes that catalyse the linking together of 2 compounds,
+e.g., enzymes which catalyse joining of C − O, C − S, C − N, P − O etc. bonds.
+⇒ Options (2), (3) and (4) are wrong as ligase catalyse the joining of P − O, C − O & C − N bonds.
+
+-------------------------------------------------------------------------------------------------
+
+Question3
+Which of the following are not fatty acids?
+A. Glutamic acid
+B. Arachidonic acid
+C. Palmitic acid
+D. Lecithin
+E. Aspartic acid
+Choose the correct answer from the options given below :
+[NEET 2024 Re]
+Options:
+
+A.
+C, D and E only
+
+B.
+A and B only
+
+C.
+A, D and E only
+
+D.
+B and C only
+
+Answer: C
+
+Solution:
+Option (3) is the correct answer because glutamic acid and aspartic acid are amino acids while lecithin is a
+phospholipid. Palmitic acid and arachidonic acid are fatty acids.
+
+Question4
+Which of the following graphs depicts the effect of substrate
+concentration on velocity of enzyme catalysed reaction?
+[NEET 2024 Re]
+Options:
+
+A.
+
+B.
+
+C.
+
+D.
+
+Answer: A
+
+Solution:
+Option (1) is the correct answer because with the increase in substrate concentration, the velocity of enzymatic reaction
+rises at first. The reaction ultimately reaches maximum velocity (Vmax.) which is not exceeded by anyfurther rise in
+concentration of the substrate. This is because the enzyme molecules are fewer than substrate molecules and after
+saturation of these molecules, there are no free enzyme molecules to bind the additional substrate molecules
+
+Option (2) is incorrect as velocity of reaction is continuously increasing in the given graph.
+In option (3) after reaching at Vmax, velocity declines while in option (4) velocity of reaction declines from high on
+increasing substrate concentration. So, option (3) and (4) are incorrect.
+
+-------------------------------------------------------------------------------------------------
+
+Question5
+Enzymes that catalyse the removal of groups from substrates by
+mechanisms other than hydrolysis leaving double bonds, are known as :
+[NEET 2024 Re]
+Options:
+
+A.
+Transferases
+
+B.
+Oxidoreductases
+
+C.
+Dehydrogenases
+
+D.
+Lyases
+
+Answer: D
+
+Solution:
+The correct answer is option (4) because lyases are group of enzymes that catalyse the removal of groups from
+substrates by mechanisms other than hydrolysis leaving double bonds.
+Option (1) is incorrect because transferases are enzymes catalysing a transfer of a group G (other than hydrogen)
+between a pair of substrate S and S′ .
+Option (2) is incorrect because oxidoreductases are enzymes which catalyse oxidoreduction between two substrates S
+and S′.
+Option (3) is incorrect because dehydrogenases are also known as oxidoreductases.
+
+-------------------------------------------------------------------------------------------------
+
+Question6
+Match List-I with List-II.
+
+List-I
+
+List-II
+
+A.
+
+Primary structure of protein
+
+I
+
+Human haemoglobin
+
+B.
+
+Secondary structure of protein
+
+II
+
+Disulphide bonds
+
+C.
+
+Tertiary structure of protein
+
+III
+
+Polypeptide chain
+
+D.
+
+Quaternary structure of protein
+
+IV
+
+Alpha helix and β sheet
+
+Choose the correct answer from the options given below :
+[NEET 2024 Re]
+Options:
+
+A.
+A-III, B-IV, C-II, D-I
+
+B.
+A-III, B-II, C-I, D-IV
+
+C.
+A-I, B-III, C-II, D-IV
+
+D.
+A-IV, B-III, C-II, D-I
+
+Answer: A
+
+Solution:
+The correct answer is option (1) because
+List-I
+
+List-II
+
+A. Primary structure of protein
+
+III Polypeptide chain with positional information of aminoacids
+
+B. Secondary structure of protein
+
+IV Alpha helix and β sheet structure
+
+C. Tertiary structure of protein
+
+II
+
+Hollow woolen ball like structure with hydrogen and disulphide bonds
+
+D. Quaternary structure of protein
+
+I
+
+Assembly of more than one polypeptides, seen in adult human haemoglobin
+
+Hence, A-III, B-IV, C-II, D-I is the correct match.
+
+-------------------------------------------------------------------------------------------------
+
+Question7
+The cofactor of the enzyme carboxypeptidase is:
+[NEET 2024]
+Options:
+
+A.
+Zinc
+
+B.
+Niacin
+
+C.
+Flavin
+
+D.
+Haem
+
+Answer: A
+
+Solution:
+The correct answer is option (1) as the cofactor of the enzyme carboxypeptidase is zinc.
+Niacin is associated with coenzyme NAD and NADP.
+Option (4) is incorrect as haem is the prosthetic group in peroxidase and catalase.
+
+-------------------------------------------------------------------------------------------------
+
+Question8
+Inhibition of Succinic dehydrogenase enzyme by malonate is a classical
+example of:
+[NEET 2024]
+Options:
+
+A.
+Cofactor inhibition
+
+B.
+Feedback inhibition
+
+C.
+Competitive inhibition
+
+D.
+Enzyme activation
+
+Answer: C
+
+Solution:
+Correct answer is option (3) because malonate shows close structural similarity with the substrate and it competes with
+the substrate for the substrate binding site of the enzyme succinic dehydrogenase.
+Option (1), (2) and (4) are incorrect as enzyme activation, co-factor inhibition are not showing structural similarity with
+substrate.
+
+-------------------------------------------------------------------------------------------------
+
+Question9
+
+Match List-I with List-II
+List-I
+
+List-II
+
+A.
+
+GLUT-4
+
+I.
+
+Hormone
+
+B.
+
+Insulin
+
+II.
+
+Enzyme
+
+C.
+
+Trypsin
+
+III.
+
+Intercellular ground substance
+
+D.
+
+Collagen
+
+IV.
+
+Enables glucose transport into cells
+
+Choose the correct answer from the options given below
+[NEET 2024]
+Options:
+
+A.
+A-IV, B-I, C-II, D-III
+
+B.
+A-I, B-II, C-III, D-IV
+
+C.
+A-II, B-III, C-IV, D-I
+
+D.
+A-III, B-IV, C-I, D-II
+
+Answer: A
+
+Solution:
+Correct answer is option (1)
+List-I
+
+List-II
+
+A.
+
+GLUT-4
+
+IV.
+
+Enables glucose transport into cells
+
+B.
+
+Insulin
+
+I.
+
+Hormone
+
+C.
+
+Trypsin
+
+II.
+
+Enzyme
+
+D.
+
+Collagen
+
+III.
+
+Intercellular ground substance
+
+-------------------------------------------------------------------------------------------------
+
+Question10
+Match List I with List II :
+List-I
+
+List-II
+
+A.
+
+Cocaine
+
+I.
+
+Effective sedative in surgery
+
+B.
+
+Heroin
+
+II.
+
+Cannabis sativa
+
+C.
+
+Morphine
+
+III.
+
+Erythroxylum
+
+D.
+
+Marijuana
+
+IV.
+
+Papaver somniferum
+
+Choose the correct answer from the options given below:
+
+[NEET 2024]
+Options:
+
+A.
+A-IV, B-III, C-I, D-II
+
+B.
+A-I, B-III, C-II, D-IV
+
+C.
+A-II, B-I, C-III, D-IV
+
+D.
+A-III, B-IV, C-I, D-II
+
+Answer: D
+
+Solution:
+The correct option is (4) as
+A. Cocaine – Obtained from plant Erythroxylum coca, stimulating action on CNS.
+B. Heroin – Formed by the acetylation of morphine which is obtained from plant Papaver somniferum.
+C. Morphine – Obtained from Papaver somniferum, is an effective sedative in surgery.
+D. Marijuana – Obtained from Cannabis sativa, produces hallucinogenic effect and affects cardiovascular system of the
+body.
+
+-------------------------------------------------------------------------------------------------
+
+Question11
+Match List I with List II :
+List-I
+
+List-II
+
+A.
+
+Lipase
+
+I.
+
+Peptide bond
+
+B.
+
+Nuclease
+
+II.
+
+Ester bond
+
+C.
+
+Protease
+
+III.
+
+Glycosidic bond
+
+D.
+
+Amylase
+
+IV.
+
+Phosphodiester bond
+
+Choose the correct answer from the options given below :
+[NEET 2024]
+Options:
+
+A.
+A-IV, B-II, C-III, D-I
+
+B.
+A-III, B-II, C-I, D-IV
+
+C.
+A-II, B-IV, C-I, D-III
+
+D.
+A-IV, B-I, C-III, D-II
+
+Answer: C
+
+Solution:
+The correct answer is option (3) as
+List-I
+A. Lipase
+
+List-II
+- Digests ester bond found in lipids.
+
+B. Nuclease - Helps in digestion of phosphodiester bonds found in nucleic acids.
+C. Protease
+D. Amylase
+
+-
+
+Helps in digestion of peptide bond found in proteins.
+Digests/breaks the glycosidic bonds found in carbohydrates i.e., digest starch into smaller molecules,
+ultimately yielding maltose, which in turn is cleaved into two glucose molecules by maltase.
+
+-------------------------------------------------------------------------------------------------
+
+Question12
+Regarding catalytic cycle of an enzyme action, select the correct
+sequential steps :
+A. Substrate enzyme complex formation.
+B. Free enzyme ready to bind with another substrate.
+C. Release of products.
+D. Chemical bonds of the substrate broken.
+E. Substrate binding to active site.
+Choose the correct answer from the options given below :
+[NEET 2024]
+Options:
+
+A.
+E, A, D, C, B
+
+B.
+A, E, B, D, C
+
+C.
+B, A, C, D, E
+
+D.
+E, D, C, B, A
+
+Answer: A
+
+Solution:
+The correct answer is option (1) which is E, A, D, C, B.
+The catalytic cycle of an enzyme action can be described in the following steps.
+(1) First, the substrate binds to the active site of the enzyme, fitting into the active site.
+(2) The binding of the substrate induces the enzyme to alter its shape, fitting more tightly around the substrate.
+(3) The active site of the enzyme, now in close proximity of the substrate breaks the chemical bonds of the substrate
+and the new enzyme-product complex is formed.
+(4) The enzyme releases the products of the reaction and the free enzyme is ready to bind to another molecule of the
+substrate and run through the catalytic cycle once again.
+Options (2), (3) and (4) are incorrect as the steps mentioned are in the wrong sequence.
+
+-------------------------------------------------------------------------------------------------
+
+Question13
+Cellulose does not form blue colour with lodine because
+[NEET 2023]
+Options:
+
+A.
+It is a helical molecule
+
+B.
+It does not contain complex helices and hence cannot hold iodine molecules
+
+C.
+It breakes down when iodine reacts with it
+
+D.
+It is a disaccharide
+
+Answer: B
+
+Solution:
+Solution:
+Option (2) is the correct answer because cellulose does not contain complex helices and hence cannot hold iodine
+molecules.
+Option (1), (3) and (4) are not correct as cellulose is a polysaccharide.
+-------------------------------------------------------------------------------------------------
+
+Question14
+Melonate inhibits the growth of pathogenic bacteria by inhibiting the
+activity of
+
+[NEET 2023]
+Options:
+
+A.
+Amylase
+
+B.
+Lipase
+
+C.
+Dinitrogenase
+
+D.
+Succinic dehydrogenase
+
+Answer: D
+
+Solution:
+Solution:
+Option (4) is correct answer of this question because malonate is a competitive inhibitor of enzyme succinate
+dehydrogenase.
+Inhibition of succinic dehydrogenase by malonate occurs due to close resemblance of malonate with substrate succinate
+in structure. Competitive inhibitors are often used in the control of bacterial pathogens.
+-------------------------------------------------------------------------------------------------
+
+Question15
+Given below are two statements :
+Statement I : Low temperature preserves the enzyme in a temporarily
+inactive state whereas high temperature destroys enzymatic activity
+because proteins are denatured by heat.
+Statement II : When the inhibitor closely resembles the substrate in its
+molecular structure and inhibits the activity of the enzyme, it is known
+as competitive inhibitor.
+In the light of the above statements, choose the correct answer from the
+options given below :
+[NEET 2023]
+Options:
+
+A.
+Both Statement I and Statement II are false.
+
+B.
+Statement I is true but Statement II is flase.
+
+C.
+Statement I is false but Statement II is true.
+
+D.
+Both Statement I and Statement II are true.
+
+Answer: D
+
+Solution:
+Solution:
+The correct answer is option (4) as low temperature preserves the enzyme in a temporarily inactive state whereas high
+temperature destroys enzymatic activity because proteins are denatured by heat.
+Competitive inhibitor due to its close structural similarity with the substrate, competes with the substrate for the
+substrate-binding site of the enzyme.
+-------------------------------------------------------------------------------------------------
+
+Question16
+Given below are two statements:
+Statement I: A protein is imagined as a line, the left end represented by
+first amino acid (C-terminal) and the right end represented by last
+amino acid ( N-terminal).
+Statement II: Adult human haemoglobin, consists of 4 subunits (two
+subunits of α type and two subunits of β type.)
+In the light of the above statements, choose the correct answer from the
+options given below
+[NEET 2023]
+Options:
+
+A.
+Both Statement I and Statement II are false.
+
+B.
+Statement I is true but Statement II is false.
+
+C.
+Statement I is false but Statement II is true.
+
+D.
+Both Statement I and Statement II are true
+
+Answer: C
+
+Solution:
+Solution:
+The correct answer is option (3) as a protein is imagined as a line, the left end represented by the first amino acid and
+the right end is represented by the last amino acid. The first amino acid is also called N-terminal amino acid. The last
+amino acid is called the C-terminal amino acid.
+-------------------------------------------------------------------------------------------------
+
+Question17
+Match List-I with List-II
+List - I
+
+List - II
+
+(A)
+
+Protein
+
+(I)
+
+C=C double bonds
+
+(B)
+
+Unsaturated fatty acid
+
+(II)
+
+Phosphodiester bond
+
+(C)
+
+Nucleic acid
+
+(III)
+
+Glycosidic bonds
+
+(D)
+
+Polysaccharide
+
+(IV)
+
+Peptide bonds
+
+Choose the correct answer from the options given below :
+[NEET 2023 mpr]
+Options:
+
+A.
+(A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+
+B.
+(A)-(IV), (B)-(III), (C)-(I), (D)-(II)
+
+C.
+(A)-(IV), (B)-(I), (C)-(II), (D)-(III)
+
+D.
+(A)-(I), (B)-(IV), (C)-(III), (D)-(II)
+
+Answer: C
+
+Solution:
+The correct matchings are :
+(A) Protein - This is a polymer made up of amino acids linked by peptide bonds. So, (A) matches with (IV) Peptide bonds.
+(B) Unsaturated fatty acid - These have one or more C=C double bonds in their hydrocarbon chain. So, (B) matches with
+(I) C=C double bonds.
+(C) Nucleic acid - These are polymers made up of nucleotides linked by phosphodiester bonds. So, (C) matches with (II)
+Phosphodiester bond.
+(D) Polysaccharide - These are polymers made up of monosaccharides linked by glycosidic bonds. So, (D) matches with
+(III) Glycosidic bonds.
+So, the correct answer is Option C : (A)-(IV), (B)-(I), (C)-(II), (D)-(III).
+
+-------------------------------------------------------------------------------------------------
+
+Question18
+Inulin is a polymer of :
+[NEET 2023 mpr]
+Options:
+
+A.
+
+Fructose
+
+B.
+Galactose
+
+C.
+Amino acids
+
+D.
+Glucose
+
+Answer: A
+
+Solution:
+Inulin is a polymer of fructose. Therefore, the correct answer is Option A : Fructose.
+
+-------------------------------------------------------------------------------------------------
+
+Question19
+Which of the following is not a secondary metabolite?
+[NEET 2023 mpr]
+Options:
+
+A.
+Curcumin
+
+B.
+Morphine
+
+C.
+Anthocyanin
+
+D.
+Lecithin
+
+Answer: D
+
+Solution:
+Secondary metabolites are organic compounds produced by organisms that are not directly involved in the normal
+growth, development, or reproduction of the organism. Examples include antibiotics, pigments, and toxins.
+Curcumin, morphine, and anthocyanin are all examples of secondary metabolites.
+Lecithin, however, is a type of phospholipid, which is a primary metabolite as it is directly involved in the normal
+growth and development of cells by being a key component of cell membranes.
+
+-------------------------------------------------------------------------------------------------
+
+Question20
+
+Choose the correct answer from the options given below .
+[NEET Re-2022]
+Options:
+
+A. (a) - (i), (b) - (iv), (c) - (iii), (d) - (ii)
+B. (a) - (iv), (b) - (i), (c) - (ii), (d) - (iii)
+C. (a) - (iv), (b) - (iii), (c) - (ii), (d) - (i)
+D. (a) - (iii), (b) - (i), (c) - (iv), (d) - (ii)
+Answer: B
+
+Solution:
+Solution:
+Adenine: Purine (double ringed structure) found in both DNA and RNA)
+Anthocyanin Pigment (secondary metabolite)
+Chitin Homopolysaccharide of mathrmN-acetylglucosamine found in fungal cell wall and exoskeleton of Arthropods
+Codeine Alkaloid (secondary metabolite)
+-------------------------------------------------------------------------------------------------
+
+Question21
+Primary proteins are also called as polypeptides because:
+[NEET Re-2022]
+Options:
+
+A. They can assume many conformations
+B. They are linear chains
+C. They are polymers of peptide monomers
+D. Successive amino acids are joined by peptide bonds
+Answer: D
+
+Solution:
+
+Primary proteins are the linear chains of amino acids, joined by peptide bonds.
+-------------------------------------------------------------------------------------------------
+
+Question22
+Given below are two statements : Statement I : Amino acids have a
+property of ionizable
+nature of — NH2 and — COOH groups, hence
+have different structures at different pH.
+Statement II : Amino acids can exist as Zwitterionic form at acidic and
+basic pH. In the Light of the above statements, choose the most
+appropriate answer from the options
+given below :
+[NEET Re-2022]
+Options:
+
+A. Statement I is incorrect but Statement II is correct
+B. Both Statement I and Statement II are correct
+C. Both Statement I and Statement II are incorrect
+D. Statement I is correct but Statement II is incorrect
+Answer: B
+
+Solution:
+Solution:
+Statement I :Correct
+Statement ll: Correct, Zwitterion formation takes place at isoelectric point that can be at acidic or basic pH.
+-------------------------------------------------------------------------------------------------
+
+Question23
+In the enzyme which catalyses the breakdown of:
+H2O2 → H2O + O2
+the prosthetic group is:
+[NEET Re-2022]
+Options:
+
+A. Niacin
+B. Nicotinamide adenine dinucleotide
+C. Haem
+D. Zinc
+Answer: C
+
+Solution:
+Peroxidase and catalase enzymes catalyze the breakdown of Hydrogen peroxide to water and oxygen, Haem is the
+prosthetic group.
+-------------------------------------------------------------------------------------------------
+
+Question24
+Read the following statements on lipids and find out correct set of
+statements:
+(a) Lecithin found in the plasma membrane is a glycolipid
+(b) Saturated fatty acids possess one or more c = c bonds
+(c) Gingely oil has lower melting point, hence remains as oil in winter
+(d) Lipids are generally insoluble in water but soluble in some organic
+solvents
+(e) When fatty acid is esterified with glycerol, monoglycerides are
+formed
+Choose the correct answer from the option given below:
+[NEET-2022]
+Options:
+
+A. (a), (b) and (c) only
+B. (a), (d) and (e) only
+C. (c), (d) and (e) only
+D. (a), (b) and (d) only
+Answer: C
+
+Solution:
+Solution:
+Option (3) is the correct answer because statements (c), (d) and (e) are correct as oils have lower melting point and
+hence remain oil in winters. Lipids are generally insoluble in water but soluble in some organic solvents.
+Option (1), (2) and (4) are incorrect because statements (a) and (b) are incorrect. Lecithin is a type of phospholipid
+found in plasma membrane. Saturated fatty acids are without double bond.
+-------------------------------------------------------------------------------------------------
+
+Question25
+A dehydration reaction links two glucose molecules to product maltose.
+If the formula for glucose is C6H 12O6 then what is the formula for
+maltose?
+[NEET-2022]
+Options:
+
+A. C12H 20O10
+
+B. C12H 24O12
+C. C12H 22O11
+D. C12H 24O11
+Answer: C
+
+Solution:
+Solution:
+Option (3) is correct because maltose is a disaccharide formed by dehydration process i.e., synthesis by elimination of
+one water molecule to form a glycosidic bond in between two glucose molecules. So, its molecular formula is.
+
+-------------------------------------------------------------------------------------------------
+
+Question26
+Which of the following are not secondary metabolites in plants?
+[NEET 2021]
+©
+
+Options:
+
+A. Morphine, codeine
+B. Amino acids, glucose
+C. Vinblastin, curcumin
+D. Rubber, gums
+Answer: B
+
+Solution:
+Solution:
+The correct option is (2)
+• Amino acids and glucose are included under the category of primary metabolites as they have identifiable functions
+and play known roles in normal physiological processes.
+• Rubber, gums, morphine, codeine, vinblastin and curcumin are included under the category of secondary metabolites
+as their role or functions in host organisms is not known yet. However, many of them are useful to human welfare.
+-------------------------------------------------------------------------------------------------
+
+Question27
+Match List-I with List-II.
+
+Choose the correct answer from the options given below.
+[NEET 2021]
+Options:
+
+A. (a)-(iv) (b)-(i) (c)-(ii) (d)-(iii)
+B. (a)-(i) (b)-(iv) (c)-(iii) (d)-(ii)
+C. (a)-(ii) (b)-(i) (c)-(iv) (d)-(iii)
+D. (a)-(iv) (b)-(iii) (c)-(i) (d)-(ii)
+Answer: A
+
+Solution:
+Solution:
+• In a polypeptide or a protein, amino acids are linked by a peptide bond which is formed when the carboxyl (–COOH)
+group of one amino acid reacts with amino (– N H 2 ) group of the next amino acid with the elimination of a water moiety.
+• Unsaturated fatty acids are with one or more C = C double bonds.
+• In nucleic acids, a phosphate moiety links the 3′-carbon of one sugar of one nucleotide to the 5′-carbon of the sugar of
+the succeeding nucleotide. The bond between the phosphate and hydroxyl group is an ester bond. As there is one such
+ester bond on either side, it is called phosphodiester bond.
+• In a polysaccharide, the individual monosaccharides are linked by a glycosidic bond.
+-------------------------------------------------------------------------------------------------
+
+Question28
+Following are the statements with reference to 'lipids'.
+(a) Lipids having only single bonds are called unsaturated fatty acids
+(b) Lecithin is a phospholipid.
+(c) Trihydroxy propane is glycerol.
+(d) Palmitic acid has 20 carbon atoms including carboxyl carbon.
+(e) Arachidonic acid has 16 carbon atoms.
+Choose the correct answer from the options given below.
+[NEET 2021]
+
+Options:
+
+A. (a) and (b) only
+B. (c) and (d) only
+C. (b) and (c) only
+D. (b) and (e) only
+Answer: C
+
+Solution:
+● The correct option is (3) because lipids having only single bonds are called saturated fatty acids and lipids having one
+or more C = C double bonds are called unsaturated fatty acids.
+● Palmitic acid has 16 carbon atoms including carboxyl carbon.
+● Arachidonic acid has 20 carbon atoms including the carboxyl carbon.
+● Lecithin is a phospholipid found in cell membrane.
+● Glycerol has 3 carbons, each bearing a hydroxyl (–OH) group.
+-------------------------------------------------------------------------------------------------
+
+Question29
+Identify the substances having glycosidic bond and peptide bond,
+respectively in their structure
+[2020]
+©
+
+Options:
+
+A. Glycerol, trypsin
+B. Cellulose, lecithin
+C. Inulin, insulin
+D. Chitin, cholesterol
+Answer: C
+
+Solution:
+Solution:
+(c) Inulin is a mixture of linear fructose polymers with different chain length and a glucose molecule at each C2 end.
+Adjacent fructose units are linked through glycosidic bond. The inulin that is used for medicine is most commonly
+obtained by soaking chicory roots in hot water.
+Insulin is a protein composed of 51 amino acids and acts as a hormone which is secreted by beta-cells of pancreas.
+Adjacent amino acids are attached through peptide bond.
+Insulin is the first protein which is sequenced by Fredrick Sanger. He was awarded the 1958 Nobel Prize for Chemistry.
+Inulin is commonly used by mouth for high blood fats, including cholesterol and triglycerides and is also used for weight
+loss, constipation, diarrhea, and diabetes.
+-------------------------------------------------------------------------------------------------
+
+Question30
+
+Match the following
+
+[2020]
+Options:
+
+A. (a)
+B. (b)
+C. (c)
+D. (d)
+Answer: D
+
+Solution:
+Solution:
+(d) is the correct answer because malonate is the competitive inhibitor of catalytic activity of succinic dehydrogenase,
+Collagen is proteinaceous in nature and possesses peptide bonds, Chitin is a homopolymer present in the cell wall of
+fungi and exoskeleton of arthropods, Abrin and Ricin are toxins, secondary metabolites.
+-------------------------------------------------------------------------------------------------
+
+Question31
+“Ramachandran plot” is used to confirm the structure of
+[OD NEET 2019]
+©
+
+Options:
+
+A. DNA
+B. RNA
+C. Proteins
+
+D. Triacylglycerides
+Answer: C
+
+Solution:
+(c) A Ramachandran plot, is a way to visualise energetically allowed regions for backbone dihedral angles y against f of
+amino acid residues to protein structure. It is used to analyse the structure of a protein, the conformation of the amino
+acids present in the protein and close contacts between the atoms.
+-------------------------------------------------------------------------------------------------
+
+Question32
+Purines found both in DNA and RNA are:
+[2019]
+©
+
+Options:
+
+A. Adenine and thymine
+B. Adenine and guanine
+C. Guanine and cytosine
+D. Cytosine and thymine
+Answer: B
+
+Solution:
+Solution:
+(b) Purines, a heterocyclic compound, such as adenine and guanine are found both in DNA and RNA.
+-------------------------------------------------------------------------------------------------
+
+Question33
+Prosthetic groups differ from co-enzymes in that[OD NEET 2019]
+©
+
+Options:
+
+A. They can serve as co-factors in a number of enzyme - catalysed reactions.
+B. They require metal ions for their activity.
+C. They (prosthetic groups) are tightly bound to apoenzymes.
+D. Their association with apoenzymes is transient.
+Answer: C
+
+Solution:
+(c) Prosthetic groups are non-peptide (non-protein) compounds that mostly attach to proteins and assist them in different
+ways. They can be inorganic (like metals) or organic (carbon-containing). Prosthetic groups are tightly bound to the
+apoenzyme but coenzymes associated with the apoenzyme last for a short period of time i.e. transiently
+-------------------------------------------------------------------------------------------------
+
+Question34
+Which of the following glucose transporters is insulin-dependent?
+[2019]
+©
+
+Options:
+
+A. GLUT I
+B. GLUT II
+C. GLUT III
+D. GLUT IV
+Answer: D
+
+Solution:
+Solution:
+GLUT-IV glucose transporter is insulin dependent and is responsible for majority of glucose transport into muscle and
+adipose cells in anabolic conditions. Whereas GLUT-I is insulin independent and is widely distributed in different tissues.
+-------------------------------------------------------------------------------------------------
+
+Question35
+Consider the following statements:
+a) Coenzyme or metal ion that is tightly bound to enzyme protein is
+called prosthetic group.
+b) A complete catalytic active enzyme with its bound prosthetic group is
+called apoenzyme.
+Select the correct option.
+[2019]
+©
+
+Options:
+
+A. Both (a) and (B) are true.
+B. (a) is true but (B) is false.
+C. Both (a) and (B) are false.
+
+D. (a) is false but (B) is true.
+Answer: B
+
+Solution:
+Solution:
+(b) Coenzyme or metal ion that is tightly bound to enzyme protein is called prosthetic group. A complete catalytic active
+enzyme with its bound prosthetic group is called holoenzyme A
+protein that forms an active enzyme system by combination with a coenzyme and determines the specificity of this
+system for a substrate is called apoenzyme
+-------------------------------------------------------------------------------------------------
+
+Question36
+The two functional groups characteristic of sugars are
+[2018]
+©
+
+Options:
+
+A. Hydroxyl and methyl
+B. Carbonyl and methyl
+C. Carbonyl and hydroxyl
+D. Carbonyl and phosphate
+Answer: C
+
+Solution:
+Solution:
+(c) Sugar is a carbohydrate. These are polyhydroxy aldehyde, ketone or their derivatives, which means they have
+carbonyl and hydroxyl groups in its structure
+-------------------------------------------------------------------------------------------------
+
+Question37
+Which of the following statements is correct with reference to enzymes?
+(NEET 2017)
+©
+
+Options:
+
+A. Holoenzyme = Apoenzyme + Coenzyme
+B. Coenzyme = Apoenzyme + Holoenzyme
+C. Holoenzyme = Coenzyme + Co-factor
+D. Apoenzyme = Holoenzyme + Coenzyme
+
+Answer: A
+
+Solution:
+Solution:
+(a) : Holoenzyme is the complete conjugate enzyme consisting of an apoenzyme and a cofactor. Cofactor may be organic
+or inorganic in nature. Organic cofactors are of two types-coenzyme and prosthetic group.
+-------------------------------------------------------------------------------------------------
+
+Question38
+Which of the following are not polymeric?
+(NEET 2017)
+©
+
+Options:
+
+A. Proteins
+B. Polysaccharides
+C. Lipids
+D. Nucleic acids
+Answer: C
+
+Solution:
+Solution:
+(c) : Lipids are fatty acids esters of alcohols and related substances. Polysaccharides are polymers of monosaccharides.
+Proteins are polymers of amino acids and nucleic acids are polymer of nucleotides.
+-------------------------------------------------------------------------------------------------
+
+Question39
+A non-proteinaceous enzyme is
+(NEET II 2016)
+©
+
+Options:
+
+A. lysozyme
+B. ribozyme
+C. ligase
+D. deoxyribonuclease.
+Answer: B
+
+Solution:
+
+(b) : A ribozyme is a ribonucleic acid (RNA) enzyme that catalyses a chemical reaction in a similar way to that of a protein
+enzyme. These are found in ribosomes and are also called catalytic RNAs.
+-------------------------------------------------------------------------------------------------
+
+Question40
+Which of the following is the least likely to be involved in stabilising the
+three-dimensional folding of most proteins?
+(NEET II 2016)
+©
+
+Options:
+
+A. Hydrogen bonds
+B. Electrostatic interaction
+C. Hydrophobic interaction
+D. Ester bonds
+Answer: D
+
+Solution:
+Solution:
+(d) : Tertiary structure or three dimensional structure of protein is stabilised by several types of bonds - hydrogen bonds,
+ionic bonds, van der Waal's interactions, covalent bonds and hydrophobic bonds.
+-------------------------------------------------------------------------------------------------
+
+Question41
+Which of the following describes the given graph correctly?
+
+(NEET II 2016)
+Options:
+
+A. Endothermic reaction with energy A in presence of enzyme and B in absence of enzyme.
+B. Exothermic reaction with energy A in presence of enzyme and B in absence of enzyme.
+C. Endothermic reaction with energy A in absence of enzyme and B in presence of enzyme.
+
+D. Exothermic reaction with energy A in absence of enzyme and B in presence of enzyme.
+Answer: B
+-------------------------------------------------------------------------------------------------
+
+Question42
+A typical fat molecule is made up of
+(NEET I 2016)
+
+Options:
+
+A. one glycerol and one fatty acid molecule
+B. three glycerol and three fatty acid molecules
+C. three glycerol molecules and one fatty acid molecule
+D. one glycerol and three fatty acid molecules.
+Answer: D
+
+Solution:
+Solution:
+(d) : Neutral or true fats are triglycerides which are formed by esterification of three molecules of fatty acids with one
+molecule of trihydric alcohol, glycerol (glycerine or trihydroxy propane).
+-------------------------------------------------------------------------------------------------
+
+Question43
+Which one of the following statements is wrong?
+(NEET I 2016)
+
+Options:
+
+A. Uracil is a pyrimidine.
+B. Glycine is a sulphur containing amino acid.
+C. Sucrose is a disaccharide.
+D. Cellulose is a polysaccharide.
+Answer: B
+
+Solution:
+
+(b) : Glycine is a neutral amino acid. Cysteine and methionine are sulphur containing amino acid.
+-------------------------------------------------------------------------------------------------
+
+Question44
+The chitinous exoskeleton of arthropods is formed by the polymerisation
+of
+(2015)
+©
+
+Options:
+
+A. N - acetyl glucosamine
+B. lipoglycans
+C. keratin sulphate and chondroitin sulphate
+D. D - glucosamine.
+Answer: A
+
+Solution:
+Solution:
+(a) : Chitin is a structural polysaccharide that constitutes the exoskeleton of arthropods. It is a complex carbohydrate in
+which N -acetyl glucosamine monomers are joined together by (1,4) β-linkages. Chitinous exoskeleton provides strength
+and elasticity to arthropods.
+-------------------------------------------------------------------------------------------------
+
+Question45
+Which of the following biomolecules does have a phosphodiester bond?
+(2015)
+©
+
+Options:
+
+A. Amino acids in a polypeptide
+B. Nucleic acids in a nucleotide
+C. Fatty acids in a diglyceride
+D. Monosaccharides in a polysaccharide
+Answer: B
+
+Question46
+Which one of the following statements is incorrect?
+(2015 Cancelled)
+Options:
+
+A. The competitive inhibitor does not affect the rate of breakdown of the enzyme-substrate
+complex.
+B. The presence of the competitive inhibitor decreases the K m of the enzyme for the substrate.
+C. A competitive inhibitor reacts reversibly with the enzyme to form an enzyme inhibitor
+complex.
+D. In competitive inhibition, the inhibitor molecule is not chemically changed by theenzyme.
+Answer: B
+
+Solution:
+Solution:
+(b): Competitive inhibition is a reversible inhibition where inhibitor competes with the normal substrate for the active site
+of enzyme. A competitive inhibitor is usually chemically similar to the normal substrate and therefore, fits into the active
+site of an enzyme and binds with it. The inhibition is thus due to substrate analogue. The enzyme, now cannot act upon
+the substrate and reaction products are not formed. E.g., the activity of succinate dehydrogenase is inhibited by
+malonate. K m value or Michaelis constant is defined as the substrate concentration at which half of the enzyme
+molecules are forming enzyme substrate (ES) complex, or concentration of the substrate when the velocity of the
+enzyme reaction is half the maximal possible. A smaller K m value indicates greater affinity of the enzyme for its
+substrate, hence, shows a quicker reaction. The competitive inhibitor decreases the affinity of enzyme for substrate, thus
+increases the K m value.
+-------------------------------------------------------------------------------------------------
+
+Question47
+Select the option which is not correct with respect to enzyme action.
+(2014)
+©
+
+Options:
+
+A. Substrate binds with enzyme at its active site.
+B. Addition of lot of succinate does not reverse the inhibition of succinic dehydrogenase by
+malonate.
+C. A non-competitive inhibitor binds the enzyme at a site distinct from that which binds the
+substrate.
+D. Malonate is a competitive inhibitor of succinic dehydrogenase.
+Answer: B
+
+Solution:
+
+(b) : The reduction of activity of succinate dehydrogenase by malonate is an example of competitive inhibition.
+Competitive inhibition is a reversible inhibition where inhibitor competes with the normal substrate for the active site of
+enzyme. A competitive inhibitor is usually similar to the normal substrate and, therefore, fits into the active site of an
+enzyme and binds with it. The enzyme, now cannot act upon the substrate and reaction products are not formed. Hence,
+action of an enzyme may be reduced or inhibited. since a competitive inhibitor occupies the site only temporarily, the
+enzyme action is not permanently affected. Thus, addition of a lot of succinate can reverse the inhibition of succinic
+dehydrogenase by malonate.
+-------------------------------------------------------------------------------------------------
+
+Question48
+Which one of the following is a non - reducing carbohydrate?
+(2014)
+©
+
+Options:
+
+A. Maltose
+B. Sucrose
+C. Lactose
+D. Ribose 5 -phosphate
+Answer: B
+
+Solution:
+Solution:
+(b) : In non-reducing sugars, a free aldehyde or ketonic group is absent. Sucrose is a non-reducing sugar formed by
+condensation of one molecule each of glucose and fructose with release of a water molecule. A glycosidic bond is
+established between carbon atom 1 of glucose and carbon atom 2 of fructose.
+-------------------------------------------------------------------------------------------------
+
+Question49
+A phosphoglyceride is always made up of
+(NEET 2013)
+©
+
+Options:
+
+A. a saturated or unsaturated fatty acid esterified to a glycerol molecule to which a phosphate
+group is also attached.
+B. a saturated or unsaturated fatty acid esterified to a phosphate group which is also attached
+to a glycerol molecule.
+C. only a saturated fatty acid esterified to a glycerol molecule to which a phosphate group is
+also attached.
+D. only an unsaturated fatty acid esterified to a glycerol molecule to which a phosphate group is
+also attached.
+
+Answer: A
+
+Solution:
+(a) : Phosphoglycerides are the triesters of fatty acids (either saturated or unsaturated) and glycerol to which a
+phosphate group is also attached.
+-------------------------------------------------------------------------------------------------
+
+Question50
+Macromolecule chitin is
+(NEET 2013)
+©
+
+Options:
+
+A. sulphur containing polysaccharide
+B. simple polysaccharide
+C. nitrogen containing polysaccharide
+D. phosphorous containing polysaccharide.
+Answer: C
+
+Solution:
+Solution:
+(c) : Chitin is a structural polysaccharide that constitutes the exoskeleton of arthropods. It is a complex carbohydrate in
+which N -acetyl glucosamine monomers are joined together by (1,4) β-linkages. Chitinous exoskeleton provides strength
+and elasticity to arthropods.
+-------------------------------------------------------------------------------------------------
+
+Question51
+Transition state structure of the substrate formed during an enzymatic
+reaction is
+(NEET 2013)
+©
+
+Options:
+
+A. transient and unstable
+B. permanent and stable
+C. transient but stable
+D. permanent but unstable.
+Answer: A
+
+Solution:
+(a) : Transition state is formation of unstable intermediate structural state. During this, substrate bonds are broken and
+new bonds are established that transform the substrate molecules into products. This state is transient and highly
+unstable.
+-------------------------------------------------------------------------------------------------
+
+Question52
+The essential chemical components of many coenzymes are
+(NEET 2013)
+©
+
+Options:
+
+A. carbohydrates
+B. vitamins
+C. proteins
+D. nucleic acids.
+Answer: B
+
+Solution:
+Solution:
+(b) : Coenzyme is the non protein organic group which gets attached to the apoenzyme to form holoenzyme or conjugate
+enzyme. It helps in removing a product of chemical reaction besides bringing contact between the substrate and the
+enzyme. Most of the coenzymes are made of water soluble vitamins B and C, e. g., thiamine, riboflavin, nicotinamide,
+pyridoxine.
+-------------------------------------------------------------------------------------------------
+
+Question53
+Which of the following statements about enzymes is wrong?
+(KN NEET 2013)
+©
+
+Options:
+
+A. Enzymes are denatured at high temperatures.
+B. Enzymes are mostly proteins but some are lipids also.
+C. Enzymes are highly specific.
+D. Enzymes require optimum pH and temperature for maximum activity.
+Answer: B
+
+Solution:
+
+(b) : Enzymes are mostly proteins but some are RNA (ribozymes). No lipid working as enzymes are known.
+-------------------------------------------------------------------------------------------------
+
+Question54
+Uridine, present only in RNA is a
+(KN NEET 2013)
+©
+
+Options:
+
+A. nucleoside
+B. nucleotide
+C. purine
+D. pyrimidine.
+Answer: A
+
+Solution:
+Solution:
+(a) : The combination of pentose sugar with nitrogenous bases (purines or pyrimidines) is called nucleoside. Examples are
+adenosine, guanosine, cytidine, thymidine and uridine.
+-------------------------------------------------------------------------------------------------
+
+Question55
+The figure shows a hypothetical tetrapeptide portion of a protein with
+parts labelled A -D. Which one of the following options is correct?
+
+(KN NEET 2013)
+Options:
+
+A. D is the acidic amino acid-glutamic acid.
+B. C is an aromatic amino acid-tryptophan.
+C. A is the C-terminal amino acid and D is N-terminal amino acid.
+D. A is a sulphur containing amino acid methionine.
+Answer: A
+
+Solution:
+
+(a) Glutamic acid and aspartic acid are acidic amino acids with two carboxylic groups and one amino group.
+-------------------------------------------------------------------------------------------------
+
+Question56
+Which one out of A − D given below correctly represents the structural
+formula of the basic amino acid?
+
+(2012)
+Options:
+
+A. C
+B. D
+C. A
+D. B
+Answer: B
+
+Solution:
+
+(b) : Basic amino acids have an additional amino group without forming amides thus they are diamino monocarboxylic
+acids e.g., arginine, lysine, etc.
+-------------------------------------------------------------------------------------------------
+
+Question57
+Which one is the most abundant protein in the animal world?
+(2012)
+©
+
+Options:
+
+A. Trypsin
+B. Haemoglobin
+C. Collagen
+D. Insulin
+Answer: C
+
+Solution:
+
+(c) : Collagen is an insoluble fibrous protein found extensively in the connective tissue of skin, tendons and bone.
+Collagen accounts for over 30% of the total body proteins of mammals and it is the most abundant animal protein.
+-------------------------------------------------------------------------------------------------
+
+Question58
+The given diagrammatic representation shows one of the categories of
+small molecular weight organic compounds in the living tissues.
+Identify the category shown and the one blank component "X" in it.
+
+(2012)
+Options:
+
+A. (a)
+B. (b)
+C. (c)
+D. (d)
+
+Answer: D
+
+Solution:
+Solution:
+(d) : The given structure corresponds with the structure of ribose sugar. As it lacks a phosphoric acid hence it can be a
+nucleoside not a nucleotide.
+-------------------------------------------------------------------------------------------------
+
+Question59
+Which one of the following is wrong statement?
+(2012)
+©
+
+Options:
+
+A. Anabaena and Nostoc are capable of fixing nitrogen in free-living state also.
+B. Root nodule forming nitrogen fixers live as aerobes under free-living conditions.
+C. Phosphorus is a constituent of cell membranes, certain nucleic acids and all proteins.
+D. Nitrosomonas and Nitrobacter are chemoautotrophs
+Answer: C
+
+Solution:
+
+(c) : Phosphorus is present in plasma membrane in the form of phospholipid bilayer. It is an essential component of all
+nucleic acids not 'certain' nucleic acids. Moreover, phosphorus is never found in proteins.
+-------------------------------------------------------------------------------------------------
+
+Question60
+Which one of the following biomolecules is correctly characterized?
+(Mains 2012)
+©
+
+Options:
+
+A. Lecithin - a phosphorylated glyceride found in cell membrane.
+B. Palmitic acid-an unsaturated fatty acid with 18 carbon atoms.
+C. Adenylic acid - adenosine with a glucose phosphate molecule.
+D. Alanine amino acid - contains an amino group and an acidic group anywhere in the molecule.
+Answer: A
+
+Solution:
+
+(a) Palmitic acid is one of the most common, saturated fatty acids found in animals and plants. It has 16 carbons
+including the carboxyl carbon. Adenylic acid is a nucleotide consisting of adenine, ribose or deoxyribose, and a phosphate
+group. It is a constituent of DNA or RNA. It is also called adenosine monophosphate. Amino acids are organic acids (with
+carboxylic group COOH) having amino group (−N H 2) generally attached to Carbon or carbon next to carboxylic group.
+The carbon also bears a variable alkyl group (R) or hydrogen or hydrocarbon. In alanine (R) is represented by methyl
+group.
+-------------------------------------------------------------------------------------------------
+
+Question61
+The curve given below shows enzymatic activity in relation to three
+conditions ( pH , temperature and substrate concentration). What do the
+two axes ( x and y ) represent?
+
+(2011)
+Options:
+
+A. (a)
+B. (b)
+C. (c)
+D. (d)
+Answer: B
+
+Solution:
+Solution:
+(b) : Enzymes generally function in a narrow range of temperature and pH. Each enzyme shows its highest activity at a
+particular temperature and pH called the optimum temperature and optimum pH. Activity declines both below and above
+the optimum values. X-axis always represents temperature or pH and Y axis represents enzyme activity.
+-------------------------------------------------------------------------------------------------
+
+Question62
+Which one of the following structural formulae of two organic
+compounds is correctly identified along with its related function?
+(2011)
+©
+
+Options:
+
+A. B : Adenine -A nucleotide that makes up nucleic acids
+B. A : Triglyceride - Major source of energy
+C. B : Uracil - A component of DNA
+D. A : Lecithin- A component of cell membrane
+Answer: D
+
+Solution:
+Solution:
+(d) : 'A' is a structural formula of lecithin. It is probably the most common phospholipid. Phospholipids are major
+components in the lipid bilayers of cell membrane.
+-------------------------------------------------------------------------------------------------
+
+Question63
+Three of the following statements about enzymes are correct and one is
+wrong. Which one is wrong?
+(Mains 2010)
+©
+
+Options:
+
+A. Enzymes require optimum pH for maximal activity.
+B. Enzymes are denatured at high temperature but in certain exceptional organisms they are
+circ
+circ
+effective even at temperatures 80
+− 90
+mathrm C
+C. Enzymes are highly specific.
+D. Most enzymes are proteins but some are lipids.
+Answer: D
+
+Solution:
+Solution:
+(d) : Enzymes are mostly proteins but some are RNA (ribozymes). No lipid working as enzymes are known.
+-------------------------------------------------------------------------------------------------
+
+Question64
+The figure given below shows the conversion of a substate into product
+by an enzyme. In which one of the four options (a-d) the components of
+reaction labelled as A, B, C and D are identified correctly?
+
+(Mains 2010)
+Options:
+
+A. (a)
+B. (b)
+C. (c)
+D. (d)
+Answer: B
+
+-------------------------------------------------------------------------------------------------
+
+Question65
+Carbohydrates are commonly found as starch in plants storage organs.
+Which of the following five properties of starch (1-5) make it useful as a
+storage material?
+(1) Easily translocated
+
+(2) Chemically non-reactive
+(3) Easily digested by animals
+(4) Osmotically inactive
+(5) Synthesized during photosynthesis
+The useful properties are
+(2008)
+Options:
+
+A. (1),(3) and (5)
+B. (1) and (5)
+C. (2) and (3)
+D. (2) and (4)
+Answer: D
+
+Solution:
+Solution:
+(d) : Starch is the major storage carbohydrate of plants. In most plant species it is accumulated in the chloroplast of
+leaves, whereas in storage organ it accumulates in amyloplast as reserve starch. It is the osmotically inactive form of
+photosynthetic product and is a hexosan polysaccharide made of large number of glucose unit so, chemically non
+reactive.
+-------------------------------------------------------------------------------------------------
+
+Question66
+Cellulose is the major component of cell walls of
+(2008)
+©
+
+Options:
+
+A. Pseudomonas
+B. Saccharomyces
+C. Pythium
+D. Xanthomonas.
+Answer: C
+
+Solution:
+Solution:
+(c) : The cell wall of most fungi consist of chitin or cellulose. In Pythium, the hyphal wall contains cellulose whereas, in
+yeast the cell wall is thin and is composed of chitin in combination with other compounds (carbohydrates, glucan and
+mannan). The bacterial cell wall contains N -acetyl glucosamine and N-acetyl muramic acid.
+-------------------------------------------------------------------------------------------------
+
+Question67
+A competitive inhibitor of succinic dehydrogenase is
+(2008)
+Options:
+
+A. m - ketoglutarate
+B. malate
+C. malonate
+D. oxaloacetate.
+Answer: D
+
+Solution:
+Solution:
+(c, d) Malonate or oxaloacetate, which resemble succinate in structure and inhibit the activity of succinate
+dehydrogenase. Such competitive inhibitors are often used in control of bacterial pathogen.
+
+-------------------------------------------------------------------------------------------------
+
+Question68
+Modern detergents contain enzyme preparations of
+(2008)
+©
+
+Options:
+
+A. thermoacidophiles
+B. thermophiles
+C. acidophiles
+D. alkaliphiles.
+Answer: D
+
+Solution:
+(d) : Modern detergents contain enzyme preparation of alkaline protease which are called alkaliphiles, for removing
+protein stain.
+
+Question69
+About 98 percent of the mass of every living organism is composed of
+just six elements including carbon, hydrogen, nitrogen, oxygen and
+(2007)
+©
+
+Options:
+
+A. sulphur and magnesium
+B. magnesium and sodium
+C. calcium and phosphorus
+D. phosphorus and sulphur
+Answer: D
+
+Solution:
+Solution:
+(d) : Living organisms requires 6 elements in relatively large amounts. C, H, O, N, P, S. These elements contribute to the
+structural organization of living organisms.
+-------------------------------------------------------------------------------------------------
+
+Question70
+An organic substance bound to an enzyme and essential for its activity
+is called
+(2006)
+©
+
+Options:
+
+A. isoenzyme
+B. coenzyme
+C. holoenzyme
+D. apoenzyme.
+Answer: B
+
+Solution:
+
+(b) : Enzymes are simple if they are made of only proteins ( e.g., pepsin, amylase etc.) while conjugate enzymes have an
+additional non-protein cofactor which may be organic or inorganic. Loosely attached organic cofactor is coenzyme. It
+plays an accessory role in enzyme catalyzed processes often by acting as a donor or acceptor of a substance involved in
+the reaction. ATP and NAD are common coenzymes.
+
+Question71
+The catalytic efficiency of two different enzymes can be compared by the
+(2006)
+©
+
+Options:
+
+A. formation of the product
+B. pH of optimum value
+C. K m value
+D. molecular size of the enzyme.
+Answer: C
+
+Solution:
+Solution:
+(c) :K m value or Michaelis constant is defined as the substrate concentration at which half of the enzyme molecules are
+forming (ES) complex or concentration of the substrate when the velocity of the enzyme reaction is half the maximal
+possible. The K m varies from enzyme to enzyme and is used in characterizing the different enzymes. A smaller K value
+indicates greater affinity of the enzyme for its substrate, hence, shows a quicker reaction. K m value is a constant
+characteristic of an enzyme for its conversion of a substrate.
+-------------------------------------------------------------------------------------------------
+
+Question72
+Which one of the following statements regarding enzyme inhibition is
+correct?
+(2005)
+©
+
+Options:
+
+A. Competitive inhibition is seen when a substrate competes with an enzyme for binding to an
+inhibitor protein.
+B. Competitive inhibition is seen when the substrate and the inhibitor compete for the active
+site on the enzyme.
+C. Non-competitive inhibition of an enzyme can be overcome by adding large amount of
+substrate.
+D. Non-competitive inhibitors often bind to the enzyme irreversibly.
+Answer: B
+
+Solution:
+
+(b): Competitive inhibition is a reversible inhibition where inhibitor competes with the normal substrate for the active site
+of enzyme. A competitive inhibitor is usually chemically similar to the normal substrate and therefore, fits into the active
+site of an enzyme and binds with it. The inhibition is thus due to substrate analogue. The enzyme, now cannot act upon
+the substrate and reaction products are not formed. E.g., the activity of succinate dehydrogenase is inhibited by
+malonate. K m value or Michaelis constant is defined as the substrate concentration at which half of the enzyme
+molecules are forming enzyme substrate (ES) complex, or concentration of the substrate when the velocity of the
+enzyme reaction is half the maximal possible. A smaller K m value indicates greater affinity of the enzyme for its
+substrate, hence, shows a quicker reaction. The competitive inhibitor decreases the affinity of enzyme for substrate, thus
+increases the K m value.
+-------------------------------------------------------------------------------------------------
+
+Question73
+Enzymes, vitamins and hormones can be classified into a single category
+of biological chemicals, because all of these
+(2005)
+©
+
+Options:
+
+A. help in regulating metabolism
+B. are exclusively synthesized in the body of a living organism as at present
+C. are conjugated proteins
+D. enhance oxidative metabolism.
+Answer: A
+
+Solution:
+Solution:
+(a) : Enzymes control all the life processes. They increase the rate of a biological reaction. The magnitude of increase
+may be greater than those affected by other catalysts. Vitamins are accessory indispensable food factor, organic in
+nature (organic acid, amino acid esters, alcohols, steroids etc.) required by an organism in small amounts to maintain
+normal growth and regulate the metabolic processes. Hormones are biologically active organic substance that are
+produced in minute quantities by some specialized organs and exert physiological effects at sites remote from their
+origin.
+-------------------------------------------------------------------------------------------------
+
+Question74
+Which of the following is the simplest amino acid?
+(2005)
+©
+
+Options:
+
+A. Alanine
+B. Asparagine
+C. Glycine
+
+D. Tyrosine
+Answer: C
+
+Solution:
+Solution:
+(c) : Glycine is considered as the simplest amino acid as it has one amino group, one carboxylic group and no substituent
+functional group.
+-------------------------------------------------------------------------------------------------
+
+Question75
+Nucleotides are building blocks of nucleic acids. Each nucleotide is a
+composite molecule formed by
+(2005)
+©
+
+Options:
+
+A. base-sugar-phosphate
+B. base-sugar-OH
+C. (base-sugar-phosphate) nn
+D. sugar-phosphate.
+Answer: A
+
+Solution:
+Solution:
+(a) : Each nucleotide consists of three distinct units - a phosphate group derived from phosphoric acid, a pentose sugar
+and a ring shaped nitrogenous base.
+Nucleoside + Phosphoric acid + Nucleotide +H 2O
+-------------------------------------------------------------------------------------------------
+
+Question76
+Carbohydrates, the most abundant biomolecule on earth, are produced
+by
+(2005)
+©
+
+Options:
+
+A. some bacteria, algae and green plant cells
+B. fungi, algae and green plant cells
+C. all bacteria, fungi and algae
+
+D. viruses, fungi and bacteria.
+Answer: A
+
+Solution:
+(a) : Carbohydrates are organic compounds synthesized in the chlorophyll containing cells of some bacteria, algae and
+green plant cells, during photosynthesis. Certain photo-autotrophic bacteria e.g., Green sulphur bacteria and purple
+sulphur bacteria contain pigments like chlorobium chlorophyll and bacteriochlorophyll respectively that helps them in
+photosynthesis.
+-------------------------------------------------------------------------------------------------
+
+Question77
+In which one of the following enzymes, is copper necessarily associated
+as an activator?
+(2004)
+©
+
+Options:
+
+A. Carbonic anhydrase
+B. Tryptophanase
+C. Lactic dehydrogenase
+D. Tyrosinase
+Answer: D
+
+Solution:
+Solution:
+(d) : Copper is associated as an activator with tyrosinase. It is widely distributed in plants, animals and man. It is also
+known as polyphenol oxidase or catecholase. It oxidizes tyrosine to melanin in mammals and causes the cut surfaces of
+many fruits and vegetable to darken.
+-------------------------------------------------------------------------------------------------
+
+Question78
+The major role of minor elements inside living organisms is to act as
+(2003)
+©
+
+Options:
+
+A. co-factors of enzymes
+B. building blocks of important amino acids
+C. constituent of hormones
+
+D. binder of cell structure.
+Answer: A
+
+Solution:
+(a) : Minor element are those which are required in quantity of less than milligram\/gram of dry matter but they are
+essential for proper growth and development of an organism e . g., Cl , M n, B, Z n, Cu Mo etc. These elements work as
+non-protein cofactor in enzymes e . g., Z n, Cu etc. They also take part in oxidation reduction reactions e . g., Cu, with
+variable valency. Chloride ion enhances activity of salivary amylase. Zinc is required for activity of carbonic anhydrase
+and alcohol dehydrogenase, etc.
+-------------------------------------------------------------------------------------------------
+
+Question79
+Lipids are insoluble in water because lipid molecules are
+(2002)
+©
+
+Options:
+
+A. hydrophilic
+B. hydrophobic
+C. neutral
+D. zwitter ions.
+Answer: B
+
+Solution:
+Solution:
+(b) : Lipid molecules are insoluble or sparingly soluble in water but are freely soluble in organic solvents like ether,
+alcohol and benzene. Insolubility of lipids in water is due to the fact that the polar groups they contain are much smaller
+than their nonpolar portions. The nonpolar chains are long complex hydrophobic hydrocarbon chains. If shaken in water
+lipids often form small droplets or micelles. The complex formed is called emulsions. These non polar proteins give them
+water repellent or hydrophobic property.
+-------------------------------------------------------------------------------------------------
+
+Question80
+Which of the following is a reducing sugar?
+(2002)
+©
+
+Options:
+
+A. Galactose
+B. Gluconic acid
+C. β -methyl galactoside
+
+D. Sucrose
+Answer: A
+
+Solution:
+(a) : All those sugars which have free aldehyde or ketone group are called reducing sugars. These are able to reduce
++2
++
+cupric ions (Cu ) into cuprous ions (Cu ). Sucrose, starch are non-reducing sugars.
+-------------------------------------------------------------------------------------------------
+
+Question81
+Enzyme first used for nitrogen fixation
+(2001)
+©
+
+Options:
+
+A. nitrogenase
+B. nitroreductase
+C. transferase
+D. transaminase.
+Answer: A
+
+Solution:
+Solution:
+(a) : Nitrogen fixation involves conversion of atmospheric nitrogen to ammonia. It is done with the help of nitrogenase
+enzyme which occurs inside thick walled heterocysts of the blue green algae. These provide suitable anaerobic
+environment for nitrogenase activity even in aerobic conditions.
+-------------------------------------------------------------------------------------------------
+
+Question82
+Role of enzyme in reactions is to/as
+(2000)
+Options:
+
+A. decrease activation energy
+B. increase activation energy
+C. inorganic catalyst
+D. none of the above.
+Answer: A
+
+Solution:
+
+(a) : All molecules require certain amount of energy for activation (to overcome energy barrier) before they can react.
+This energy is called activation energy. This energy is recovered when products are formed. The essence of an enzyme is
+its ability to speed up (catalyze) a reaction by making or breaking specific covalent bonds (bonds in which atoms are held
+together by sharing of electrons). Enzymes act by somehow lowering the temperature at which a given bond is unstable
+i.e., they speed up a reaction by lowering the activation energy. It is the magnitude of the activation energy which
+determines how fast the reaction will proceed.
+
+-------------------------------------------------------------------------------------------------
+
+Question83
+Which factor is responsible for inhibition of enzymatic process during
+feedback?
+(2000)
+Options:
+
+A. Substrate
+B. Enzymes
+C. End product
+D. Temperature
+Answer: C
+
+Solution:
+
+(c) : Feedback inhibition or end product inhibition is the inhibition of the activity of an enzyme catalysing some early
+reactions of the series by the end product of the metabolic pathway. For example a substrate A is converted into a
+product F through B, C, D and E intermediate products. As the concentration of end product F increases, it diffuses to
+allosteric enzyme (E) causing a reduced synthesis of the product B which in turn lowers the rate of enzymatic reactions in
+rest of the pathway.
+
+-------------------------------------------------------------------------------------------------
+
+Question84
+Enzymes are not found in
+(2000)
+©
+
+Options:
+
+A. fungi
+B. algae
+C. virus
+D. cyanobacteria.
+Answer: C
+
+Solution:
+Solution:
+(c) : Viruses do not have enzymes so they cannot synthesize proteins. They multiply only inside the living host cell and
+for multiplication and metabolism they take over the machinery of the host cell. They lack their own cellular machinery
+and enzymes.
+-------------------------------------------------------------------------------------------------
+
+Question85
+ATP is
+(2000)
+©
+
+Options:
+
+A. nucleotide
+B. nucleoside
+C. nucleic acid
+D. vitamin.
+Answer: A
+
+Solution:
+Solution:
+(a) : ATP is a nucleotide as it is composed of adenine, ribose sugar and phosphoric acid. There are two additional
+phosphate groups attached to the phosphate group of AMP. The last two phosphate molecules are connected by high
+energy bonds.
+-------------------------------------------------------------------------------------------------
+
+Question86
+Which of the following have carbohydrate as prosthetic group?
+(2000)
+©
+
+Options:
+
+A. Glycoprotein
+B. Chromoprotein
+C. Lipoprotein
+D. Nucleoprotein
+Answer: A
+
+Solution:
+Solution:
+(a) : Glycoproteins are proteins that contain sugars like carbohydrates as prosthetic group. In most glycoproteins, the
+linkage is between asparagine and N-acetyl-D-glucosamine. Some glycoproteins are immunoglobulins, membrane
+proteins and muscle proteins. Lipoproteins are protein complexed with lipids like triglycerides, phospholipids etc.
+Nucleoproteins are proteins associated with nucleic acids and chromoproteins are proteins associated with pigments e.g.,
+cytochrome, phytochrome.
+-------------------------------------------------------------------------------------------------
+
+Question87
+Cellulose, the most important constituent of plant cell wall is made up
+of
+(1998)
+©
+
+Options:
+
+A. branched chain of glucose molecules linked by β − 1, 4 glycosidic bond in straight chain and
+α-1,6 glycosidic bond at the site of branching
+B. unbranched chain of glucose molecules linked by α − 1, 4 glycosidic bond
+C. branched chain of glucose molecules linked by α − 1, 6 glycosidic bond at the site of
+branching
+D. unbranched chain of glucose molecules linked by β − 1, 4 glycosidic bond.
+Answer: D
+
+Solution:
+Solution:
+Cellulose (C6H 10O5)n is the most abundant organic polymer. It is a polysaccharide and consists of long unbranched
+chains of glucose residues linked by ( β, 1 − 4 glycosidic bonds. In plants, cellulose is formed from sugar. It serves as
+building material in the formation of cell wall.
+-------------------------------------------------------------------------------------------------
+
+Question88
+Lactose is composed of
+(1998)
+©
+
+Options:
+
+A. glucose + galactose
+B. fructose + galactose
+C. glucose + fructose
+D. glucose + glucose.
+Answer: A
+
+Solution:
+Solution:
+(a) : Lactose is popularly known as milk sugar. It is a disaccharide composed of one molecule of glucose and one
+molecule of galactose. The covalent bond that joins these two monosaccharide units is called glycosidic bond or
+glycosidic linkage. It is a reducing sugar.
+-------------------------------------------------------------------------------------------------
+
+Question89
+Co-factor (prosthetic group) is a part of holoenzyme. It is
+(1997)
+©
+
+Options:
+
+A. loosely attached organic part
+B. loosely attached inorganic part
+C. accessory non-protein substance attached firmly
+D. none of these.
+Answer: C
+
+Solution:
+Solution:
+-------------------------------------------------------------------------------------------------
+
+Question90
+Which is a typical example of 'feedback inhibition'?
+(1996)
+Options:
+
+A. Cyanide and cytochrome reaction
+B. Sulpha drugs and folic acid synthesizer bacteria
+C. Allosteric inhibition of hexokinase by glucose 6 -phosphate
+D. Reaction between succinic dehydro-genase and succinic acid
+Answer: C
+
+Solution:
+Solution:
+(c) : Feedback inhibition or end product inhibition occurs when the end product of a metabolic pathway inhibits the
+activity of an enzyme catalysing some early reactions of the series. The end product is the inhibitor and the enzyme
+inactivated is called allosteric enzyme. The enzyme is regulated by modulators that bind noncovalently at site other than
+the active site. An example of feedback inhibition is the inhibition of the activity of the enzyme hexokinase by glucose 6 phosphate in glycolysis. This enzyme catalyses conversion of glucose into glucose 6 -phosphate but as the reaction
+proceeds, increase in concentration of glucose 6-phosphate inhibits the activity of hexokinase.
+
+-------------------------------------------------------------------------------------------------
+
+Question91
+In which of the following groups are all polysaccharides?
+(1996)
+©
+
+Options:
+
+A. Sucrose, glucose and fructose
+B. Maltose, lactose and fructose
+C. Glycogen, sucrose and maltose
+D. Glycogen, cellulose and starch
+Answer: D
+
+Solution:
+Solution:
+(d) : Polysaccharides are complex long chain carbohydrates which are formed by dehydrate synthesis or polymerisation
+of more than 10 but generally very large number of units called monosacccharides. Starch,glycogen and cellulose are all
+polysaccharides. Starch is a glucosan homopolysaccharide which is the main reserve food of plants. Glycogen is also a
+glucosan homopoly-saccharide which is the major reserve food of fungi, animals and some bacteria. It is also called
+animal starch. Cellulose is the structural polysaccharide of plant cell walls, some fungi, protists. It is a fibrous glucosan
+homopolysaccharide of high tensile strength.
+-------------------------------------------------------------------------------------------------
+
+Question92
+What are the most diverse molecules in the cell?
+(1996)
+©
+
+Options:
+
+A. Lipids
+B. Mineral salts
+C. Proteins
+D. Carbohydrates
+Answer: C
+
+Solution:
+Solution:
+(c) : Proteins show enormous diversity because of different proportions and sequences of twenty amino acid within the
+protein molecule. A large number of permutations and combinations of these amino acids are responsible for the
+unlimited variety of proteins. Proteins are the most abundant and most varied of the macromolecules having one or more
+polypeptides (chains of amino acids). The proteins constitute almost 50 % of the total dry weight of the cell. Proteins may
+
+be simple or conjugated. Among conjugated, proteins may be phosphoprotein, glycoprotein, nucleoprotein,
+chromoprotein, lipoprotein, flavoprotein, metallo protein etc. Functionally proteins may be structural protein, enzymes,
+hormones, respiratory pigment etc.
+-------------------------------------------------------------------------------------------------
+
+Question93
+Which purine base is found in RNA?
+(1996)
+©
+
+Options:
+
+A. Thymine
+B. Uracil
+C. Cytosine
+D. Guanine
+Answer: D
+
+Solution:
+Solution:
+(d) : The bases are of two types-purines and pyrimidines. The purine derivatives adenine (A) and guanine (G) are double
+ring structures whereas pyrimidine derivatives thymine, cytosine and uracil are single ring structures. Thymine (T) and
+cytosine (C) are found in DNA and cytosine (C) and uracil (U) is found in RNA.
+-------------------------------------------------------------------------------------------------
+
+Question94
+Which of the following nucleotide sequences contains 4 pyrimidine
+bases?
+(1994)
+©
+
+Options:
+
+A. GATCAATGC
+B. GCUAGACAA
+C. UAGCGGUAA
+D. Both (b) and (c)
+Answer: A
+
+Solution:
+Solution:
+(a) : In the given question there are 4 pyrimidines as 2 cytosine and 2 thymine in option 'a'
+
+-------------------------------------------------------------------------------------------------
+
+Question95
+The four elements that make up 99% of all elements found in a living
+system are
+(1994)
+©
+
+Options:
+
+A. C, H , O and P
+B. C, N , O and P
+C. H , O, C and N
+D. C, H , O and S
+Answer: C
+
+Solution:
+Solution:
+(c) : Carbon, hydrogen, oxygen and nitrogen are called four big elements of living body they make up about 99% of the
+mass of most cells. As C, H , O and N are lightest elements so the bonds they form are the strongest covalent bonds. So
+that the compounds formed are stable, varied in size and shapes. Carbon constitutes more than 50% of the dry matter. It
+has been observed that human body contains 0.5% hydrogen, 18.5% carbon, 65% oxygen and 3.3% nitrogen. Other
+elements are present in very lesser amount.
+-------------------------------------------------------------------------------------------------
+
+Question96
+Which is wrong about nucleic acids?
+(1993)
+©
+
+Options:
+
+A. DNA is single stranded in some viruses.
+B. RNA is double stranded occasionally.
+C. Length of one helix is 45Å in B-DNA.
+D. One turn of Z-DNA has 12 bases.
+Answer: C
+
+Solution:
+Solution:
+(c) : One complete turn of DNA is 34Å long and has 10 base pairs.
+
+-------------------------------------------------------------------------------------------------
+
+Question97
+Glycogen is a polymer of
+(1993)
+©
+
+Options:
+
+A. galactose
+B. glucose
+C. fructose
+D. sucrose.
+Answer: B
+
+Solution:
+Solution:
+(b) : Glycogen (animal starch) is a polysaccharide consisting of a highly branched polymer of glucose occurring in animal
+tissues, especially in liver and muscle cells. It is the major store of carbohydrate energy in animal cells.
+-------------------------------------------------------------------------------------------------
+
+Question98
+In RNA, thymine is replaced by
+(1992)
+©
+
+Options:
+
+A. adenine
+B. guanine
+C. cytosine
+D. uracil.
+Answer: D
+
+Solution:
+Solution:
+(d) : The bases are of two types-purines and pyrimidines. The purine derivatives adenine (A) and guanine (G) are double
+ring structures whereas pyrimidine derivatives thymine, cytosine and uracil are single ring structures. Thymine (T) and
+cytosine (C) are found in DNA and cytosine (C) and uracil (U) is found in RNA.
+-------------------------------------------------------------------------------------------------
+
+Question99
+
+Amino acids are mostly synthesised from
+(1992)
+©
+
+Options:
+
+A. mineral salts
+B. fatty acids
+C. volatile acids
+D. α -ketoglutaric acid.
+Answer: D
+
+Solution:
+Solution:
+(d) : Amino acids are mostly synthesized from α -ketoglutaric acid. These are the precursors of amino acids. A five carbon
+compound formed during Krebs' cycle is a α -ketoglutaric acid which is the first dicarboxylic acid formed. Pyruvic acid
+converted into alanine, α -ketoglutaric acid into glutamic acid, OAA into aspartic acid, polymerization of such amino acids
+results into formation of proteins.
+-------------------------------------------------------------------------------------------------
+
+Question100
+Which is distributed more widely in a cell?
+(1992)
+©
+
+Options:
+
+A. DNA
+B. RNA
+C. Chloroplasts
+D. Sphaerosomes
+Answer: B
+
+Solution:
+Solution:
+(b) : RNA occurs in the nucleus as well as in the cytoplasm of the eukaryotic cells and in prokaryotic cell, it is found in the
+cytoplasm. DNA is found in the nucleus, mitochondria and chloroplast. Chloroplast and sphaerosomes are found only in
+cytoplasm.
+-------------------------------------------------------------------------------------------------
+
+Question101
+Living cell contains 60-95% water. Water present in human body is
+
+(1992)
+©
+
+Options:
+
+A. 60-65 %
+B. 50-55 %
+C. 75-80 %
+D. 65-70 %
+Answer: D
+
+Solution:
+Solution:
+(d) : Water is the most abundant substance of living beings. The water content of actively living cells varies between 6095 %. In human beings maximum water content is found in the embryo 90-95 %. Water content decreases thereafter in
+adult and the aged where it is 65 -70 %
+-------------------------------------------------------------------------------------------------
+
+Question102
+Adenine is
+(1992)
+©
+
+Options:
+
+A. purine
+B. pyrimidine
+C. nucleoside
+D. nucleotide
+Answer: A
+
+Solution:
+Solution:
+(a) : The bases are of two types-purines and pyrimidines. The purine derivatives adenine (A) and guanine (G) are double
+ring structures whereas pyrimidine derivatives thymine, cytosine and uracil are single ring structures. Thymine (T) and
+cytosine (C) are found in DNA and cytosine (C) and uracil (U) is found in RNA.
+-------------------------------------------------------------------------------------------------
+
+Question103
+Enzymes having slightly different molecular structure but performing
+identical activity are
+(1991)
+
+©
+
+Options:
+
+A. holoenzymes
+B. isoenzymes
+C. apoenzymes
+D. coenzymes
+Answer: B
+
+Solution:
+Solution:
+(b) There are certain enzymes which have slightly different molecular structure but have similar catalytic function such
+enzymes are known as isoenzymes. Holoenzyme is the active compound formed by combination of a coenzyme and an
+apoenzyme. Apoenzyme is the protein component of an enzyme, to which the coenzyme attaches to form an active
+enzyme. Coenzymes are organic non-protein molecules that bind with the protein molecule (apoenzyme) to form the
+active enzyme (holoenzyme).
+-------------------------------------------------------------------------------------------------
+
+Question104
+A nucleotide is formed of
+(1991)
+©
+
+Options:
+
+A. purine, pyrimidine and phosphate
+B. purine, sugar and phosphate
+C. nitrogen base, sugar and phosphate
+D. pyrimidine, sugar and phosphate
+Answer: C
+
+Solution:
+Solution:
+(c) : Nucleotide is an organic compound consisting of a nitrogen-containing purine or pyrimidine base linked to a sugar
+(ribose or deoxyribose) and a phosphate group.
+-------------------------------------------------------------------------------------------------
+
+Question105
+DNA is composed of repeating units of
+(1991)
+
+©
+
+Options:
+
+A. ribonucleosides
+B. deoxyribonucleosides
+C. ribonucleotides
+D. deoxyribonucleotides
+Answer: D
+
+Solution:
+Solution:
+(d) : DNA is the largest macromolecule in the organisms. It is a long, double chain of deoxyribonucleotide, or
+deoxyribotide units. The two deoxyribonucleotide chains are twisted around a common axis to form a right-handed
+double helix (spiral) that encloses a cylindrical space in it. Each deoxyribonucleotide unit, in turn, consists of three
+different molecules : phosphate, (PO43−), a 5 -carbon deoxyribose sugar (C5H 10O4) and a nitrogenous base.
+-------------------------------------------------------------------------------------------------
+
+Question106
+A segment of DNA has 120 adenine and 120 cytosine bases. The total
+number of nucleotides present in the segment is
+(1991)
+©
+
+Options:
+
+A. 120
+B. 240
+C. 60
+D. 480
+Answer: D
+
+Solution:
+Solution:
+(d) : According to Chargaff's rules, the amount of adenine is always equal to that of thymine, and the amount of guanine
+is always equal to that of cytosine i.e., A = T (120) and G = C(120), therefore, the total no. of nucleotides would be
+120 × 4 = 480.
+-------------------------------------------------------------------------------------------------
+
+Question107
+The basic unit of nucleic acid is
+(1991)
+
+©
+
+Options:
+
+A. pentose sugar
+B. nucleoid
+C. nucleoside
+D. nucleotide.
+Answer: D
+
+Solution:
+Solution:
+(d) : The nucleic acids (DNA and RNA) are the molecules having complex structure and very high molecular weights. The
+nucleic acid is composed of a large number of nucleotide molecules joined into a linear, unbranched chain. Nucleotide is
+an organic compound consisting of a nitrogen-containing purine or pyrimidine base linked to a sugar (ribose or
+deoxyribose) and a phosphate group.
+-------------------------------------------------------------------------------------------------
+
+Question108
+Mineral associated with cytochrome is
+(1991)
+©
+
+Options:
+
+A. Cu
+B. M g
+C. Cu and Mg
+D. F e
+Answer: D
+
+Solution:
+Solution:
+(d) : Cytochromes are generally membranebound hemoproteins that contain heme groups and carry out electron
+transport. The heme group is a highly conjugated ring system (which means its electrons are very mobile) surrounding a
+metal ion, which readily interconverts between the oxidation states. For many cytochromes the metal ion present is that
+of iron, which interconverts between F e2+ (reduced) and F e3+ (oxidized) states (electron-transfer processes) or between
+2+
+3+
+F e (reduced) and F e (formal, oxidized) states (oxidative processes). Cytochromes are thus capable of performing
+oxidation and reduction.
+-------------------------------------------------------------------------------------------------
+
+Question109
+Which is not consistent with double helical structure of DNA?
+(1990)
+
+
+
+Options:
+
+A. A = T, C = G
+B. Density of DNA decreases on heating.
+C. A + T/C + G is not constant.
+D. Both (a) and (b)
+Answer: C
+
+Solution:
+Solution:
+(c) : The density of DNA decreases on heating as hydrogen bonds breakdown. According to Chargaff's rules, the amount
+of adenine is always equal to that of thymine, and the amount of guanine is always equal to that of cytosine i.e., A = T
+and G = C. The base ratio A + T/G + C may vary form species to species, but is constant for a given species.
+-------------------------------------------------------------------------------------------------
+
+Question110
+RNA does not possess
+(1988)
+©
+
+Options:
+
+A. uracil
+B. thymine
+C. adenine
+D. cytosine.
+Answer: B
+
+Solution:
+Solution:
+(b) : The bases are of two types-purines and pyrimidines. The purine derivatives adenine (A) and guanine (G) are double
+ring structures whereas pyrimidine derivatives thymine, cytosine and uracil are single ring structures. Thymine (T) and
+cytosine (C) are found in DNA and cytosine (C) and uracil (U) is found in RNA.
+-------------------------------------------------------------------------------------------------
+
+Question111
+In double helix of DNA, the two DNA strands are
+(1988)
+©
+
+Options:
+
+A. coiled around a common axis
+B. coiled around each other
+C. coiled differently
+D. coiled over protein sheath.
+Answer: A
+
+Solution:
+Solution:
+(a) : According to Watson-Crick model, the DNA molecule consists of two long, parallel chains which are joined together
+by short crossbars at regular intervals. The two chains are spirally coiled around a common axis in a regular manner to
+form a right handed double helix.
+-------------------------------------------------------------------------------------------------
+
