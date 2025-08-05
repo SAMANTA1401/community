@@ -1,0 +1,1300 @@
+[
+  {
+    "question": "Given below are two statements: Statement I: Failure of segregation of chromatids during cell cycle resulting in the gain or loss of whole set of chromosome in an organism is known as aneuploidy. Statement II: Failure of cytokinesis after anaphase stage of cell division results in the gain or loss of a chromosome is called polyploidy. In the light of the above statements, choose the correct answer from the options given below:",
+    "options": [
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true",
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2024,
+    "answer": "D",
+    "solution": "Failure of segregation of chromatids during cell division cycle results in the gain or loss of a chromosome(s), called aneuploidy. Failure of cytokinesis after telophase of cell division results in an increase in a whole set of chromosomes in an organism and this phenomenon is known as polyploidy. Hence the correct answer is option (4).",
+    "images": []
+  },
+  {
+    "question": "Recombination between homologous chromosomes is completed by the end of",
+    "options": ["Diakinesis", "Zygotene", "Diplotene", "Pachytene"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2024,
+    "answer": "D",
+    "solution": "Recombination between homologous chromosomes is completed by the end of pachytene.",
+    "images": []
+  },
+  {
+    "question": "Match List-I with List-II: List-I: A. Metacentric chromosome, B. Sub-metacentric chromosome, C. Acrocentric chromosome, D. Telocentric chromosome; List-II: I. Chromosome has a terminal centromere, II. Middle centromere forming two equal arms of chromosome, III. Centromere is slightly away from the middle of chromosome resulting into two unequal arms, IV. Centromere is situated close to its end forming one extremely short and one very long arm. Choose the correct answer from the options given below:",
+    "options": [
+      "A-II, B-I, C-IV, D-III",
+      "A-IV, B-I, C-II, D-III",
+      "A-I, B-II, C-III, D-IV",
+      "A-II, B-III, C-IV, D-I"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2024,
+    "answer": "D",
+    "solution": "Metacentric chromosome → Middle centromere forming two equal arms of chromosome. Sub-metacentric chromosome → Centromere is slightly away from the middle of chromosome resulting into two unequal arms. Acrocentric chromosome → Centromere is situated close to its end forming one extremely short and one very long arm. Telocentric chromosome → Chromosome has a terminal centromere. Hence the correct answer is option (4).",
+    "images": []
+  },
+  {
+    "question": "Match List-I with List-II: List-I (Event): A. Chiasmata formation, B. Crossing over, C. Synaptonemal complex formation, D. Terminalisation of chiasmata; List-II (Stage of Prophase-I (Meiosis-I)): I. Pachytene, II. Diakinesis, III. Diplotene, IV. Zygotene. Choose the correct answer from the options given below:",
+    "options": [
+      "A-III, B-I, C-IV, D-II",
+      "A-II, B-I, C-III, D-IV",
+      "A-III, B-I, C-II, D-IV",
+      "A-II, B-III, C-IV, D-I"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2024,
+    "answer": "A",
+    "solution": "Zygotene is the second stage of prophase I during this stage synaptonemal complex formation occur. In pachytene the four chromatids of each bivalent chromosomes becomes distinct and clearly appears as tetrad and in this stage crossing over occurs. Diplotene is recognised by the dissolution of the synaptonemal complex and the tendency of the recombined homologous chromosomes of the bivalents to separate from each other except at the sites of crossovers. These X-shaped are called chiasmata. Diakinesis is marked by terminalisation of chiasmata.",
+    "images": []
+  },
+  {
+    "question": "Match List-I with List-II: List-I: A. Cells are metabolically active and proliferate, B. DNA replication takes place, C. Proteins are synthesised, D. Quiescent stage with metabolically active cells; List-II: I. G2 phase, II. G1 phase, III. G0 phase, IV. S phase. Choose the correct answer from the options given below:",
+    "options": [
+      "A-IV, B-II, C-III, D-I",
+      "A-I, B-III, C-IV, D-II",
+      "A-I, B-I, C-III, D-IV",
+      "A-II, B-IV, C-I, D-III"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2024,
+    "answer": "D",
+    "solution": "(1) During G1 phase the cell is metabolically active and continuously grows but does not replicate its DNA. (2) S or synthesis phase marks the period during which DNA synthesis or replication takes place. (3) During the G2 phase, proteins are synthesized in preparation for mitosis while cell growth continues. (4) Cells that do not divide further exit G1 phase to enter an inactive stage called quiescent stage (G0) of the cell cycle. Cells in this stage remain metabolically active but no longer proliferate unless called on to do so.",
+    "images": []
+  },
+  {
+    "question": "Spindle fibers attach to kinetochores of chromosomes during",
+    "options": ["Prophase", "Metaphase", "Anaphase", "Telophase"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2024,
+    "answer": "B",
+    "solution": "Spindle fibers attach to kinetochores of chromosome in metaphase stage.",
+    "images": []
+  },
+  {
+    "question": "Given below are two statements: Statement I: Chromosomes become gradually visible under light microscope during leptotene stage. Statement II: The beginning of diplotene stage is recognized by dissolution of synaptonemal complex. In the light of the above statements, choose the correct answer from the options given below:",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2024,
+    "answer": "A",
+    "solution": "During leptotene stage the chromosomes become gradually visible under the light microscope. The beginning of diplotene is recognised by the dissolution of the synaptonemal complex and the tendency of the recombined homologous chromosomes of the bivalents to separate from each other except at the site of crossover. Thus both statement I and II are correct.",
+    "images": []
+  },
+  {
+    "question": "Following are the stages of cell division: A. Gap 2 phase, B. Cytokinesis, C. Synthesis phase, D. Karyokinesis, E. Gap 1 phase. Choose the correct sequence of stages from the options given below:",
+    "options": ["C-E-D-A-B", "E-B-D-A-C", "B-D-E-A-C", "E-C-A-D-B"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2024,
+    "answer": "D",
+    "solution": "",
+    "images": []
+  },
+  {
+    "question": "Match List I with List II: List-I (Sub Phases of Prophase I): A. Diakinesis, B. Pachytene, C. Zygotene, D. Leptotene; List-II (Specific Characters): I. Synaptonemal complex formation, II. Completion of terminalisation of chiasmata, III. Chromosomes look like thin threads, IV. Appearance of recombination nodules. Choose the correct answer from the options given below:",
+    "options": [
+      "A-IV, B-II, C-III, D-I",
+      "A-I, B-II, C-IV, D-III",
+      "A-II, B-IV, C-I, D-III",
+      "A-IV, B-III, C-II, D-I"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2024,
+    "answer": "C",
+    "solution": "(A) Diakinesis – Completion of terminalisation of chiasmata. (B) Pachytene – Appearance of recombination nodules. (C) Zygotene – Synaptonemal complex formation. (D) Leptotene – Chromosomes look like thin threads. A-II, B-IV, C-I, D-III.",
+    "images": []
+  },
+  {
+    "question": "Among eukaryotes, replication of DNA takes place in:",
+    "options": ["S phase", "G1 phase", "G2 phase", "M phase"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2023,
+    "answer": "A",
+    "solution": "Replication of DNA takes place in S-phase of cell cycle in eukaryotes. Most of the cell organelles duplicate in G1 phase.",
+    "images": []
+  },
+  {
+    "question": "Which of the following stages of meiosis involves division of centromere?",
+    "options": ["Metaphase II", "Anaphase II", "Telophase", "Metaphase I"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2023,
+    "answer": "B",
+    "solution": "Splitting of centromere occurs during anaphase of mitosis or anaphase II of meiosis. During Metaphase I and II, chromosomes align at the equator. During telophase, chromosomes reach the respective poles.",
+    "images": []
+  },
+  {
+    "question": "The process of appearance of recombination nodules occurs at which sub stage of prophase I in meiosis?",
+    "options": ["Pachytene", "Diplotene", "Diakinesis", "Zygotene"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2023,
+    "answer": "A",
+    "solution": "The process of recombination occurs at Pachytene stage of prophase I. This stage is characterised by the appearance of recombination nodules.",
+    "images": []
+  },
+  {
+    "question": "Match List I with List II: List I: A. M Phase, B. G2 Phase, C. Quiescent stage, D. G1 Phase; List II: I. Proteins are synthesized, II. Inactive phase, III. Interval between mitosis and initiation of DNA replication, IV. Equational division. Choose the correct answer from the options given below:",
+    "options": [
+      "A-IV, B-II, C-I, D-III",
+      "A-IV, B-I, C-II, D-III",
+      "A-II, B-IV, C-I, D-III",
+      "A-III, B-II, C-IV, D-I"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2023,
+    "answer": "B",
+    "solution": "M phase or mitosis is the phase where the actual cell division occurs. Mitosis is also called equational division. During G2 phase DNA synthesis stops but cell synthesizes RNA, proteins, etc. for next phase. Quiescent stage is inactive phase in which non-dividing cells enter. G1 phase is the interval between mitosis and initiation of DNA replication. Therefore, option (2) is correct.",
+    "images": []
+  },
+  {
+    "question": "Select the correct statements. A. Tetrad formation is seen during Leptotene. B. During Anaphase, the centromeres split and chromatids separate. C. Terminalization takes place during Pachytene. D. Nucleolus, Golgi complex and ER are reformed during Telophase. E. Crossing over takes place between sister chromatids of homologous chromosome. Choose the correct answer from the options given below:",
+    "options": [
+      "B and D only",
+      "A, C and E only",
+      "B and E only",
+      "A and C only"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2023,
+    "answer": "A",
+    "solution": "Tetrad formation is seen during zygotene stage. During Anaphase, the centromeres split and chromatids separate. Terminalisation of chiasmata takes place during diakinesis. Nucleolus, golgi complex and ER are reformed during telophase. Crossing over takes place between non-sister chromatids of homologous chromosomes.",
+    "images": []
+  },
+  {
+    "question": "Given below are two statements: Statement I: During G0 phase of cell cycle, the cell is metabolically inactive. Statement II: The centrosome undergoes duplication during S phase of interphase. In the light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": [
+      "Both Statement I and Statement II are incorrect.",
+      "Statement I is correct but Statement II is incorrect.",
+      "Statement I is incorrect but Statement II is correct.",
+      "Both Statement I and Statement II are correct"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2023,
+    "answer": "C",
+    "solution": "Cells in the G0 stage remain metabolically active but no longer proliferate unless called on to do so depending on the requirement of the organism. In animal cells, during the S-phase, DNA replication begins in the nucleus, and the centriole duplicates in the cytoplasm.",
+    "images": []
+  },
+  {
+    "question": "The dissolution of synaptonemal complex occurs during:",
+    "options": ["Pachytene", "Diplotene", "Diakinesis", "Leptotene"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2023,
+    "answer": "B",
+    "solution": "Diplotene is the stage of meiosis during which the synaptonemal complex, a structure that holds homologous chromosomes together, dissolves, and the chromosomes begin to move apart, although they remain attached at chiasmata (points of crossing over).",
+    "images": []
+  },
+  {
+    "question": "Doubling of the number of chromosomes can be achieved by disrupting mitotic cell division soon after:",
+    "options": ["Anaphase", "Telophase", "Prophase", "Metaphase"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2023,
+    "answer": "D",
+    "solution": "The doubling of the number of chromosomes can be achieved by disrupting mitotic cell division soon after DNA replication has occurred and before the separation of sister chromatids. This stage of mitosis is the metaphase, where chromosomes align in the center of the cell, prior to separation in anaphase. If mitosis is disrupted after this point, sister chromatids cannot separate, leading to a doubling of the chromosome number in the resulting cells.",
+    "images": []
+  },
+  {
+    "question": "During which stages of mitosis and meiosis, respectively does the centromere of each chromosome split?",
+    "options": [
+      "Mataphase, Metaphase II",
+      "Prophase, Telophase I",
+      "Telophase, Anaphase I",
+      "Anaphase, Anaphase II"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2023,
+    "answer": "D",
+    "solution": "The centromere of each chromosome splits during the anaphase stage of both mitosis and meiosis. In mitosis, this happens during anaphase, when sister chromatids separate and move to opposite poles of the cell. In meiosis, the centromere splits during anaphase II, which is similar to anaphase of mitosis, and sister chromatids separate.",
+    "images": []
+  },
+  {
+    "question": "Which one of the following is the quiescent stage of cell cycle?",
+    "options": ["M", "G2", "G1", "G0"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2023,
+    "answer": "D",
+    "solution": "The cell cycle comprises several stages through which a cell passes during its life, from its formation to its division into two daughter cells. Option A: M (Mitotic phase) - This is the phase where the cell divides. Option B: G2 (Gap 2) - This is the phase of the cell cycle following DNA replication (S phase) and preceding mitosis (M phase). During this time, the cell will continue to grow and produce proteins necessary for cell division. Option C: G1 (Gap 1) - This phase follows cell division (M phase) and precedes DNA replication (S phase). In this phase, the cell grows and monitors its environment to determine whether it should initiate DNA synthesis. Option D: G0 (Gap 0) - This is a stage where cells are neither dividing nor preparing to divide. Instead, they are performing their designated functions and are in a state of dormancy or quiescence.",
+    "images": []
+  },
+  {
+    "question": "Which stage of meiosis can last for months or years in the oocytes of some vertebrates?",
+    "options": ["Diakinesis", "Leptotene", "Pachytene", "Diplotene"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2022,
+    "answer": "D",
+    "solution": "In oocytes of some vertebrates, diplotene lasts for months or years. It is called dictyotene state i.e., suspended diplotene stage.",
+    "images": []
+  },
+  {
+    "question": "In meiosis, crossing over and exchange of material between homologous chromosomes catalyzed by the enzyme:",
+    "options": ["Polymerase", "Phosphorylase", "Recombinase", "Transferase"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2022,
+    "answer": "C",
+    "solution": "The enzyme required during the process of crossing over and exchange of genetic material is recombinase enzyme.",
+    "images": []
+  },
+  {
+    "question": "Identify the correct sequence of events during Prophase I of meiosis: (a) Synapsis of homologous chromosomes, (b) Chromosomes become gradually visible under microscope, (c) Crossing over between non-sister chromatids of homologous chromosomes, (d) Terminalisation of chiasmata, (e) Dissolution of synaptonemal complex. Choose the correct answer from the options given below:",
+    "options": [
+      "(a), (c), (d), (e), (b)",
+      "(a), (b), (c), (d), (e)",
+      "(b), (c), (d), (e), (a)",
+      "(b), (a), (c), (e), (d)"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2022,
+    "answer": "D",
+    "solution": "During meiosis-I, in prophase I, firstly chromatin network condenses gradually which is visible as chromosomes under microscope. Homologous chromosomes pair up in a process called synapsis. Crossing over is the exchange of genetic material between non-sister chromatids of homologous chromosomes. The paired chromosomes move apart due to dissolution of the protein laden-synaptonemal complex. The actual point at which crossing over takes place is visualized as 'X' shaped structure called chiasmata.",
+    "images": []
+  },
+  {
+    "question": "Bivalent or Tetrad formation is a characteristic feature observed during:",
+    "options": [
+      "Chiasmata in zygotene stage",
+      "Synaptonemal complex in zygotene stage",
+      "Chiasmata in Diplotene stage",
+      "Synaptonemal complex in Pachytene stage"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2022,
+    "answer": "B",
+    "solution": "Bivalent or tetrad formation is a characteristic feature observed during zygotene stage when the homologous chromosomes undergo synapsis (pairing).",
+    "images": []
+  },
+  {
+    "question": "With respect to metaphase, which of the following statements is incorrect?",
+    "options": [
+      "Chromosomes lie at the equator of the cell",
+      "Complete disintegration of nuclear envelope takes place",
+      "Chromosomes are highly condensed",
+      "Metaphase chromosomes are made up of four sister chromatids held together by centromere"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2022,
+    "answer": "D",
+    "solution": "Each chromosome is made up of 2 sister chromatids.",
+    "images": []
+  },
+  {
+    "question": "Which one of the following never occurs during mitotic cell division?",
+    "options": [
+      "Spindle fibres attach to kinetochores of chromosomes",
+      "Movement of centrioles towards opposite poles",
+      "Pairing of homologous chromosomes",
+      "Coiling and condensation of the chromatids"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2022,
+    "answer": "C",
+    "solution": "Pairing of homologous chromosomes occurs during prophase I of meiosis. Coiling and condensation of chromatids, spindle fibres attachment to the kinetochores and movement of centrioles towards opposite poles occur in both mitosis and meiosis.",
+    "images": []
+  },
+  {
+    "question": "The appearance of recombination nodules on homologous chromosomes during meiosis characterizes:",
+    "options": [
+      "Synaptonemal complex",
+      "Bivalent",
+      "Sites at which crossing over occurs",
+      "Terminalization"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2022,
+    "answer": "C",
+    "solution": "Pachytene stage of meiosis is characterised by the appearance of recombination nodules, the sites at which crossing over occurs between non-sister chromatids of homologous chromosomes.",
+    "images": []
+  },
+  {
+    "question": "Regarding Meiosis, which of the statements is incorrect?",
+    "options": [
+      "There are two stages in Meiosis, Meiosis-I and II",
+      "in S phase of Meiosis DNA replication occurs-II",
+      "Pairing of homologous chromosomes and recombination occurs in Meiosis-I",
+      "Four haploid cells are formed at the end of Meiosis-II"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2022,
+    "answer": "B",
+    "solution": "Meiosis involves two sequential cycles of nuclear and cell division called meiosis-I and meiosis-II but only single cycle of DNA replication. The stage between two meiotic divisions is called interkinesis and is generally short lived and involves no DNA replication.",
+    "images": []
+  },
+  {
+    "question": "Select the incorrect statement with reference to mitosis:",
+    "options": [
+      "All the chromosomes lie at the equator at metaphase",
+      "Spindle fibres attach to centromere of chromosomes",
+      "Chromosomes decondense at telophase",
+      "Splitting of centromere occurs at anaphase"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2022,
+    "answer": "B",
+    "solution": "Spindle fibres attach to the kinetochores of chromosomes. Kinetochores are the disc shaped structures present on sides of primary constriction or centromere of chromosomes.",
+    "images": []
+  },
+  {
+    "question": "Which of the following stages of meiosis involves division of centromere?",
+    "options": ["Metaphase I", "Metaphase II", "Anaphase II", "Telophase II"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2021,
+    "answer": "C",
+    "solution": "Division of centromere occurs in anaphase II. Telophase II is the last stage of meiosis II. During this phase, the chromatids reach the poles and start uncoiling. Chromosomes form two parallel plates in metaphase I and one plate in metaphase II.",
+    "images": []
+  },
+  {
+    "question": "Match List-I with List-II: List-I: (a) S phase, (b) G2 phase, (c) Quiescent stage, (d) G1 phase; List-II: (i) Proteins are synthesized, (ii) Inactive phase, (iii) Interval between mitosis and initiation of DNA replication, (iv) DNA replication. Choose the correct answer from the options given below:",
+    "options": [
+      "(a)-(iii), (b)-(ii), (c)-(i), (d)-(iv)",
+      "(a)-(iv), (b)-(ii), (c)-(iii), (d)-(i)",
+      "(a)-(iv), (b)-(i), (c)-(ii), (d)-(iii)",
+      "(a)-(ii), (b)-(iv), (c)-(iii), (d)-(i)"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2021,
+    "answer": "C",
+    "solution": "In S phase DNA replication takes place. In G2 phase there is synthesis of proteins, RNA etc. Quiescent stage is inactive stage of cell cycle but cells remain metabolically active in this stage. G1 phase is the interval between mitosis and initiation of DNA replication.",
+    "images": []
+  },
+  {
+    "question": "The fruit fly has 8 chromosomes (2n) in each cell. During interphase of Mitosis if the number of chromosomes at G1 phase is 8, what would be the number of chromosomes after S phase?",
+    "options": ["8", "16", "4", "32"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2021,
+    "answer": "A",
+    "solution": "In S phase there is duplication of DNA. So amount of DNA increases but not the chromosome number. So, if the number of chromosomes at G1 phase is 8 in fruit fly then the number of chromosomes will be same in S phase that is 8 only.",
+    "images": []
+  },
+  {
+    "question": "The centriole undergoes duplication during:",
+    "options": ["S-phase", "Prophase", "Metaphase", "G2 phase"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2021,
+    "answer": "A",
+    "solution": "During S phase of cell cycle replication of DNA takes place. In animal cells during S phase, centriole duplicates in the cytoplasm. In G2 phase there is duplication of mitochondria, chloroplast and Golgi bodies. Tubulin protein is also synthesized during this phase. During prophase, condensation of chromatin starts. During metaphase, chromosomes get aligned at equator to form metaphasic plate.",
+    "images": []
+  },
+  {
+    "question": "Which stage of meiotic prophase shows terminalisation of chiasmata as its distinctive feature?",
+    "options": ["Leptotene", "Zygotene", "Diakinesis", "Pachytene"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2021,
+    "answer": "C",
+    "solution": "In meiosis I, chiasmata (X shaped structure) is formed in diplotene stage while it terminalise in diakinesis stage. Bivalents are formed in zygotene stage and crossing over takes place in pachytene stage. Compaction of chromosomal material occurs in leptotene stage.",
+    "images": []
+  },
+  {
+    "question": "Some dividing cells exit the cell cycle and enter vegetative inactive stage. This is called quiescent stage (G0). This process occurs at the end of",
+    "options": ["G1 phase", "S phase", "G2 phase", "M phase"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2020,
+    "answer": "A",
+    "solution": "Some cells do not appear to undergo division such as heart cells. These cells do not divide further and exit G1 phase to enter an inactive stage known as quiescent stage. Cells in the G0 phase are metabolically active but don't proliferate unless called on to do so depending on the requirement of the organism.",
+    "images": []
+  },
+  {
+    "question": "Identify the correct statement with regard to G1 phase (Gap 1) of interphase.",
+    "options": [
+      "Reorganisation of all cell components takes place.",
+      "Cell is metabolically active, grows but does not replicate its DNA.",
+      "Nuclear Division takes place.",
+      "DNA synthesis or replication takes place."
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2020,
+    "answer": "B",
+    "solution": "During G1 phase the cell is metabolically active and continuously grows but does not replicate its DNA. DNA synthesis takes place in S phase. Nuclear division occurs during Karyokinesis. Reorganization of all cell components takes place in M-Phase.",
+    "images": []
+  },
+  {
+    "question": "Match the following with respect to meiosis: (a) Zygotene, (b) Pachytene, (c) Diplotene, (d) Diakinesis; List-II: (i) Synapsis, (ii) Crossing over, (iii) Chiasmata formation, (iv) Terminalisation. Choose the correct answer from the options given below:",
+    "options": [
+      "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+      "(b)-(i), (c)-(ii), (d)-(iii), (a)-(iv)",
+      "(c)-(i), (d)-(ii), (a)-(iii), (b)-(iv)",
+      "(d)-(i), (a)-(ii), (b)-(iii), (c)-(iv)"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2020,
+    "answer": "A",
+    "solution": "Zygotene → Synapsis, Pachytene → Crossing over, Diplotene → Chiasmata formation, Diakinesis → Terminalisation.",
+    "images": []
+  },
+  {
+    "question": "Dissolution of the synaptonemal complex occurs during:",
+    "options": ["Zygotene", "Diplotene", "Leptotene", "Pachytene"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2020,
+    "answer": "B",
+    "solution": "Dissolution of the synaptonemal complex occurs during diplotene stage of Prophase-I of Meiosis-I. The beginning of diplotene is recognised by the dissolution of the synaptonemal complex and the tendency of the recombined homologous chromosomes of the bivalents to separate from each other except at the sites of crossovers. These X-shaped structures are called chiasmata.",
+    "images": []
+  },
+  {
+    "question": "Meiotic division of the secondary oocyte is completed:",
+    "options": [
+      "At the time of copulation",
+      "After zygote formation",
+      "At the time of fusion of a sperm with an ovum",
+      "Prior to ovulation"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2020,
+    "answer": "C",
+    "solution": "Meiotic division of secondary oocyte is completed after the entry of sperm in secondary oocyte which lead to the formation of a large ovum and a tiny 2nd polar body.",
+    "images": []
+  },
+  {
+    "question": "Cells in G0 phase:",
+    "options": [
+      "exit the cell cycle",
+      "enter the cell cycle",
+      "suspend the cell cycle",
+      "terminate the cell cycle"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2019,
+    "answer": "A",
+    "solution": "Four different stages of the cell cycle: The G1 phase, the S phase (synthesis), the G2 phase (collectively referred to as the interphase), and the M phase (mitosis and cytokinesis). The M step is a mixture of two processes: -mitosis, in which the nucleus of the cell divides, and cytokinesis, in which the cytoplasm of the cell divides, into two daughter cells. Cells that have stopped dividing semi-permanently or reversibly are part of a cycle called the G0 phase. In an adult animal, certain cells do not differentiate, e.g., nerve cells, whereas several cells often divide only to replace cell loss due to damage or cell death. This type of cell is still in the G0 phase. The cell cycle's G0 phase is also known as the quiescent period. The cell remains metabolically active in this phase but does not proliferate until it is called upon to do so. Cells stop the cell cycle for some time in the G0 phase of the cell cycle, but they do not terminate the cell cycle entirely. They leave the cell cycle when a cell reaches the G0 process.",
+    "images": []
+  },
+  {
+    "question": "The correct sequence of phases of cell cycle is:",
+    "options": [
+      "M → G1 → G2 → S",
+      "G1 → G2 → S → M",
+      "S → G1 → G2 → M",
+      "G1 → S → G2 → M"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2019,
+    "answer": "D",
+    "solution": "Cell cycle is the complete series of events from one cell division to the next. The correct sequence of phases of cell cycle is G1 → S → G2 → M.",
+    "images": []
+  },
+  {
+    "question": "Crossing over takes place between which chromatids and in which stage of the cell cycle?",
+    "options": [
+      "Non-sister chromatids of non-homologous chromosomes at Pachytene stage of prophase I.",
+      "Non-sister chromatids of non-homologous chromosomes at Zygotene stage of prophase I.",
+      "Non-sister chromatids of homologous chromosomes at Pachytene stage of prophase I.",
+      "Non-sister chromatids of homologous chromosomes at Zygotene stage of prophase I."
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2019,
+    "answer": "C",
+    "solution": "Crossing over is the exchange of gene which takes place between non-sister chromatids of homologous chromosomes at pachytene stage of meiosis I resulting in new allelic combinations in the daughter cells.",
+    "images": []
+  },
+  {
+    "question": "After meiosis I, the resultant daughter cells have",
+    "options": [
+      "four times the amount of DNA in comparison to haploid gamete.",
+      "same amount of DNA as in the parent cell in S phase.",
+      "twice the amount of DNA in comparison to haploid gamete.",
+      "same amount of DNA in comparison to haploid gamete."
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2019,
+    "answer": "C",
+    "solution": "Meiosis I is reductional division thus the resultant cell just after meiosis I will have half the number of chromosomes as compared to diploid parent cells. Therefore if the parent cell has 4C amount of DNA the daughter cell will have 2C amount of DNA and each gamete will have 1C amount of DNA.",
+    "images": []
+  },
+  {
+    "question": "The stage during which separation of the paired homologous chromosomes begins is",
+    "options": ["Pachytene", "Diplotene", "Zygotene", "Diakinesis"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2018,
+    "answer": "B",
+    "solution": "Diplotene is a stage of meiotic prophase which follows the pachytene and during which the paired homologous chromosomes begin to separate and chiasmata become visible.",
+    "images": []
+  },
+  {
+    "question": "Which of the following options gives the correct sequence of events during mitosis?",
+    "options": [
+      "Condensation → Nuclear membrane disassembly → Arrangement at equator → Centromere division → Segregation → Telophase",
+      "Condensation → Crossing over → Nuclear membrane disassembly → Segregation → Telophase",
+      "Condensation → Arrangement at equator → Centromere division → Segregation → Telophase",
+      "Condensation → Nuclear membrane disassembly → Crossing over → Segregation → Telophase"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2017,
+    "answer": "A",
+    "solution": "Mitosis is divided into four phase prophase, metaphase, anaphase and telophase. During prophase the indistinct and intertwined DNA molecules condenses to form elongated chromosomes. The nuclear membrane disintegrates during pro metaphase. During metaphase, the chromosomes align themselves at the equatorial plate. During anaphase, centromere of each chromosome divides into two so that each chromosome come to have its own centromere. Chromatids move towards opposite poles along the path of their chromosome fibres. Finally during telophase, two chromosome groups reorganise to form two nuclei. Nuclear envelope reappears, Golgi complex and endoplasmic reticulum are reformed, etc. Crossing over occurs during meiosis. Option (c) also gives the correct sequence of events but it misses step II (nuclear membrane disassembly).",
+    "images": []
+  },
+  {
+    "question": "Anaphase Promoting Complex (APC) is a protein degradation machinery necessary for proper mitosis of animal cell. If APC is defective in a human cell, which of the following is expected to occur?",
+    "options": [
+      "Chromosomes will be fragmented.",
+      "Chromosomes will not segregate.",
+      "Recombination of chromosome arms will occur",
+      "Chromosomes will not condense"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2017,
+    "answer": "B",
+    "solution": "During anaphase in mitosis, sister chromatids segregate at opposite poles. Therefore, a defective APC will affect chromosome segregation.",
+    "images": []
+  },
+  {
+    "question": "During cell growth, DNA synthesis takes place on",
+    "options": ["S-phase", "G1-phase", "G2-phase", "M phase"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2016,
+    "answer": "A",
+    "solution": "In S-phase (synthetic phase) of cell cycle, the chromosomes replicate. For this their DNA molecules function as templates and form carbon copies. The DNA content doubles i.e., 1C to 2C for haploid cells and 2C to 4C for diploid cells. As a result duplicate sets of genes are formed. Along with replication of DNA new chromatin fibres are formed which, however, remain attached in pairs and the number of chromosomes does not increase. As chromatin fibres are elongated chromosomes, each chromosome comes to have two chromatin threads or sister chromatids which remain attached at a common point called centromere.",
+    "images": []
+  },
+  {
+    "question": "When cell has stalled DNA replication fork, which checkpoint should be predominantly activated?",
+    "options": ["G1/S", "G2/M", "M", "Both G2/M and M"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2016,
+    "answer": "A",
+    "solution": "The DNA replication stress term depicts the state of a cell whose genome is endangered by numerous stresses. The events that participate in replication stress happen during DNA replication, as well as it can result in a stalled replication fork. There are several events that provide to replication stress, including: Misincorporation of ribonucleotides, Unusual DNA configurations, Tensions between replication and transcription, Insufficiency of important replication factors, Common fragile sites, Overexpression also known as constitutive activation of oncogenes, Chromatin inaccessibility. ATM along with ATR are proteins that abet to alleviate replication stress. Specifically, they are kinases that are recruited as well as activated by DNA damage. The stalled replication fork can decline if these regulatory proteins fail to solidify it. When this situation arises, reassembly of the fork is initiated in decree to overhaul the damaged DNA end. Thus, the valid answer to the question is Option A i.e. G1/S.",
+    "images": []
+  },
+  {
+    "question": "Match the stages of meiosis in column I to their characteristic features in column II: Column I: (A) Pachytene, (B) Metaphase I, (C) Diakinesis, (D) Zygotene; Column II: (i) Pairing of homologous chromosomes, (ii) Terminalization of chiasmata, (iii) Crossing over takes place, (iv) Chromosomes align at equatorial plate. Choose the correct option using the codes given below:",
+    "options": [
+      "A-(iii), B-(iv), C-(ii), D-(i)",
+      "A-(i), B-(iv), C-(ii), D-(iii)",
+      "A-(ii), B-(iv), C-(iii), D-(i)",
+      "A-(iv), B-(iii), C-(ii), D-(i)"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2016,
+    "answer": "A",
+    "solution": "The long pachytene stage begins with the completion of synapsis and is associated with further thickening and shortening of chromosomes. During this stage, exchanges of chromosome material between maternal and paternal homologous chromosomes occur by crossing over. At the points of crossing over, bridges (chiasmata) are seen in variable numbers. Metaphase I is marked by the movement of pairs of homologous chromosomes towards the equator and their arrangement on it. They need to be equally distributed in the newly formed cells. Terminalization of chiasma occurs during diplotene, after crossing over at pachytene, and terminalization completion takes place in diakinesis. The Zygotene stage of meiosis is characterised by the pairing of homologous chromosomes (synapsis). This pairing is brought about in a zipper-like fashion and may start at the centromere, at chromosome ends or at any other position.",
+    "images": []
+  },
+  {
+    "question": "Spindle fibres attach on to",
+    "options": [
+      "centromere of the chromosome",
+      "kinetosome of the chromosome",
+      "telomere of the chromosome",
+      "kinetochore of the chromosome"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2016,
+    "answer": "D",
+    "solution": "Small disc-shaped structures at the surface of the centromeres are called kinetochores. These structures serve as the sites of attachment of spindle fibres to the chromosomes that are moved into position at the centre of the cell.",
+    "images": []
+  },
+  {
+    "question": "Which of the following is not a characteristic feature during mitosis in somatic cells?",
+    "options": [
+      "Chromosome movement",
+      "Synapsis",
+      "Spindle fibres",
+      "Disappearance of nucleolus"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2016,
+    "answer": "B",
+    "solution": "Synapsis is the process of association of homologous chromosomes. It takes place during zygotene stage of prophase I of meiosis. This stage is not seen during mitosis.",
+    "images": []
+  },
+  {
+    "question": "In meiosis crossing over is initiated at",
+    "options": ["zygotene", "diplotene", "pachytene", "leptotene"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2016,
+    "answer": "C",
+    "solution": "Crossing over is a process of exchange of genetic material or chromatid segments between two homologous chromosomes. It is initiated during pachytene stage of meiosis.",
+    "images": []
+  },
+  {
+    "question": "Arrange the following events of meiosis in correct sequence (i) Crossing over (ii) Synapsis (iii) Terminalisation of chiasmata (iv) Disappearance of nucleolus",
+    "options": [
+      "(i), (ii), (iii), (iv)",
+      "(ii), (iii), (iv), (i)",
+      "(ii), (i), (iv), (iii)",
+      "(ii), (i), (iii), (iv)"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2015,
+    "answer": "D",
+    "solution": "Synapsis → Crossing over → Terminalisation of chiasmata → Disappearance of nucleolus.",
+    "images": []
+  },
+  {
+    "question": "A somatic cell that has just completed the S phase of its cell cycle, as compared to gamete of the same species, has",
+    "options": [
+      "twice the number of chromosomes and four times the amount of DNA",
+      "four times the number of chromosomes and twice the amount of DNA",
+      "twice the number of chromosomes and twice the amount of DNA",
+      "same number of chromosomes but twice the amount of DNA"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2015,
+    "answer": "A",
+    "solution": "In diploid cells (somatic cells) during G1 phase, DNA content is 2C and chromosome number is 2n whereas in haploid cells (gamete) during G1 phase, DNA content is 1C and chromosome number is n. S phase is marked by replication of DNA and the amount of DNA per cell is doubled i.e., it becomes 4C in somatic cells, whereas chromosome number remains same i.e., 2n. Thus, a somatic cell which has just completed S phase, will have 4C DNA content but 2n chromosome number, while the gamete cell has 1C DNA content and n chromosome number.",
+    "images": []
+  },
+  {
+    "question": "Select the correct option: (A) Zygotene, (B) G2 phase, (C) Pachytene, (D) Anaphase I; (i) Synapsis aligns homologous chromosomes, (ii) Synthesis of RNA and protein, (iii) Action of enzyme - phase recombinase, (iv) Centromeres do not separate but chromatids move towards opposite poles",
+    "options": [
+      "A-(i), B-(ii), C-(v), D-(iv)",
+      "A-(ii), B-(iii), C-(iv), D-(v)",
+      "A-(ii), B-(i), C-(iii), D-(iv)",
+      "A-(ii), B-(iii), C-(v), D-(iv)"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2015,
+    "answer": "D",
+    "solution": "Zygotene - Synapsis aligns homologous chromosomes, G2 phase - Synthesis of RNA and protein, Pachytene - Action of enzyme - phase recombinase, Anaphase I - Centromeres do not separate but chromatids move towards opposite poles.",
+    "images": []
+  },
+  {
+    "question": "During which phase(s) of cell cycle, amount of DNA in a cell remains at 4C level if the initial amount is denoted as 2C?",
+    "options": ["G0 and G1", "G1 and S", "Only G2", "G2 and M"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2014,
+    "answer": "C",
+    "solution": "In M-phase, both 4C and 2C of DNA are present in different stages. S phase marks the period during which the amount of DNA in the cell doubles. Thus, at G2 phase the amount of DNA is 4C. These doubled cellular contents prepare the cell to sustain in the further mitotic division.",
+    "images": []
+  },
+  {
+    "question": "In 'S' phase of the cell cycle",
+    "options": [
+      "amount of DNA doubles in each cell",
+      "amount of DNA remains same in each cell",
+      "chromosome number is increased",
+      "amount of DNA is reduced to half in each cell"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2014,
+    "answer": "A",
+    "solution": "In 'S' phase of cell cycle the DNA content doubles, i.e., 1C to 2C for haploid cells and 2C to 4C for diploid cells. However, the number of chromosomes does not increase.",
+    "images": []
+  },
+  {
+    "question": "The enzyme recombinase is required at which stage of meiosis?",
+    "options": ["Pachytene", "Zygotene", "Diplotene", "Diakinesis"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2014,
+    "answer": "A",
+    "solution": "Pachytene is characterized by the appearance of recombination nodules, the sites at which crossing over occurs between non-sister chromatids of the homologous chromosomes. Nodules contain multienzyme complex called recombinase. Recombinase is made of endonuclease, exonuclease, unwindase, R-protein, etc.",
+    "images": []
+  },
+  {
+    "question": "The complex formed by a pair of synapsed homologous chromosomes is called",
+    "options": ["bivalent", "axoneme", "equatorial plate", "kinetochore"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2013,
+    "answer": "A",
+    "solution": "During zygotene stage chromosomes start pairing together and this process of association is called synapsis. Such paired chromosomes are called homologous chromosomes. Electron micrographs of this stage indicate that chromosome synapsis is accompanied by the formation of complex structure called synaptonemal complex. The complex formed by a pair of synapsed homologous chromosomes is called a bivalent or a tetrad.",
+    "images": []
+  },
+  {
+    "question": "A stage in cell division is shown in the figure. Select the answer which gives correct identification of the stage with its characteristics.",
+    "options": [
+      "(a) Telophase - Chromosomes cluster at opposite spindle poles and their identity is lost as discrete elements.",
+      "(b) Late anaphase - Chromosomes move away from equatorial plate, nucleolus reappears.",
+      "(c) Telophase - Chromosomes cluster at opposite spindle poles and their identity is lost as discrete elements.",
+      "(d) Late anaphase - Nuclear envelope assembles around the chromosome clusters."
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2013,
+    "answer": "C",
+    "solution": "The figure given in the question shows a stage of mitotic cell division called as telophase stage. The individual chromosomes are no longer seen and chromatin material tends to collect in a mass at the two poles. This is the stage which shows the following key events: - Chromosomes cluster at opposite spindle poles and their identity is lost as discrete elements. - Nuclear envelope assembles around the chromosome clusters. - Nucleolus, Golgi complex and ER reform.",
+    "images": ["image present"]
+  },
+  {
+    "question": "During meiosis I, the chromosomes start pairing at",
+    "options": ["zygotene", "pachytene", "diplotene", "leptotene"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2013,
+    "answer": "A",
+    "solution": "During zygotene or zygonema of meiotic prophase I the chromosomes become shorter and thicker. The homologous chromosomes come to lie side-by-side in pairs. This pairing of homologous chromosomes is known as synapsis, or syndesis. A pair of homologous chromosomes lying together is called a bivalent.",
+    "images": []
+  },
+  {
+    "question": "During the metaphase stage of mitosis, spindle fibres attach to chromosomes at",
+    "options": [
+      "kinetochore",
+      "both centromere and kinetochore",
+      "centromere, kinetochore and areas adjoining centromere",
+      "centromere"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2013,
+    "answer": "A",
+    "solution": "In metaphase, chromosomes consisting of two sister chromatids get arranged at equator. Discontinuous fibres radiate out from two spindle poles and get connected to the disc shaped structure at the surface of the centromere called kinetochores. These are known as chromosome fibres or tractile fibrils. A kinetochore is a complex protein structure that is analogous to a ring for the microtubule hook; it is the point where microtubules attach themselves to the chromosome.",
+    "images": []
+  },
+  {
+    "question": "A stage of mitosis is shown in the diagram. Which stage is it and what are its characteristics?",
+    "options": [
+      "Metaphase - Spindle fibers attached to kinetochores, centromeres split and chromatids separate.",
+      "Metaphase - Chromosomes moved to spindle equator, chromosomes made up of two sister chromatids.",
+      "Anaphase - Centromeres split and chromatids separate and start moving away.",
+      "Late prophase - Chromosomes move to spindle equator."
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2013,
+    "answer": "B",
+    "solution": "In metaphase, chromosomes consisting of two sister chromatids get arranged at equator. Discontinuous fibres radiate out from two spindle poles and get connected to the disc shaped structure at the surface of the centromere called kinetochores. These are known as chromosome fibres or tractile fibrils. A kinetochore is a complex protein structure that is analogous to a ring for the microtubule hook; it is the point where microtubules attach themselves to the chromosome.",
+    "images": ["image present"]
+  },
+  {
+    "question": "During gamete formation, the enzyme recombinase participates during",
+    "options": ["metaphase I", "anaphase II", "prophase I", "prophase II"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2012,
+    "answer": "C",
+    "solution": "During gamete formation, the enzyme recombinase participates during pachytene stage of prophase I. This stage is characterized by the appearance of recombination nodules, the sites at which crossing over occurs between non-sister chromatids of the homologous chromosomes. Crossing over is the exchange of genetic material between two homologous chromosomes. Crossing over is also an enzyme-mediated process and the enzyme involved is called recombinase.",
+    "images": []
+  },
+  {
+    "question": "The given figure is the representation of a certain event at a particular stage of a type of cell division. Which is this stage?",
+    "options": [
+      "Prophase I during meiosis",
+      "Prophase II during meiosis",
+      "Prophase of mitosis",
+      "Both prophase and metaphase of mitosis"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2012,
+    "answer": "A",
+    "solution": "The given figure shows crossing over i.e., exchange of segments between two homologous chromosomes. Crossing over is characteristic of meiosis and occurs during pachytene stage of prophase I.",
+    "images": ["image present"]
+  },
+  {
+    "question": "Identify the meiotic stage in which the homologous chromosomes separate while the sister chromatids remain associated at their centromeres.",
+    "options": ["Metaphase I", "Metaphase II", "Anaphase I", "Anaphase II"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2012,
+    "answer": "C",
+    "solution": "During anaphase I, from each tetrad two chromatids of a chromosome move as a unit (dyad) to one pole of a spindle, and the remaining two chromatids of its homologue migrate to the opposite pole. Thus, the homologous chromosomes of each pair, rather than the chromatids of a chromosome, are separated. As a result, half of the chromosomes, which appear in early prophase, go to each pole. Thus the paternal and maternal chromosomes of each homologous pair segregate during anaphase I independently of the other chromosomes.",
+    "images": []
+  },
+  {
+    "question": "Select the correct option with respect to mitosis.",
+    "options": [
+      "Chromatids separate but remain in the centre of the cell in anaphase",
+      "Chromatids start moving towards opposite poles in telophase",
+      "Golgi complex and endoplasmic reticulum are still visible at the end of prophase.",
+      "Chromosomes move to the spindle equator and get aligned along equatorial plate in metaphase."
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2011,
+    "answer": "D",
+    "solution": "The plane of alignment of the chromosomes at metaphase is referred to as the metaphase plate. The key features of metaphase are, (1) Spindle fibres attach to kinetochores of chromosomes Chromosomes are moved to spindle equator and get aligned along metaphase plate through spindle fibres to both poles.",
+    "images": []
+  },
+  {
+    "question": "At metaphase, chromosomes are attached to the spindle fibres by their",
+    "options": [
+      "satellites",
+      "secondary constrictions",
+      "kinetochores",
+      "centromeres"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2011,
+    "answer": "C",
+    "solution": "The key feature of metaphase is the attachment of spindle fibres to kinetochores of chromosomes. Kinetochores are disc-shaped structures at the surface of the centromeres. These structures serve as the sites of attachment of spindle fibres to the chromosomes that are moved into position.",
+    "images": []
+  },
+  {
+    "question": "During mitosis, ER and nucleolus begin to disappear at",
+    "options": [
+      "late prophase",
+      "early metaphase",
+      "late metaphase",
+      "early prophase"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2010,
+    "answer": "A",
+    "solution": "Prophase is the first stage in both mitosis and meiosis of cell division. At interphase, the two copies of the identical chromosomes are replicated forming sister chromatids. They then enter the prophase and start chromosome condensation and disappearance of the nucleolus along with the endoplasmic reticulum.",
+    "images": []
+  },
+  {
+    "question": "Which stages of cell division do the following figures A and B represent respectively?",
+    "options": [
+      "(a) Prophase - Anaphase",
+      "(b) Metaphase - Telophase",
+      "(c) Telophase - Metaphase",
+      "(d) Anaphase - Prophase"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2010,
+    "answer": "C",
+    "solution": "",
+    "images": ["image present"]
+  },
+  {
+    "question": "Synapsis occurs between",
+    "options": [
+      "mRNA and ribosomes",
+      "spindle fibres and centromere",
+      "two homologous chromosomes",
+      "a male and a female gamete"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2009,
+    "answer": "C",
+    "solution": "During zygotene or zygonema of meiotic prophase I the chromosomes become shorter and thicker. The homologous chromosomes come to lie side-by-side in pairs. This pairing of homologous chromosomes is known as synapsis, or syndesis. A pair of homologous chromosomes lying together is called a bivalent.",
+    "images": []
+  },
+  {
+    "question": "Given below is a schematic break-up of the phases/stages of cell cycle. Which one of the following is the correct indication of the stage/phase in the cell cycle?",
+    "options": [
+      "C - karyokinesis",
+      "D - synthetic phase",
+      "A - cytokinesis",
+      "B - metaphase"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2009,
+    "answer": "B",
+    "solution": "In cell cycle there are two main phases interphase and mitotic phase. Interphase is divided into 3 stage G1, S and G2. G1 is first growth phase. S is synthetic phase and G2 is second growth phase.",
+    "images": ["image present"]
+  },
+  {
+    "question": "At what stage of the cell cycle are histone proteins synthesized in a eukaryotic cell?",
+    "options": [
+      "During G2 stage of prophase",
+      "During S-phase",
+      "During entire prophase",
+      "During telophase"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2005,
+    "answer": "B",
+    "solution": "During S phase or synthetic phase the replication of DNA takes place. For replication of DNA histone proteins are required so they are also synthesized during this phase. It takes about 30% - 50% of the total cell cycle. Prophase and telophase are stages involved in mitosis or meiosis. During G2 phase division of centrioles, mitochondria and chloroplasts occurs.",
+    "images": []
+  },
+  {
+    "question": "In the somatic cell cycle",
+    "options": [
+      "in G1 phase DNA content is double the amount of DNA present in the original cell",
+      "DNA replication takes place in S phase",
+      "a short interphase is followed by a long mitotic phase",
+      "G2 phase follows mitotic phase"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2004,
+    "answer": "B",
+    "solution": "Interphase is the stage between two successive cell divisions. During interphase, chromosomes are decondensed and are distributed throughout the nucleus. It is divided into three phases G1, S and G2. During G1 phase the cell grows and synthesis of tRNA, mRNA, ribosomes, enzymes and proteins necessary for DNA synthesis occurs. During S phase replication of DNA takes place. The nucleotides get assembled and DNA molecules are synthesized. During G2 phase organelles like centrioles are doubled and mitochondria, chloroplasts etc. divide.",
+    "images": []
+  },
+  {
+    "question": "If you are provided with root-tips of onion in your class and are asked to count the chromosomes, which of the following stages can you most conveniently look into?",
+    "options": ["Metaphase", "Telophase", "Anaphase", "Prophase"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2004,
+    "answer": "A",
+    "solution": "Metaphase is the best time to count and study the number and morphology of chromosomes. The distinctly visible chromosome arrange themselves at the equatorial or metaphasic plate. The centromeres lie at the equatorial plate while the limbs are placed variously according to their size and spiral arrangement. At prophase the chromosomes appear thin and filamentous, forming a network. So they are not very clearly visible. At telophase the chromosomes uncoil and lengthen and therefore are not clearly seen. Anaphase also shows chromosomes distinctly and they can be counted. But during anaphase chromatids separate and start moving towards opposite pole. So for counting metaphase is the best stage.",
+    "images": []
+  },
+  {
+    "question": "Which one of the following precedes reformation of the nuclear envelope during M phase of the cell cycle?",
+    "options": [
+      "Decondensation from chromosomes, and reassembly of the nuclear lamina",
+      "Transcription from chromosomes, and reassembly of the nuclear lamina",
+      "Formation of the contractile ring, and formation of the phragmoplast",
+      "Formation of the contractile ring, and transcription from chromosomes"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2004,
+    "answer": "C",
+    "solution": "M phase or mitotic phase is the actual division phase and formation of contractile ring and formation of phragmoplast precedes reformation of nuclear envelope. Contractile ring is belt-like bundle of actin and myosin that appears during cell division immediately below the plasma membrane. Contraction of this ring leads to the separation of the two daughter cells. Phragmoplast is the region of plant cell cytoplasm that becomes evident in the latter stages of mitosis. It forms from the residual microtubules of the polar mitotic spindle and appears to function in transporting materials to the new cell plate forming between the daughter cells. Once the cell plate is complete, the phragmoplast is divided and gradually disappears, the cell plate finally becoming transformed into the middle lamella lying between the new cell walls.",
+    "images": []
+  },
+  {
+    "question": "Mitotic spindle is mainly composed of which protein?",
+    "options": ["Actin", "Myosin", "Actomyosin", "Myoglobin"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2002,
+    "answer": "C",
+    "solution": "A spindle of fine fibres begins to develop during prophase. It consists of microtubules which are made of protein called tubulin and certain other associated proteins. These delicate fibres radiate from the centriole and constitute aster. This option was not given in the entrance paper. As actin and myosin are involved as contractile machinery in many nonmuscle cells so it can be considered as the correct answer. Myoglobin is present in muscles which can bind to oxygen.",
+    "images": []
+  },
+  {
+    "question": "Best material for the study of mitosis in laboratory is",
+    "options": ["anther", "root tip", "leaf tip", "ovary"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2002,
+    "answer": "B",
+    "solution": "Mitosis occurs both in somatic cells as well as in germ cells of the gonads. In plants mitosis occurs in the meristematic cells of root tip or shoot tip. These cells divide at a faster rate. So the root tip shows active cell division and are used in the laboratory to study mitosis. For studying meiosis young anthers are used.",
+    "images": []
+  },
+  {
+    "question": "Spindle fibre unite with which structure of chromosomes?",
+    "options": ["Chromocentre", "Chromomere", "Kinetochore", "Centriole"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2000,
+    "answer": "C",
+    "solution": "Spindle is microtubular apparatus that appears in many eukaryotic cells at the beginning of nuclear division and is responsible for the ordered separation of the chromosomes, chromosomes being attached to the spindle fibres by their centromeres. Two types of spindle fibres can be distinguished as the interpolar fibre, which stretches continuously from pole to pole of the spindle; the kinetochore fibre, which stretches from the pole to the centromere (kinetochore) of an individual chromosome. The mechanism by which the chromosomes move and the spindle fibres contract remains unclear. Cells of animals and lower plants possess centrioles, which act as organizer regions for spindle microtubule formation, but centrioles are absent from the cells of higher plants.",
+    "images": []
+  },
+  {
+    "question": "In which stage of cell cycle, DNA replication occurs?",
+    "options": ["G1-phase", "S-phase", "G2-phase", "M-phase"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 2000,
+    "answer": "B",
+    "solution": "During S phase or synthetic phase the replication of DNA takes place. For replication of DNA histone proteins are required so they are also synthesized during this phase. It takes about 30% - 50% of the total cell cycle. Prophase and telophase are stages involved in mitosis or meiosis. During G2 phase division of centrioles, mitochondria and chloroplasts occurs.",
+    "images": []
+  },
+  {
+    "question": "Microtubule is involved in the",
+    "options": [
+      "muscle contraction",
+      "membrane architecture",
+      "cell division",
+      "DNA recognition"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 1998,
+    "answer": "C",
+    "solution": "Microtubules are unbranched hollow submicroscopic tubules of protein tubulin which develop on specific nucleating regions and can undergo quick growth or dissolution at their ends by assembly or disassembly of monomers. Microtubules form spindle during cell division. Centrioles help in cell division by forming spindle poles or microtubules. In animal cells, microfilament collect in the middle region of the cell below the cell membrane. They induce the cell membrane to invaginate. In plant cells, cell plate is formed to separate the two daughter cells. Some of the spindle fibres called interzonal microtubules are deposited around phragmoplast. Vesicles from Golgi apparatus are deposited and coalesce on the phragmoplast to form a cell plate.",
+    "images": []
+  },
+  {
+    "question": "How many mitotic divisions are needed for a single cell to make 128 cells?",
+    "options": ["28", "32", "7", "14"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 1997,
+    "answer": "C",
+    "solution": "Mitosis is an equational division where after division each cell produces two daughter cells, therefore after 7 divisions one cell will give 128 cells in case of mitosis.",
+    "images": []
+  },
+  {
+    "question": "During cell division in apical meristem, the nuclear membrane appears in",
+    "options": ["telophase", "cytokinesis", "metaphase", "anaphase"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 1997,
+    "answer": "A",
+    "solution": "In apical meristems mitotic divisions occur at a rapid rate. In late telophase of mitosis, a nuclear membrane appears on the outside from either pieces of nuclear envelope or endoplasmic reticulum. The telophase may last as long as the prophase.",
+    "images": []
+  },
+  {
+    "question": "When paternal and maternal chromosomes change their materials with each other in cell division this event is called",
+    "options": [
+      "bivalent-forming",
+      "dyad-forming",
+      "synapsis",
+      "crossing-over"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 1996,
+    "answer": "D",
+    "solution": "Crossing over is responsible for inducing variability. It involves an exchange of equal segments of non-sister chromatids belonging to two different but homologous chromosomes. Crossing over takes place at four stranded stage. Only two of the four chromatids take part in crossing over. The other two are called non crossovers. Zygotene is characterized by pairing of homologous chromosomes which is called synapsis. The first meiotic division which is completed at first telophase may be followed by cytokinesis giving rise to a dyad.",
+    "images": []
+  },
+  {
+    "question": "Which typical stage is known for DNA replication?",
+    "options": ["S-phase", "G2-phase", "metaphase", "G1-phase"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 1996,
+    "answer": "A",
+    "solution": "Interphase is the stage between two successive cell divisions. During interphase, chromosomes are decondensed and are distributed throughout the nucleus. It is the largest period in the cell cycle and is divided into three phases G1, S and G2. During G1 phase the cell grows and synthesis of tRNA, mRNA, ribosomes, enzymes and proteins necessary for DNA synthesis occurs. During S phase replication of DNA takes place. The nucleotides get assembled and DNA molecules are synthesized. During G2 phase organelles like centrioles are doubled and mitochondria, chloroplasts etc. divide.",
+    "images": []
+  },
+  {
+    "question": "Which of the following represents the best stage to view the shape, size and number of chromosomes?",
+    "options": ["Prophase", "Metaphase", "Interphase", "Telophase"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 1996,
+    "answer": "B",
+    "solution": "Metaphase is the best time to count and study the number and morphology of chromosomes. The distinctly visible chromosome arrange themselves at the equatorial or metaphasic plate. The centromeres lie at the equatorial plate while the limbs are placed variously according to their size and spiral arrangement. At prophase the chromosomes appear thin and filamentous, forming a network. So they are not very clearly visible. At telophase the chromosomes uncoil and lengthen and therefore are not clearly seen. Anaphase also shows chromosomes distinctly and they can be counted. But during anaphase chromatids separate and start moving towards opposite pole. So for counting metaphase is the best stage.",
+    "images": []
+  },
+  {
+    "question": "In a somatic cell cycle, DNA synthesis takes place in",
+    "options": ["G1 phase", "prophase of mitosis", "S-phase", "G2 phase"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 1994,
+    "answer": "C",
+    "solution": "Interphase is the stage between two successive cell divisions. During interphase, chromosomes are decondensed and are distributed throughout the nucleus. It is the largest period in the cell cycle and is divided into three phases G1, S and G2. During G1 phase the cell grows and synthesis of tRNA, mRNA, ribosomes, enzymes and proteins necessary for DNA synthesis occurs. During S phase replication of DNA takes place. The nucleotides get assembled and DNA molecules are synthesized. During G2 phase organelles like centrioles are doubled and mitochondria, chloroplasts etc. divide.",
+    "images": []
+  },
+  {
+    "question": "Which statement best explains the evolutionary advantage of meiosis?",
+    "options": [
+      "Meiosis is necessary for sexual reproduction.",
+      "Genetic recombinations are possible from generation to generation",
+      "Meiosis alternates with mitosis from generation to generation",
+      "The same genetic system is passed on from generation to generation"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 1994,
+    "answer": "B",
+    "solution": "Meiosis involves exchange of genes between homologous chromosomes. So the gametes produced are genetically different from each other. Offsprings produced by the fusion of gametes therefore also show recombinations or genetic variations. These variations in the offsprings make organisms more adaptable to the environment and these have a definite role in evolution.",
+    "images": []
+  },
+  {
+    "question": "Meiosis II performs",
+    "options": [
+      "separation of sex chromosomes",
+      "synthesis of DNA and centromere",
+      "separation of homologous chromosomes",
+      "separation of chromatids"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 1993,
+    "answer": "D",
+    "solution": "Meiosis II is shorter than the typical mitotic division because of the shortening of prophase of this division. The division maintains the number of chromosomes produce at the end of reduction division. Hence, it is called homotypic or equational division, though it is similar to mitosis. The main function of homotypic division or meiosis II is to separate the chromatids of univalent chromosomes which differ from each other in their linkage groups due to crossing over.",
+    "images": []
+  },
+  {
+    "question": "Number of chromatids at metaphase is",
+    "options": [
+      "two each in mitosis and meiosis",
+      "two in mitosis and one in meiosis",
+      "two in mitosis and four in meiosis",
+      "one in mitosis and two in meiosis"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 1992,
+    "answer": "A",
+    "solution": "Number of chromatids at metaphase is two each in mitosis and meiosis. Chromatid is a half chromosome during duplication in early prophase and metaphase of mitosis and between diplotene and the second metaphase of meiosis. After these stages chromatids are called a daughter chromosomes.",
+    "images": []
+  },
+  {
+    "question": "Mitotic anaphase differs from metaphase in possessing",
+    "options": [
+      "same number of chromosomes and same number of chromatids",
+      "half number of chromosomes and half number of chromatids",
+      "half number of chromosomes and same number of chromatids",
+      "same number of chromosomes and half number of chromatids"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 1991,
+    "answer": "D",
+    "solution": "Mitotic anaphase differs from metaphase in possessing same number of chromosomes and half number of chromatids. During anaphase of mitosis, chromosomes divide at the point of centromere or kinetochore and thus two sister chromatids are formed which are called as chromosomes. While during metaphase, chromosomes become maximally distinct due to further contraction and thus size of chromosomes is measured at mitotic metaphase.",
+    "images": []
+  },
+  {
+    "question": "In meiosis, the daughter cells differ from parent cell as well as amongst themselves due to",
+    "options": [
+      "segregation, independent assortment and crossing over",
+      "segregation and crossing over",
+      "independent assortment and crossing over",
+      "segregation and independent assortment"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 1991,
+    "answer": "A",
+    "solution": "In meiosis, the daughter cells differ from parent cell as well as amongst themselves due to segregation, independent assortment and crossing over. Daughter cells inhibit variations. Meiosis leads to recombinations or new combinations of genes or characters as a result of crossing over. Due to these recombinations, variations are created, which have role in process of evolution.",
+    "images": []
+  },
+  {
+    "question": "Segregation of Mendelian factor (Aa) occurs during",
+    "options": ["diplotene", "anaphase I", "zygotene/pachytene", "anaphase II"],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 1990,
+    "answer": "B",
+    "solution": "Segregation of Mendelian factor (Aa) occurs during Anaphase I. The paired homologous chromosomes separate in meiosis I so that each gamete receives one chromosome of each homologous pair. During Anaphase I chromosome divides at the point of centromere or kinetochore and thus two sister chromatids are formed, which are called as chromosomes.",
+    "images": []
+  },
+  {
+    "question": "Meiosis I is reductional division. Meiosis II is equational division due to",
+    "options": [
+      "pairing of homologous chromosomes",
+      "crossing over",
+      "separation of chromatids",
+      "disjunction of homologous chromosomes"
+    ],
+    "subject": "Biology",
+    "topic": "Cell Cycle and Cell Division",
+    "exam name": "NEET",
+    "exam year": 1988,
+    "answer": "C",
+    "solution": "August Weismann in 1887 predicted that the number of chromosomes must be reduced by one half during gamete formation. The two divisions of meiosis are called the first and the second meiotic divisions. In meiosis I, the number of chromosomes are reduced from diploid to haploid condition, whereas in meiosis II, the two chromatids of each chromosome separate from each other and go to separate daughter cells, as a result the number of chromosomes remains the same as produced by meiosis I.",
+    "images": []
+  }
+]
